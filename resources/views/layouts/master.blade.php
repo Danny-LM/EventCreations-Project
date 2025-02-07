@@ -29,10 +29,10 @@
                         <a class="nav-link active" aria-current="page" href="#">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Login</a>
+                        <a class="nav-link active" aria-current="page" href="{{ route('login') }}">Login</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Create Account</a>
+                        <a class="nav-link active" aria-current="page" href="{{ route('register') }}">Create Account</a>
                     </li>
                 </ul>
             </div>

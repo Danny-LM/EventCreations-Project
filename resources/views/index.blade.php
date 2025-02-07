@@ -11,7 +11,7 @@
     </p>
   </div>
   <div class="container">
-    <button class="">Create Account</button>
+    <button class="" onclick="window.location.href='{{ route('register') }}'">Create Account</button>
     <button class="">About Us</button>
   </div>
 </section>

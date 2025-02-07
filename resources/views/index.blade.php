@@ -1,12 +1,18 @@
 @extends('layouts.master')
 @section('content')
-<section class="section" id="Section-1">
+<section class="section" id="Hero-Section">
   <div class="container">
-    <div class="row">
-      <div class="col-md-4">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi possimus aut, animi distinctio et officiis sequi ex iure ut fugit, harum repellat, nihil nostrum esse inventore itaque! Ipsam, cum magnam?
-      </div>
-    </div>
+    <h1 class="">
+      "Create unique moments<br>
+      quickly and easily."
+    </h1>
+    <p class="">
+      The ideal platform to plan and organize your events efficiently!
+    </p>
+  </div>
+  <div class="container">
+    <button class="">Create Account</button>
+    <button class="">About Us</button>
   </div>
 </section>
 <section class="section" id="Section-2">

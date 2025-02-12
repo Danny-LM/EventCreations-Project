@@ -11,16 +11,16 @@
       <br>
     </h1>
     <p class="">
-=======
+
       The ideal platform to plan and organize your events efficiently!
       <br>
       <br>
     </p>
   </div>
   <div class="container">
-    <button class="btn-rounded" style= "margin: 10px;"onclick="window.location.href='{{ route('register') }}'">Create Account</button>
-    <button class="btn-rounded" style="border-radius: 10px;">About Us</button>
->>>>>>> 20740a4 ({algo})
+  <button class="btn-rounded" style="margin: 50px; border-radius: 8px;" onclick="window.location.href='{{ route('register') }}'">Create Account</button>
+  <button class="btn-rounded"style="border-radius: 8px;">About Us</button>
+
   </div>
 </section>
 <br>

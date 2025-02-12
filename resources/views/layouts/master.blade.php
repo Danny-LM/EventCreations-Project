@@ -30,10 +30,10 @@
                         <a class="nav-link active" aria-current="page" href="#">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="{{ route('login') }}">Sign up</a>
+                        <a class="nav-link custom-btn" href="{{ route('register') }}">Sign up</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="{{ route('register') }}">Log in</a>
+                        <a class="nav-link custom-btn" href="{{ route('login') }}">Log in</a>
                     </li>
                 </ul>
             </div>

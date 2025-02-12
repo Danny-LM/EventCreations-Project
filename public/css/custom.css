@@ -53,3 +53,21 @@
     padding-top: var(--padding-lg);
     padding-bottom: var(--padding-lg);
 }
+/* Estilos para los botones Sign up y Log in */
+.custom-btn {
+    padding: var(--padding-sm) var(--padding-lg); /* Usa tus variables de padding */
+    border: 2px solid #007bff; /* Color del borde */
+    border-radius: var(--corner-sm); /* Usa tus variables de bordes */
+    color: #007bff; /* Color del texto */
+    background-color: transparent;
+    text-decoration: none; /* Quita el subrayado */
+    font-size: var(--paragraph-md); /* Usa tus variables de fuente */
+    transition: 0.3s ease-in-out;
+    display: inline-block; /* Asegura que respete padding y tamaño */
+}
+
+.custom-btn:hover {
+    background-color: #007bff;
+    color: white;
+}
+

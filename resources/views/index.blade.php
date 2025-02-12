@@ -3,19 +3,29 @@
 <section class="section" id="Hero-Section">
   <div class="container">
     <h1 class="">
+    <br>
+    <br>
       "Create unique moments<br>
       quickly and easily."
+      <br>
+      <br>
     </h1>
     <p class="">
-      With Event Creations, turn your ideas into unforgettable<br>
-      events with smart organization and unlimited creativity.
+=======
+      The ideal platform to plan and organize your events efficiently!
+      <br>
+      <br>
     </p>
   </div>
   <div class="container">
-    <button class="" onclick="window.location.href='{{ route('register') }}'">Sign up</button>
-    <button class="">About Us</button>
+    <button class="btn-rounded" style= "margin: 10px;"onclick="window.location.href='{{ route('register') }}'">Create Account</button>
+    <button class="btn-rounded" style="border-radius: 10px;">About Us</button>
+>>>>>>> 20740a4 ({algo})
   </div>
 </section>
+<br>
+<br>
+<br>
 <section class="section" id="Section-2">
   <div class="container">
     <div class="row">

@@ -7,11 +7,12 @@
       quickly and easily."
     </h1>
     <p class="">
-      The ideal platform to plan and organize your events efficiently!
+      With Event Creations, turn your ideas into unforgettable<br>
+      events with smart organization and unlimited creativity.
     </p>
   </div>
   <div class="container">
-    <button class="" onclick="window.location.href='{{ route('register') }}'">Create Account</button>
+    <button class="" onclick="window.location.href='{{ route('register') }}'">Sign up</button>
     <button class="">About Us</button>
   </div>
 </section>

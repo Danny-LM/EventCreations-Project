@@ -24,7 +24,7 @@
     </h1>
     <p class="">
 
-    With Event Creations, turn your ideas into unforgettable events 
+    With Event Creations, turn your ideas into unforgettable events <br>
     with smart organization and unlimited creativity.
       <br>
       <br>

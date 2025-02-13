@@ -6,7 +6,7 @@
   .rectangle {
     width: 200px;
     height: 100px;
-    background-color: 221D4F;
+    background-color: #221D4F;
     margin: 0 auto;
   }
   </style>

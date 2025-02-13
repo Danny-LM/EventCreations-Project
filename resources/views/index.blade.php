@@ -5,19 +5,11 @@
      /* Sección principal */
      #Hero-Section {
     text-align: center;
-    padding: 60px 20px;
+    padding: 60px 30px;
     background-color: #221D4F;
     color: white;
      }
-  .rectangle {
-    width: 1342px;
-    height: 100px;
-    background-color: #221D4F;
-    margin: 0 auto;
-  .content-background{
-    background-color:rgb(0, 0, 0)
-  }
-  }
+ 
   </style>
 
 
@@ -25,7 +17,6 @@
   <div class="container">
     <h1 class=""style="text-align: left;">
     <br>
-    <div class="rectangle,"></div> 
     <br>
       "Create unique moments<br>
       quickly and easily."

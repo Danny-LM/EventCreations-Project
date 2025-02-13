@@ -3,34 +3,45 @@
 
 /*Rectangulo de fondo inicial*/ 
 <style>
+     /* Sección principal */
+     #Hero-Section {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #221D4F;
+    color: white;
+     }
   .rectangle {
-    width: 200px;
+    width: 1342px;
     height: 100px;
     background-color: #221D4F;
     margin: 0 auto;
+  .content-background{
+    background-color:rgb(0, 0, 0)
+  }
   }
   </style>
 
+
 <section class="section" id="Hero-Section">
   <div class="container">
-    <h1 class="">
+    <h1 class=""style="text-align: left;">
     <br>
-    <div class="rectangle"></div> 
+    <div class="rectangle,"></div> 
     <br>
       "Create unique moments<br>
       quickly and easily."
       <br>
       <br>
     </h1>
-    <p class="" style="font-wight;bolt;">
+    <p class=""style="text-align: left;">
 
-    With Event Creations, turn your ideas into unforgettable events <br>
-    with smart organization and unlimited creativity.
+      "With Event Creations, turn your ideas into unforgettable events <br>
+      with smart organization and unlimited creativity.
       <br>
       <br>
     </p>
   </div>
-  <div class="container"> 
+  <div class="container"style="text-align: left;"> 
   <button class="btn-rounded" 
         style="margin: 40px; border-radius: 30px; padding: 5px 40px; background: rgb(165, 105, 200);
         color: white; font-wight:bolt;" 

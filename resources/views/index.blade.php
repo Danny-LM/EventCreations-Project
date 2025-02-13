@@ -22,7 +22,7 @@
       <br>
       <br>
     </h1>
-    <p class="">
+    <p class="" style="font-wight;bolt;">
 
     With Event Creations, turn your ideas into unforgettable events <br>
     with smart organization and unlimited creativity.
@@ -31,11 +31,14 @@
     </p>
   </div>
   <div class="container"> 
-  <button class="btn-rounded" style="margin: 10px; border-radius: 8px; padding: 10px 12px;" onclick="window.location.href='{{ route('register') }}'">
+  <button class="btn-rounded" 
+        style="margin: 40px; border-radius: 30px; padding: 5px 40px; background: rgb(165, 105, 200);
+        color: white; font-wight:bolt;" 
+        onclick="window.location.href='{{ route('register') }}'">
   Create Account
 </button>
 
-<button class="btn-rounded" style="border-radius: 8px; padding: 10px 12px;">
+<button class="btn-rounded" style="border-radius: 40px; padding: 5px 40px;">
   About Us
 </button>
 

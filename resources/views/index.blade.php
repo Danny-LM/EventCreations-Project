@@ -31,8 +31,13 @@
     </p>
   </div>
   <div class="container"> 
-  <button class="btn-rounded"style="margin: 10px; border-radius: 8px;"onclick="window.location.href='{{ route('register') }}'">Create Account</button>
-  <button class="btn-rounded"style="border-radius: 8px;">About Us</button>
+  <button class="btn-rounded" style="margin: 10px; border-radius: 8px; padding: 10px 12px;" onclick="window.location.href='{{ route('register') }}'">
+  Create Account
+</button>
+
+<button class="btn-rounded" style="border-radius: 8px; padding: 10px 12px;">
+  About Us
+</button>
 
   </div>
 </section>

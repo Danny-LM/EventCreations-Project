@@ -30,8 +30,8 @@
       <br>
     </p>
   </div>
-  <div class="container">
-  <button class="btn-rounded" style="margin: 50px; border-radius: 8px;" onclick="window.location.href='{{ route('register') }}'">Create Account</button>
+  <div class="container"> 
+  <button class="btn-rounded"style="margin: 10px; border-radius: 8px;"onclick="window.location.href='{{ route('register') }}'">Create Account</button>
   <button class="btn-rounded"style="border-radius: 8px;">About Us</button>
 
   </div>

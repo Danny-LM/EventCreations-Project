@@ -1,7 +1,6 @@
 @extends('layouts.master')
 @section('content')
 
-/*Rectangulo de fondo inicial*/ 
 <style>
      /* Sección principal */
      #Hero-Section {

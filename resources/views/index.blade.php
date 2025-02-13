@@ -1,9 +1,21 @@
 @extends('layouts.master')
 @section('content')
+
+/*Rectangulo de fondo inicial*/ 
+<style>
+  .rectangle {
+    width: 200px;
+    height: 100px;
+    background-color: 221D4F;
+    margin: 0 auto;
+  }
+  </style>
+
 <section class="section" id="Hero-Section">
   <div class="container">
     <h1 class="">
     <br>
+    <div class="rectangle"></div> 
     <br>
       "Create unique moments<br>
       quickly and easily."

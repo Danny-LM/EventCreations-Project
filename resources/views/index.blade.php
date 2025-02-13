@@ -24,7 +24,8 @@
     </h1>
     <p class="">
 
-      The ideal platform to plan and organize your events efficiently!
+    With Event Creations, turn your ideas into unforgettable events 
+    with smart organization and unlimited creativity.
       <br>
       <br>
     </p>

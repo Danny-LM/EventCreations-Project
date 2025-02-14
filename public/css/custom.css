@@ -1,13 +1,16 @@
-/*bhsabdbaskjdb nuevo intento de cambio*/ 
+
 :root {
 /* Primitive Colors */
     --color-white: #ffffff;
     --color-black: #000000;
+    --color-midnight-purple: #221D4F;
+    --color-royal-violet: #BB6BD9;
+    --color-steel-gray: #979797;
 
 /* Color Tokens */
     /*Basic*/
-    --surface-primary: var(--color-white);
-    --secondary-color: var(--color-black);
+    --light-bg-primary: var(--color-midnight-purple);
+    --light-bg-secondary: var(--color-white);
 
 /* Spacing Tockens */
     --border-radius: 20px;
@@ -29,7 +32,7 @@
     --padding-xl: 20px;
     --padding-xxl: 24px;
 
-/* Font */
+/* Text */
     /* Sizes */
     --ui-text: 16px;
 
@@ -37,16 +40,28 @@
     --paragraph-md: 16px;
     --paragraph-lg: 20px;
 
-    --h3-text: 24px;
-    --h2-text: 28px;
-    --h1-text: 34px;
+    --h3-text-size: 24px;
+    --h2-text-size: 28px;
+    --h1-text-size: 34px;
 
     /* Color */
-    --text-primary: var(--color-black);
-    --text-secondary: var(--color-white);
+    --color-text-primary: var(--color-black);
+    --color-text-secondary: var(--color-white);
+
+    /* Font Family */
+    --font-family-primary: 'Poppins', sans-serif;
+    --font-family-primary-bold: 'Poppins Bold', sans-serif;
+    --font-family-primary-light: 'Poppins Light', sans-serif;
+    --font-family-primary-underline: 'Poppins Underline', sans-serif;
 }
 
-/**/
+
+/* STYLES */
+.section{
+    padding-top: var(--padding-lg);
+    padding-bottom: var(--padding-lg);
+}
+
 /* Estilos para los botones Sign up y Log in */
 .custom-btn {
     padding: var(--padding-xs) var(--padding-xl); /* Reduce altura, aumenta ancho */

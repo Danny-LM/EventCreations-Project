@@ -9,8 +9,7 @@
     background-color: #221D4F;
     color: white;
      }
- 
-  </style>
+  </style> -->
 
 
 <section class="section" id="Hero-Section">
@@ -48,6 +47,24 @@
 <br>
 <br>
 <br>
+
+<!-- Para corregir bien lo de arriba (luego)
+<section class="section" id="Hero-Section">
+  <div class="container">
+    <h1 class="">
+      "Create unique moments<br>
+      quickly and easily."
+    </h1>
+    <p class="">
+      The ideal platform to plan and organize your events efficiently!
+    </p>
+  </div>
+  <div class="container">
+    <button class="">Create Account</button>
+    <button class="">About Us</button>
+  </div>
+</section> -->
+
 <section class="section" id="Section-2">
   <div class="container">
     <div class="row">
@@ -57,6 +74,7 @@
     </div>
   </div>
 </section>
+
 <section class="section" id="Section-3">
   <div class="container">
     <div class="row">
@@ -66,6 +84,7 @@
     </div>
   </div>
 </section>
+
 <section class="section" id="Section-4">
   <div class="container">
     <div class="row">
@@ -75,6 +94,7 @@
     </div>
   </div>
 </section>
+
 <section class="section" id="Section-5">
   <div class="container">
     <div class="row">
@@ -84,6 +104,7 @@
     </div>
   </div>
 </section>
+
 <section class="section" id="Section-6">
   <div class="container">
     <div class="row">
@@ -93,6 +114,7 @@
     </div>
   </div>
 </section>
+
 <section class="section" id="Section-7">
   <div class="container">
     <div class="row">

@@ -1,20 +1,23 @@
 
+/* How to use:
+   - Primitive colors ONLY for new tokens
+   - Use tokens in components */
 :root {
 /* Primitive Colors */
+    /* grayscale */
     --color-white: #ffffff;
-    --color-black: #000000;
-    --color-midnight-purple: #221D4F;
-    --color-royal-violet: #BB6BD9;
     --color-steel-gray: #979797;
+    --color-black: #000000;
 
-/* Color Tokens */
+    /* Primary Colors */
+    --color-royal-violet: #BB6BD9;
+    --color-midnight-purple: #221D4F;
+
+
+/* Tokens */
     /*Basic*/
     --light-bg-primary: var(--color-midnight-purple);
     --light-bg-secondary: var(--color-white);
-
-/* Spacing Tockens */
-    --border-radius: 20px;
-    --padding: 10px;
 
     /*Corner*/
     --corner-xs: 4px;
@@ -24,6 +27,14 @@
     --corner-xl: 20px;
     --corner-xxl: 24px;
 
+    /*Border*/
+    --border-xs: 1px;
+    --border-sm: 2px;
+    --border-md: 4px;
+    --border-lg: 8px;
+    --border-xl: 12px;
+    --border-xxl: 16px;
+
     /*Padding*/
     --padding-xs: 4px;
     --padding-sm: 8px;
@@ -32,8 +43,7 @@
     --padding-xl: 20px;
     --padding-xxl: 24px;
 
-/* Text */
-    /* Sizes */
+    /* Text Sizes */
     --ui-text: 16px;
 
     --paragraph-sm: 14px;
@@ -44,22 +54,82 @@
     --h2-text-size: 28px;
     --h1-text-size: 34px;
 
-    /* Color */
+    /* Text Color */
     --color-text-primary: var(--color-black);
     --color-text-secondary: var(--color-white);
 
     /* Font Family */
     --font-family-primary: 'Poppins', sans-serif;
-    --font-family-primary-bold: 'Poppins Bold', sans-serif;
-    --font-family-primary-light: 'Poppins Light', sans-serif;
-    --font-family-primary-underline: 'Poppins Underline', sans-serif;
+        
+    /* Font Weights */
+    --font-weight-light: 300;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+        
+    /* Text Styles */
+    --text-underline: underline;
+
+/* Button Tokens
+Structure: --btn-[type]-[propiety]-[state]
+Ejemplo: --btn-primary-bg-hover */
+    /* Primary Button */
+    --btn-primary-bg: var();
+    --btn-primary-label: var();
+    --btn-primary-border: var();
+
+    --btn-primary-bg-hover: var();
+    --btn-primary-label-hover: var();
+
+    --btn-primary-bg-active: var();
+
+    /* Secondary Button */
+    --btn-secondary-bg: var();
+    --btn-secondary-label: var();
+    --btn-secondary-border: var();
+
+    --btn-secondary-bg-hover: var();
+    --btn-secondary-label-hover: var();
+    
+    --btn-secondary-bg-active: var();
+
+    /* Tertiary Button */
+    --btn-tertiary-bg: var();
+    --btn-tertiary-label: var();
+    --btn-tertiary-border: var();
+
+    --btn-tertiary-bg-hover: var();
+    --btn-tertiary-label-hover: var();
+    
+    --btn-tertiary-bg-active: var();
+
+    /* Quaternary Button */
+    --btn-quaternary-bg: var();
+    --btn-quaternary-label: var();
+    --btn-quaternary-border: var();
+
+    --btn-quaternary-bg-hover: var();
+    --btn-quaternary-label-hover: var();
+    
+    --btn-quaternary-bg-active: var();
+
+    /* Disabled Button (For all buttons) */
+    --btn-primary-bg-disabled: var();
+    --btn-primary-label-disabled: var();
+
+    --btn-secondary-bg-disabled: var();
+    --btn-secondary-label-disabled: var();
+
+    /* Focus Rings (For all buttons) */
+    --focus-ring-primary: var();
+    --focus-ring-secondary: var();
 }
 
 
-/* STYLES */
+/* Components */
 .section{
     padding-top: var(--padding-lg);
-    padding-bottom: var(--padding-lg);
+    padding-bottom: var(--padding-xl);
 }
 
 /* Estilos para los botones Sign up y Log in */

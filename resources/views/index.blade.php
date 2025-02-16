@@ -9,12 +9,14 @@
     background-color: #221D4F;
     color: white;
      }
-  </style> -->
+  </style>
 
 
 <section class="section" id="Hero-Section">
   <div class="container">
     <h1 class=""style="text-align: left;">
+    <br>
+    <br>
     <br>
     <br>
       "Create unique moments<br>
@@ -43,10 +45,12 @@
 </button>
 
   </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
 </section>
-<br>
-<br>
-<br>
 
 <!-- Para corregir bien lo de arriba (luego)
 <section class="section" id="Hero-Section">

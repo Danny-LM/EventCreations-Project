@@ -19,9 +19,15 @@
     <div class="container">
       <img src="https://placehold.jp/250x250.png" alt="" class="">
     </div>
+>>>>>>> 0acf17b5d82b7de90b317b6d43b59dd83e3c5339
   </div>
 </section>
-
+<h2 class=""style="text-align: center;">
+    <br>
+     <br>
+      <em>Create your dream event with our tools!</em><br>
+      
+      </h2>
 <!-- Para corregir bien lo de arriba (luego)
 <section class="section" id="Hero-Section">
   <div class="container">

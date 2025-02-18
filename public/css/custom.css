@@ -97,6 +97,7 @@ Ejemplo: --btn-primary-bg-hover */
 
 
 /* Components */
+/* Sections */
 .section {
     padding-top: var(--padding-xl);
     padding-bottom: var(--padding-xl);
@@ -115,6 +116,7 @@ Ejemplo: --btn-primary-bg-hover */
     justify-content: center;
 }
 
+/* Texts */
 .h1-text {
     font-size: var(--h1-text-size);
     font-weight: var(--font-weight-bold);
@@ -150,6 +152,38 @@ Ejemplo: --btn-primary-bg-hover */
     font-family: var(--font-family-primary);
 }
 
+/* Buttons */
+.btn-primary {
+    background-color: var(--btn-primary-bg);
+}
+
+.btn-primary:hover {
+    background-color: var(--btn-primary-bg);
+}
+
+.btn-primary:active {
+    background-color: var(--btn-primary-bg);
+}
+
+.btn-primary:focus {
+    background-color: var(--btn-primary-bg);
+}
+
+.btn-primary:active:focus {
+    background-color: var(--btn-primary-bg);
+}
+
+.btn-primary:hover:focus {
+    background-color: var(--btn-primary-bg);
+}
+
+.btn-primary:disabled {
+    background-color: var(--btn-primary-bg);
+}
+
+.btn-primary:focus {
+    background-color: var(--btn-primary-bg);
+}
 
 
 

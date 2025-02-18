@@ -1,53 +1,26 @@
 @extends('layouts.master')
 @section('content')
 
-<style>
-     /* Sección principal */
-     #Hero-Section {
-    text-align: center;
-    padding: 60px 30px;
-    background-color: #221D4F;
-    color: white;
-     }
-  </style>
-
 
 <section class="section" id="Hero-Section">
   <div class="container">
-    <h1 class=""style="text-align: left;">
-    <br>
-     <br>
-      "Create unique moments<br>
-      quickly and easily."
-      <br>
-      <br>
-    </h1>
-    <p class=""style="text-align: left;">
-
-      "With Event Creations, turn your ideas into unforgettable events <br>
-      with smart organization and unlimited creativity.
-      <br>
-      <br>
-    </p>
+    <div class="container">
+      <h1 class="h1-text">
+        "Create unique moments<br>quickly and easily."
+      </h1>
+      <p class="paragraph-text">
+        With Event Creations, turn your ideas into unforgettable events<br>with smart organization and unlimited creativity.
+      </p>
+      <div class="container">
+        <button class="btn btn-primary" onclick="window.location.href='{{ route('register') }}'">Create Account</button>
+        <button class="btn btn-secondary">About Us</button>
+      </div>
+    </div>
+    <div class="container">
+      <img src="https://placehold.jp/250x250.png" alt="" class="">
+    </div>
+>>>>>>> 0acf17b5d82b7de90b317b6d43b59dd83e3c5339
   </div>
-  <div class="container"style="text-align: left;"> 
-  <button class="btn-rounded" 
-        style="margin: 40px; border-radius: 30px; padding: 5px 40px; background: rgb(165, 105, 200);
-        color: white; font-wight:bolt;" 
-        onclick="window.location.href='{{ route('register') }}'">
-  Create Account
-</button>
-
-<button class="btn-rounded" style="border-radius: 40px; padding: 5px 40px;">
-  About Us
-</button>
-
-  </div>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
 </section>
 <h2 class=""style="text-align: center;">
     <br>

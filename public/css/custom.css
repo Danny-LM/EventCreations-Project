@@ -14,11 +14,9 @@
     --color-imperial-plum: #7D1F94;
     --color-midnight-purple: #221D4F;
 
-
 /* Tokens */
     /*Basic*/
-    --light-bg-primary: var(--color-midnight-purple);
-    --light-bg-secondary: var(--color-white);
+    --bg-primary: var(--color-midnight-purple);
 
     /*Corner*/
     --corner-xs: 4px;
@@ -56,8 +54,8 @@
     --h1-text-size: 34px;
 
     /* Text Color */
-    --color-text-primary: var(--color-black);
-    --color-text-secondary: var(--color-white);
+    --color-text-primary: var(--color-white);
+    --color-text-secondary: var(--color-black);
 
     /* Font Family */
     --font-family-primary: 'Poppins', sans-serif;
@@ -84,36 +82,6 @@ Ejemplo: --btn-primary-bg-hover */
 
     --btn-primary-bg-active: var(--color-imperial-plum);
 
-    /* Secondary Button */
-    --btn-secondary-bg: var();
-    --btn-secondary-label: var();
-    --btn-secondary-border: var();
-
-    --btn-secondary-bg-hover: var();
-    --btn-secondary-label-hover: var();
-    
-    --btn-secondary-bg-active: var();
-
-    /* Tertiary Button */
-    --btn-tertiary-bg: var();
-    --btn-tertiary-label: var();
-    --btn-tertiary-border: var();
-
-    --btn-tertiary-bg-hover: var();
-    --btn-tertiary-label-hover: var();
-    
-    --btn-tertiary-bg-active: var();
-
-    /* Quaternary Button */
-    --btn-quaternary-bg: var();
-    --btn-quaternary-label: var();
-    --btn-quaternary-border: var();
-
-    --btn-quaternary-bg-hover: var();
-    --btn-quaternary-label-hover: var();
-    
-    --btn-quaternary-bg-active: var();
-
     /* Disabled Button (For all buttons) */
     --btn-primary-bg-disabled: var();
     --btn-primary-label-disabled: var();
@@ -128,67 +96,44 @@ Ejemplo: --btn-primary-bg-hover */
 
 
 /* Components */
-.section{
-    padding-top: var(--padding-lg);
+.section {
+    padding-top: var(--padding-xl);
     padding-bottom: var(--padding-xl);
 }
 
-.btn-primary {
-    background-color: var(--btn-primary-bg);
-    color: var(--btn-primary-label);
-    border-color: var(--btn-primary-border);
-    padding: var(--padding-sm) var(--padding-xxl);
-    border-radius: var(--corner-xl);
-    box-shadow: none;
-
-    text-decoration: none;
-    font-size: var(--paragraph-sm);
+.h1-text {
+    font-size: var(--h1-text-size);
     font-weight: var(--font-weight-bold);
-
-    transition: 0.3s ease-in-out;
-    display: inline-block;
-    text-align: center;
+    color: var(--color-text-primary);
+    font-family: var(--font-family-primary);
 }
 
-/* Hover state */
-.btn-primary:hover {
-    background-color: var(--btn-primary-bg-hover);
-    color: var(--btn-primary-label-hover);
-    border-color: var(--btn-primary-border);
-    box-shadow: none;
+.h2-text {
+    font-size: var(--h2-text-size);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-primary);
+    font-family: var(--font-family-primary);
 }
 
-/* Active (pressed) state */
-.btn-primary:active {
-    background-color: var(--btn-primary-bg-active);
-    color: var(--btn-primary-label);
-    border-color: var(--btn-primary-border);
-    box-shadow: none;
+.h3-text {
+    font-size: var(--h3-text-size);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-primary);
+    font-family: var(--font-family-primary);
 }
 
-/* Focus state */
-.btn-primary:focus,
-.btn-primary:active:focus,
-.btn-primary:hover:focus {
-    outline: none;
-    box-shadow: none;
+.paragraph-text {
+    font-size: var(--paragraph-md);
+    font-weight: var(--font-weight-regular);
+    color: var(--color-text-primary);
+    font-family: var(--font-family-primary);
 }
 
-/* Disabled state */
-.btn-primary:disabled {
-    background-color: var(--btn-primary-bg-disabled);
-    color: var(--btn-primary-label-disabled);
-    border-color: var(--btn-primary-border);
-    box-shadow: none;
-    cursor: not-allowed;
-    opacity: 0.65;
-}
-
-/* Focus state after being pressed */
-.btn-primary:focus {
-    background-color: var(--btn-primary-bg-focus);
-    color: var(--btn-primary-label-focus);
-    border-color: var(--btn-primary-border-focus);
+.ui-text {
+    font-size: var(--ui-text);
+    font-weight: var(--font-weight-regular);
+    color: var(--color-text-primary);
+    font-family: var(--font-family-primary);
 }
 
 
@@ -201,7 +146,7 @@ Ejemplo: --btn-primary-bg-hover */
 /* Estilos para los botones Sign up y Log in */
 .custom-btn {
     padding: var(--padding-xs) var(--padding-xl); /* Reduce altura, aumenta ancho */
-    border: 2px solid #a9a7a7; /* Color del borde */
+    border: 2px solid #141313; /* Color del borde */
     border-radius: 30px; /* Hace el botón más ovalado */
     color: var(--text-primary); /* Asegura que el texto siempre sea negro */
     background-color: transparent;
@@ -209,7 +154,7 @@ Ejemplo: --btn-primary-bg-hover */
     font-size: var(--paragraph-sm); /* Reduce tamaño de fuente */
     transition: 0.3s ease-in-out;
     display: inline-block; /* Asegura que respete padding y tamaño */
-    width: 120px; /* Define un ancho fijo para hacerlos más alargados */
+    width: 90px; /* Define un ancho fijo para hacerlos más alargados */
     text-align: center; /* Centra el texto dentro del botón */
 }
 

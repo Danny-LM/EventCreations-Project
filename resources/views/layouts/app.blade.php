@@ -19,7 +19,7 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
-<body>
+<body >
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
@@ -42,7 +42,7 @@
                         @guest
                             @if (Route::has('login'))
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('login') }}" style="custom-btn" >{{ __('Login') }}</a>
+                                    <a class="nav-link" href="{{ route('login') }}" >{{ __('Login') }}</a>
                                 </li>
                             @endif
 

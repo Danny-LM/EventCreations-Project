@@ -97,7 +97,27 @@
       </div>
     </div>
   </div>
+<!-- ---------------------------------------------------------------seccion media----------------------------------------------------->
 
 
+<!-- ---------------------------------------------------------------seccion de precios----------------------------------------------------->
+<!-- Sección de Precios -->
+ <br>
+
+<section class="section" id="pricing-section">
+  <div class="container mb-5">
+    <h2 class="text-center mb-5">Nuestros Planes</h2>
+    <div class="row justify-content-center"> <!-- Asegura que las columnas se centren -->
+      <!-- Plan Básico -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card shadow-sm">
+          <div class="card-body text-center">
+            <h5 class="card-title">Plan Básico</h5>
+            <p class="card-text">Ideal para pequeños proyectos.</p>
+            <h3>$10 / mes</h3>
+            <a href="#" class="btn btn-primary mt-3">Get Started</a>
+          </div>
+        </div>
+      </div>
 
 @endsection

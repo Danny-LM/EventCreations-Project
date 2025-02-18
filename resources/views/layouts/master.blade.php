@@ -27,19 +27,19 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item mx-3">
-                    <a class="nav-link active" aria-current="page" href="#" style="color: white; font-weight:bolt;"><b>Home</b></a>
+                    <a class="nav-link active" aria-current="page" href="#" style="color: white; font-wight:bolt;"><b>Home</b></a>
                 </li>
                 <li class="nav-item mx-3">
-                    <a class="nav-link active" aria-current="page" href="#" style="color: white; font-weight:bolt;"><b>Objective</b></a>
+                    <a class="nav-link active" aria-current="page" href="#" style="color: white; font-wight:bolt;"><b>Objective</b></a>
                 </li>
                 <li class="nav-item mx-3">
-                    <a class="nav-link active" aria-current="page" href="#" style="color: white; font-weight:bolt;"><b>Services</b></a>
+                    <a class="nav-link active" aria-current="page" href="#" style="color: white; font-wight:bolt;"><b>Services</b></a>
                 </li>
                 <li class="nav-item mx-3">
-                    <a class="nav-link custom-btn" href="{{ route('register') }}" style="color: white; font-weight:bolt;"><b>Sign up</b></a>
+                    <a class="nav-link custom-btn" href="{{ route('register') }}" style="color: white; font-wight:bolt;"><b>Sign up</b></a>
                 </li>
                 <li class="nav-item mx-3">
-                    <a class="nav-link custom-btn" href="{{ route('login') }}" style="background: rgb(165, 105, 200); color: white; font-weight:bolt;"><b>Login</b></a>
+                    <a class="nav-link custom-btn" href="{{ route('login') }}" style="background: rgb(165, 105, 200); color: white; font-wight:bolt;"><b>Login</b></a>
                 </li>
             </ul>
         </div>

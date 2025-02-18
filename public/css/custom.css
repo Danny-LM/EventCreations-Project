@@ -136,15 +136,29 @@ Ejemplo: --btn-primary-bg-hover */
     font-family: var(--font-family-primary);
 }
 
-.mini-section{
-    padding-top: var(--padding-sm);
-    padding-bottom: var(--padding-md);
+
+
+
+
+
+
+
+/* Estilos para los botones Sign up y Log in */
+.custom-btn {
+    padding: var(--padding-xs) var(--padding-xl); /* Reduce altura, aumenta ancho */
+    border: 2px solid #141313; /* Color del borde */
+    border-radius: 30px; /* Hace el botón más ovalado */
+    color: var(--text-primary); /* Asegura que el texto siempre sea negro */
+    background-color: transparent;
+    text-decoration: none; /* Quita el subrayado */
+    font-size: var(--paragraph-sm); /* Reduce tamaño de fuente */
+    transition: 0.3s ease-in-out;
+    display: inline-block; /* Asegura que respete padding y tamaño */
+    width: 90px; /* Define un ancho fijo para hacerlos más alargados */
+    text-align: center; /* Centra el texto dentro del botón */
 }
 
-#Hero-Section {
-    background-color: var(--bg-primary);
-    height: 90vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.custom-btn:hover {
+    background-color: #007bff;
+    color: var(--text-primary); /* Mantiene el texto negro */
 }

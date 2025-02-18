@@ -19,8 +19,7 @@
     <div class="container">
       <img src="https://placehold.jp/250x250.png" alt="" class="">
     </div>
->>>>>>> 0acf17b5d82b7de90b317b6d43b59dd83e3c5339
-  </div>
+</div>
 </section>
 <h2 class=""style="text-align: center;">
     <br>

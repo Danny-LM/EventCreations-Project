@@ -44,6 +44,7 @@
   </div>
 </section> -->
 
+<<<<<<< HEAD
 <div class="row row-cols-1 row-cols-md-2 g-4">
   <div class="col">
     <div class="card">
@@ -51,33 +52,82 @@
       <div class="card-body">
         <h5 class="card-title">Card title</h5>
         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+=======
+<div class="cards-container">
+  <div class="row row-cols-1 row-cols-md-2 g-4">
+   
+  <div class="col">
+      <div class="card">
+        <div class="icon">📅</div>
+        <div class="card-body">
+          <h5 class="card-title">Interactive Calendar</h5>
+          <p class="card-text">Plan and see your events, set reminders, and stay organized.</p>
+        </div>
+>>>>>>> 395282d (Cards informacion)
       </div>
     </div>
-  </div>
 
 
+<<<<<<< HEAD
   <div class="col">
     <div class="card">
       <img src="..." class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">Card title</h5>
         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+=======
+    <div class="col">
+      <div class="card">
+        <div class="icon">📅</div>
+        <div class="card-body">
+          <h5 class="card-title">Note Blog</h5>
+          <p class="card-text">Write notes, save ideas, and keep track of tasks.</p>
+        </div>
+>>>>>>> 395282d (Cards informacion)
       </div>
     </div>
-  </div>
 
 
+<<<<<<< HEAD
   <div class="col">
     <div class="card">
       <img src="..." class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">Card title</h5>
         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+=======
+    <div class="col">
+      <div class="card">
+        <div class="icon">📅</div>
+        <div class="card-body">
+          <h5 class="card-title">Guest List</h5>
+          <p class="card-text">Manage who's coming to your events and get confirmations.</p>
+        </div>
+>>>>>>> 395282d (Cards informacion)
       </div>
     </div>
-  </div>
 
 
+<<<<<<< HEAD
+  <div class="col">
+    <div class="card">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+=======
+    <div class="col">
+      <div class="card">
+        <div class="icon">📅</div>
+        <div class="card-body">
+          <h5 class="card-title">Send Invitations</h5>
+          <p class="card-text">Send digital invitations via email or social media.</p>
+        </div>
+>>>>>>> 395282d (Cards informacion)
+      </div>
+    </div>
+
+<<<<<<< HEAD
   <div class="col">
     <div class="card">
       <img src="..." class="card-img-top" alt="...">
@@ -86,18 +136,27 @@
         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
       </div>
     </div>
+=======
+    <div class="col">
+      <div class="card">
+        <div class="icon">📅</div>
+        <div class="card-body">
+          <h5 class="card-title">´Photo Gallery</h5>
+          <p class="card-text">In the Premium version, share a link where guests can upload photos and memories.</p>
+        </div>
+     </div>
+>>>>>>> 395282d (Cards informacion)
   </div>
-
-  <div class="col">
-    <div class="card">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      </div>
-    </div>
   </div>
+  
+</div>
 <!-- ---------------------------------------------------------------seccion media----------------------------------------------------->
+
+
+
+
+
+
 
 
 <!-- ---------------------------------------------------------------seccion de precios----------------------------------------------------->

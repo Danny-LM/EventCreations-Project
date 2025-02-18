@@ -211,6 +211,13 @@ Ejemplo: --btn-primary-bg-hover */
     color: var(--text-primary); /* Mantiene el texto negro */
 }
 
+.cards-container {
+    background-color: #007bff;
+    padding: 20px;
+    border-radius: 10px;
+     
+}
+
 .card {
     background-color: #ffffff;
     border: none;

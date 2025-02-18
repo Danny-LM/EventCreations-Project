@@ -143,18 +143,60 @@ Ejemplo: --btn-primary-bg-hover */
 
     text-decoration: none;
     font-size: var(--paragraph-sm);
+    font-weight: var(--font-weight-bold);
 
     transition: 0.3s ease-in-out;
     display: inline-block;
     text-align: center;
 }
 
+/* Hover state */
 .btn-primary:hover {
     background-color: var(--btn-primary-bg-hover);
     color: var(--btn-primary-label-hover);
     border-color: var(--btn-primary-border);
     box-shadow: none;
 }
+
+/* Active (pressed) state */
+.btn-primary:active {
+    background-color: var(--btn-primary-bg-active);
+    color: var(--btn-primary-label);
+    border-color: var(--btn-primary-border);
+    box-shadow: none;
+}
+
+/* Focus state */
+.btn-primary:focus,
+.btn-primary:active:focus,
+.btn-primary:hover:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+/* Disabled state */
+.btn-primary:disabled {
+    background-color: var(--btn-primary-bg-disabled);
+    color: var(--btn-primary-label-disabled);
+    border-color: var(--btn-primary-border);
+    box-shadow: none;
+    cursor: not-allowed;
+    opacity: 0.65;
+}
+
+/* Focus state after being pressed */
+.btn-primary:focus {
+    background-color: var(--btn-primary-bg-focus);
+    color: var(--btn-primary-label-focus);
+    border-color: var(--btn-primary-border-focus);
+}
+
+
+
+
+
+
+
 
 /* Estilos para los botones Sign up y Log in */
 .custom-btn {

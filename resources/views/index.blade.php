@@ -44,63 +44,60 @@
   </div>
 </section> -->
 
-<section class="section" id="Section-2">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi possimus aut, animi distinctio et officiis sequi ex iure ut fugit, harum repellat, nihil nostrum esse inventore itaque! Ipsam, cum magnam?
+<div class="row row-cols-1 row-cols-md-2 g-4">
+  <div class="col">
+    <div class="card">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
       </div>
     </div>
   </div>
-</section>
 
-<section class="section" id="Section-3">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi possimus aut, animi distinctio et officiis sequi ex iure ut fugit, harum repellat, nihil nostrum esse inventore itaque! Ipsam, cum magnam?
-      </div>
-    </div>
-  </div>
-</section>
 
-<section class="section" id="Section-4">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi possimus aut, animi distinctio et officiis sequi ex iure ut fugit, harum repellat, nihil nostrum esse inventore itaque! Ipsam, cum magnam?
+  <div class="col">
+    <div class="card">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
       </div>
     </div>
   </div>
-</section>
 
-<section class="section" id="Section-5">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi possimus aut, animi distinctio et officiis sequi ex iure ut fugit, harum repellat, nihil nostrum esse inventore itaque! Ipsam, cum magnam?
-      </div>
-    </div>
-  </div>
-</section>
 
-<section class="section" id="Section-6">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi possimus aut, animi distinctio et officiis sequi ex iure ut fugit, harum repellat, nihil nostrum esse inventore itaque! Ipsam, cum magnam?
+  <div class="col">
+    <div class="card">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
       </div>
     </div>
   </div>
-</section>
 
-<section class="section" id="Section-7">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi possimus aut, animi distinctio et officiis sequi ex iure ut fugit, harum repellat, nihil nostrum esse inventore itaque! Ipsam, cum magnam?
+
+  <div class="col">
+    <div class="card">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
       </div>
     </div>
   </div>
-</section>
+
+  <div class="col">
+    <div class="card">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+    </div>
+  </div>
+
+
+
 @endsection

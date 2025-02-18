@@ -16,9 +16,7 @@
   <div class="container">
     <h1 class=""style="text-align: left;">
     <br>
-    <br>
-    <br>
-    <br>
+     <br>
       "Create unique moments<br>
       quickly and easily."
       <br>
@@ -51,7 +49,12 @@
   <br>
   <br>
 </section>
-
+<h2 class=""style="text-align: center;">
+    <br>
+     <br>
+      <em>Create your dream event with our tools!</em><br>
+      
+      </h2>
 <!-- Para corregir bien lo de arriba (luego)
 <section class="section" id="Hero-Section">
   <div class="container">

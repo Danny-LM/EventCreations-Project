@@ -13,6 +13,7 @@
     --color-majestic-purple: #9C42B3;
     --color-imperial-plum: #7D1F94;
     --color-midnight-purple: #221D4F;
+    --test: var(--color-black); /* Test color */
 
 /* Tokens */
     /*Basic*/

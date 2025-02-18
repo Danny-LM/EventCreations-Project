@@ -101,6 +101,19 @@ Ejemplo: --btn-primary-bg-hover */
     padding-bottom: var(--padding-xl);
 }
 
+.mini-section {
+    padding-top: var(--padding-md);
+    padding-bottom: var(--padding-md);
+}
+
+#Hero-Section {
+    background-color: var(--bg-primary);
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .h1-text {
     font-size: var(--h1-text-size);
     font-weight: var(--font-weight-bold);

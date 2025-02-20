@@ -1,0 +1,83 @@
+.form-floating {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+.form-control {
+  max-width: 400px;
+  min-width: 200px;
+  height: 30px;
+  padding: 1rem;
+  margin: 15px 0;
+  padding-top: 2.625rem;
+  padding-bottom: 1.625rem;
+  border: 3px solid #ccc;
+  border-radius: 15px;
+  width: 100%;
+}
+
+label {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color: #666;
+  opacity: 0.65;
+  transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
+  pointer-events: none;
+}
+
+.form-floating button.form-control {
+  width: 100%;
+  max-width: 400px;
+  min-width: 200px;
+  height: 50px;
+  padding: 10px;
+  margin: 15px 0;
+  border: 3px solid #ccc;
+  border-radius: 15px;
+  background-color: #221D4F;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+.form-floating button.form-control:hover {
+  background-color: #fff;
+  color: #221D4F;
+}
+.form-floating button.form-control:active {
+  background-color: #fff;
+  color: #221D4F;
+}
+.form-floating button.form-control:focus {
+  background-color: #fff;
+  color: #221D4F;
+}
+
+.form-control:focus ~ label,
+.form-control:not(:placeholder-shown) ~ label {
+  opacity: 1;
+  transform: scale(0.85) translateY(-2.59rem) translateX(-1rem);
+}
+
+.form-control:focus {
+  border-color: #221D4F;
+  outline: none;
+}
+
+h1 {
+  font-weight: 1000;
+  text-align: center;
+}
+
+body {
+  background-color: #E6E8EA;
+}
+
+/*# sourceMappingURL=form.css.map */

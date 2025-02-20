@@ -13,12 +13,11 @@
     --color-majestic-purple: #9C42B3;
     --color-imperial-plum: #7D1F94;
     --color-midnight-purple: #221D4F;
-
+    --test: var(--color-black); /* Test color */
 
 /* Tokens */
     /*Basic*/
-    --light-bg-primary: var(--color-midnight-purple);
-    --light-bg-secondary: var(--color-white);
+    --bg-primary: var(--color-midnight-purple);
 
     /*Corner*/
     --corner-xs: 4px;
@@ -56,8 +55,8 @@
     --h1-text-size: 34px;
 
     /* Text Color */
-    --color-text-primary: var(--color-black);
-    --color-text-secondary: var(--color-white);
+    --color-text-primary: var(--color-white);
+    --color-text-secondary: var(--color-black);
 
     /* Font Family */
     --font-family-primary: 'Poppins', sans-serif;
@@ -84,36 +83,6 @@ Ejemplo: --btn-primary-bg-hover */
 
     --btn-primary-bg-active: var(--color-imperial-plum);
 
-    /* Secondary Button */
-    --btn-secondary-bg: var();
-    --btn-secondary-label: var();
-    --btn-secondary-border: var();
-
-    --btn-secondary-bg-hover: var();
-    --btn-secondary-label-hover: var();
-    
-    --btn-secondary-bg-active: var();
-
-    /* Tertiary Button */
-    --btn-tertiary-bg: var();
-    --btn-tertiary-label: var();
-    --btn-tertiary-border: var();
-
-    --btn-tertiary-bg-hover: var();
-    --btn-tertiary-label-hover: var();
-    
-    --btn-tertiary-bg-active: var();
-
-    /* Quaternary Button */
-    --btn-quaternary-bg: var();
-    --btn-quaternary-label: var();
-    --btn-quaternary-border: var();
-
-    --btn-quaternary-bg-hover: var();
-    --btn-quaternary-label-hover: var();
-    
-    --btn-quaternary-bg-active: var();
-
     /* Disabled Button (For all buttons) */
     --btn-primary-bg-disabled: var();
     --btn-primary-label-disabled: var();
@@ -128,33 +97,99 @@ Ejemplo: --btn-primary-bg-hover */
 
 
 /* Components */
-.section{
-    padding-top: var(--padding-lg);
+/* Sections */
+.section {
+    padding-top: var(--padding-xl);
     padding-bottom: var(--padding-xl);
 }
 
+.mini-section {
+    padding-top: var(--padding-md);
+    padding-bottom: var(--padding-md);
+}
+
+#Hero-Section {
+    background-color: var(--bg-primary);
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Texts */
+.h1-text {
+    font-size: var(--h1-text-size);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-primary);
+    font-family: var(--font-family-primary);
+}
+
+.h2-text {
+    font-size: var(--h2-text-size);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-primary);
+    font-family: var(--font-family-primary);
+}
+
+.h3-text {
+    font-size: var(--h3-text-size);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-primary);
+    font-family: var(--font-family-primary);
+}
+
+.paragraph-text {
+    font-size: var(--paragraph-md);
+    font-weight: var(--font-weight-regular);
+    color: var(--color-text-primary);
+    font-family: var(--font-family-primary);
+}
+
+.ui-text {
+    font-size: var(--ui-text);
+    font-weight: var(--font-weight-regular);
+    color: var(--color-text-primary);
+    font-family: var(--font-family-primary);
+}
+
+/* Buttons */
 .btn-primary {
     background-color: var(--btn-primary-bg);
-    color: var(--btn-primary-label);
-    border-color: var(--btn-primary-border);
-    padding: var(--padding-sm) var(--padding-xxl);
-    border-radius: var(--corner-xl);
-    box-shadow: none;
-
-    text-decoration: none;
-    font-size: var(--paragraph-sm);
-
-    transition: 0.3s ease-in-out;
-    display: inline-block;
-    text-align: center;
 }
 
 .btn-primary:hover {
-    background-color: var(--btn-primary-bg-hover);
-    color: var(--btn-primary-label-hover);
-    border-color: var(--btn-primary-border);
-    box-shadow: none;
+    background-color: var(--btn-primary-bg);
 }
+
+.btn-primary:active {
+    background-color: var(--btn-primary-bg);
+}
+
+.btn-primary:focus {
+    background-color: var(--btn-primary-bg);
+}
+
+.btn-primary:active:focus {
+    background-color: var(--btn-primary-bg);
+}
+
+.btn-primary:hover:focus {
+    background-color: var(--btn-primary-bg);
+}
+
+.btn-primary:disabled {
+    background-color: var(--btn-primary-bg);
+}
+
+.btn-primary:focus {
+    background-color: var(--btn-primary-bg);
+}
+
+
+
+
+
+
 
 /* Estilos para los botones Sign up y Log in */
 .custom-btn {
@@ -174,4 +209,33 @@ Ejemplo: --btn-primary-bg-hover */
 .custom-btn:hover {
     background-color: #007bff;
     color: var(--text-primary); /* Mantiene el texto negro */
+}
+
+.cards-container {
+    background-color: #007bff;
+    padding: 20px;
+    border-radius: 10px;
+     
+}
+
+.card {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.icon {
+    font-size: 40px;
+    color: #6c757d;
+    margin-bottom: 10px;
 }

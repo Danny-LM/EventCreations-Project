@@ -1,57 +1,32 @@
 @extends('layouts.master')
 @section('content')
 
-<style>
-     /* Sección principal */
-     #Hero-Section {
-    text-align: center;
-    padding: 60px 30px;
-    background-color: #221D4F;
-    color: white;
-     }
-  </style>
-
 
 <section class="section" id="Hero-Section">
   <div class="container">
-    <h1 class=""style="text-align: left;">
-    <br>
-    <br>
-    <br>
-    <br>
-      "Create unique moments<br>
-      quickly and easily."
-      <br>
-      <br>
-    </h1>
-    <p class=""style="text-align: left;">
-
-      "With Event Creations, turn your ideas into unforgettable events <br>
-      with smart organization and unlimited creativity.
-      <br>
-      <br>
-    </p>
-  </div>
-  <div class="container"style="text-align: left;"> 
-  <button class="btn-rounded" 
-        style="margin: 40px; border-radius: 30px; padding: 5px 40px; background: rgb(165, 105, 200);
-        color: white; font-wight:bolt;" 
-        onclick="window.location.href='{{ route('register') }}'">
-  Create Account
-</button>
-
-<button class="btn-rounded" style="border-radius: 40px; padding: 5px 40px;">
-  About Us
-</button>
-
-  </div>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
+    <div class="container">
+      <h1 class="h1-text">
+        "Create unique moments<br>quickly and easily."
+      </h1>
+      <p class="paragraph-text">
+        With Event Creations, turn your ideas into unforgettable events<br>with smart organization and unlimited creativity.
+      </p>
+      <div class="container">
+        <button class="btn btn-primary" onclick="window.location.href='{{ route('register') }}'">Create Account</button>
+        <button class="btn btn-secondary">About Us</button>
+      </div>
+    </div>
+    <div class="container">
+      <img src="https://placehold.jp/250x250.png" alt="" class="">
+    </div>
+</div>
 </section>
-
+<h2 class=""style="text-align: center;">
+    <br>
+     <br>
+      <em>Create your dream event with our tools!</em><br>
+      
+      </h2>
 <!-- Para corregir bien lo de arriba (luego)
 <section class="section" id="Hero-Section">
   <div class="container">
@@ -69,63 +44,100 @@
   </div>
 </section> -->
 
-<section class="section" id="Section-2">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi possimus aut, animi distinctio et officiis sequi ex iure ut fugit, harum repellat, nihil nostrum esse inventore itaque! Ipsam, cum magnam?
-      </div>
+  </section> -->
+<div class="cards-container">
+  <div class="row row-cols-1 row-cols-md-2 g-4">
+   
+  <div class="col">
+      <div class="card">
+        <div class="icon">📅</div>
+        <div class="card-body">
+          <h5 class="card-title">Interactive Calendar</h5>
+          <p class="card-text">Plan and see your events, set reminders, and stay organized.</p>
+        </div>
+        </div>
     </div>
-  </div>
-</section>
 
-<section class="section" id="Section-3">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi possimus aut, animi distinctio et officiis sequi ex iure ut fugit, harum repellat, nihil nostrum esse inventore itaque! Ipsam, cum magnam?
-      </div>
-    </div>
-  </div>
-</section>
 
-<section class="section" id="Section-4">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi possimus aut, animi distinctio et officiis sequi ex iure ut fugit, harum repellat, nihil nostrum esse inventore itaque! Ipsam, cum magnam?
+      <div class="col">
+      <div class="card">
+        <div class="icon">📅</div>
+        <div class="card-body">
+          <h5 class="card-title">Note Blog</h5>
+          <p class="card-text">Write notes, save ideas, and keep track of tasks.</p>
+        </div>
+        </div>
       </div>
+    <div class="col">
+      <div class="card">
+        <div class="icon">📅</div>
+        <div class="card-body">
+          <h5 class="card-title">Guest List</h5>
+          <p class="card-text">Manage who's coming to your events and get confirmations.</p>
+          </div>
+      </div>
+      </div>
+    <div class="col">
+      <div class="card">
+        <div class="icon">📅</div>
+        <div class="card-body">
+          <h5 class="card-title">Send Invitations</h5>
+          <p class="card-text">Send digital invitations via email or social media.</p>
+        </div>
     </div>
   </div>
-</section>
+    <div class="col">
+      <div class="card">
+        <div class="icon">📅</div>
+        <div class="card-body">
+          <h5 class="card-title">´Photo Gallery</h5>
+          <p class="card-text">In the Premium version, share a link where guests can upload photos and memories.</p>
+        </div>
+    </div>
+  </div>
+  </div>
+  
+</div>
+<!-- ---------------------------------------------------------------seccion media----------------------------------------------------->
 
-<section class="section" id="Section-5">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi possimus aut, animi distinctio et officiis sequi ex iure ut fugit, harum repellat, nihil nostrum esse inventore itaque! Ipsam, cum magnam?
-      </div>
-    </div>
-  </div>
-</section>
 
-<section class="section" id="Section-6">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi possimus aut, animi distinctio et officiis sequi ex iure ut fugit, harum repellat, nihil nostrum esse inventore itaque! Ipsam, cum magnam?
-      </div>
-    </div>
-  </div>
-</section>
 
-<section class="section" id="Section-7">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi possimus aut, animi distinctio et officiis sequi ex iure ut fugit, harum repellat, nihil nostrum esse inventore itaque! Ipsam, cum magnam?
+
+
+
+
+
+<!-- ---------------------------------------------------------------seccion de precios----------------------------------------------------->
+<!-- Sección de Precios -->
+ <br>
+
+<section class="section" id="pricing-section">
+  <div class="container mb-5">
+    <h2 class="text-center mb-5">Nuestros Planes</h2>
+    <div class="row justify-content-center"> <!-- Asegura que las columnas se centren -->
+    
+    
+    <!-- Plan Básico -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card shadow-sm">
+          <div class="card-body text-center">
+            <h5 class="card-title">Plan Básico</h5>
+            <p class="card-text">Ideal para pequeños proyectos.</p>
+            <h3>$10 / mes</h3>
+            <a href="#" class="btn btn-primary mt-3">Get Started</a>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
+
+      <!-- Plan Básico -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card shadow-sm">
+          <div class="card-body text-center">
+            <h5 class="card-title">Plan Básico</h5>
+            <p class="card-text">Ideal para pequeños proyectos.</p>
+            <h3>$10 / mes</h3>
+            <a href="#" class="btn btn-primary mt-3">Get Started</a>
+          </div>
+        </div>
+      </div>
 @endsection

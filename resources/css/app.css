@@ -1,3 +1,19 @@
 .btn-rounded {
     border-radius: 10px; /* Ajusta el valor según el nivel de redondeo */
 }
+
+.navbar-custom {
+    background-color: #1A1A50 !important; /* Ajusta el color según necesites */
+}
+.custom-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:"";
+    color: white;
+    font-weight: bold;
+    margin: 15px;
+    padding: 5px 50px;
+    text-decoration: none; /* Evita el subrayado en el enlace */
+    border-radius: 5px; /* Opcional: añade bordes redondeados */
+}

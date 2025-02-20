@@ -16,36 +16,34 @@
 
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                EventCreations
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Objective</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link custom-btn" href="{{ route('register') }}">Sign up</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link custom-btn" href="{{ route('login') }}">Log in</a>
-                    </li>
-                </ul>
-            </div>
+<nav class="navbar navbar-expand-lg navbar-medium sticky-top navbar-custom" style="background-color: #1A1A50;">
+    <div class="container">
+        <a class="navbar-brand" href="#" style="color:white; font-weight:bolt;">
+            <b>EventCreations</b>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item mx-3">
+                    <a class="nav-link active" aria-current="page" href="#" style="color: white; font-wight:bolt;"><b>Home</b></a>
+                </li>
+                <li class="nav-item mx-3">
+                    <a class="nav-link active" aria-current="page" href="#" style="color: white; font-wight:bolt;"><b>Objective</b></a>
+                </li>
+                <li class="nav-item mx-3">
+                    <a class="nav-link active" aria-current="page" href="#" style="color: white; font-wight:bolt;"><b>Services</b></a>
+                </li>
+                <li class="nav-item mx-3">
+                    <a class="nav-link custom-btn" href="{{ route('register') }}" style="color: white; font-wight:bolt;"><b>Sign up</b></a>
+                </li>
+                <li class="nav-item mx-3">
+                    <a class="nav-link custom-btn" href="{{ route('login') }}" style="background: rgb(165, 105, 200); color: white; font-wight:bolt;"><b>Login</b></a>
+                </li>
+            </ul>
         </div>
-    </nav>
-    @yield('content')
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-</body>
-</html>
+    </div>
+</nav>
+@yield('content')
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

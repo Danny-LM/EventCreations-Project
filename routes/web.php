@@ -11,7 +11,11 @@ use App\Http\Controllers\RoleController;
 | routes are loaded by the RouteServiceProvider within a group which
 | contains the "web" middleware group. Now create something great!
 */
+Route::get('/', [AuthController::class, 'index'])->name('home');
+Route::post('/custom-login', [AuthController::class, 'login'])->name('custom-login');
+Route::get('/logados', [AuthController::class, 'logados'])->name('logados');
 
+/* <---------------------La anteriror funcion-------------->
 Route::get('/', function () {
     return view('index');
 });
@@ -20,12 +24,16 @@ Route::get('roles',[RoleController::class,'index']);
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
+<------------------------------------------------------------------------>
 /*
+
+Route::get('/test', function () {
+    return view('test');
+});
+
+
 |--------------------------------------------------------------------------
 | Test Route
 |--------------------------------------------------------------------------
 */
-Route::get('/test', function () {
-    return view('test');
-});
+

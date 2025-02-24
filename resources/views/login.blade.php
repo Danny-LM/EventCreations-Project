@@ -1,4 +1,4 @@
-@extends('app')
+@extends('layouts.app')
 @section('content')
 @if(session('success'))
     <h1>{{session('success')}}</h1>
@@ -10,7 +10,7 @@
                 <div class="card">
                     <h3 class="card-header text-center">Formulario Login</h3>
                     <div class="card-body">
-                        <form method="POST" action="{{ route('login') }}">
+                        <form method="POST" action="{{ route('custom-login') }}">
                             @csrf
                             <div class="form-group mb-3">
                                 <input type="text" placeholder="Email" id="email" class="form-control" name="email" required
@@ -43,4 +43,3 @@
     </div>
 </main>
 @endsection
-                            

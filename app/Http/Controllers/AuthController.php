@@ -13,14 +13,12 @@ class AuthController extends Controller
 	public function index()
 	{
 	    // Comprobamos si el usuario ya está logado
-	    if (Auth::check()) {
-	
-	        // Si está logado le mostramos la vista de logados
+	    if (Auth::check()) {	        // Si está logado le mostramos la vista de logados
 	        return view('logados');
 	    }
 	
-	    // Si no está logado le mostramos la vista con el formulario de login
-	    return view('login');
+	    
+	    return view('index');
 	}
 	
     /**
@@ -60,6 +58,15 @@ class AuthController extends Controller
 	
 	    return redirect("/")->withSuccess('No tienes acceso, por favor inicia sesión');
     }
+
+    /**
+    * Función para cerrar sesión y redirigir al usuario a la página de inicio
+    */
+    public function logout()
+    {
+        Auth::logout();  // Cierra la sesión del usuario
+        return redirect('/')->with('success', 'Has cerrado sesión correctamente');
+    }
 }
-    
+
      

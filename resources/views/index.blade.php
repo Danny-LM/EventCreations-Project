@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('content')
+@section('content') 
 
 
 <section class="section" id="Hero-Section">

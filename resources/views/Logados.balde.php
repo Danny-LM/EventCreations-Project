@@ -1,15 +1,18 @@
-@extends('app')
-@section('content')
-<main class="login-form">
-    <div class="cotainer">
-        <div class="row justify-content-center">
-            <div class="col-md-4">
-                <div class="card">
-                    <h1>USUARIO LOGADO</h1>
-                 </div>
-            </div>
-        </div>
-    </div>
-</main>
-@endsection
-                                
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Logados</title>
+</head>
+<body>
+    <h2>Bienvenido a la vista de logados</h2>
+    
+    <!-- Mostrar un mensaje de éxito -->
+    @if(session('success'))
+        <p>{{ session('success') }}</p>
+    @endif
+
+    <!-- Botón para cerrar sesión -->
+    <a href="{{ route('logout') }}">Cerrar sesión</a>
+</body>
+</html>

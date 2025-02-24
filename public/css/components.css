@@ -1,52 +1,101 @@
 
 /* Sections */
+
+
+/* Seccionado de Home page */
 .section {
     padding-top: var(--padding-xl);
     padding-bottom: var(--padding-xl);
 }
-
+ 
+/* Aun sin usar (creo) */
 .mini-section {
     padding-top: var(--padding-md);
     padding-bottom: var(--padding-md);
 }
 
-#Hero-Section {
-    background-color: var(--bg-primary);
+/* Primera seccion homepage */
+#hero-section {
+    background-color: #221D4F;
     height: 90vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+#welcome {
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* Seccion de Herramientas */
+#tools {
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+}
+
+
 /* Texts */
-.h1-text {
-    font-size: var(--h1-text-size);
-    font-weight: var(--font-weight-bold);
-    color: var(--color-text-primary);
-    font-family: var(--font-family-primary);
+
+/* Texto Inicial GRANDE*/
+.h1-text {  
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    font-family: poppins;
 }
 
+/* Parrafo de texto incial */
+.paragraph-text { 
+    font-size: 18;
+    font-weight: medium;
+    color: white;
+    font-family: poppins;
+
+}
+
+/* Bienvenida */
+#fpresent {
+    font-size: 40px;
+    font-weight: lighter;
+    color: black;
+    justify-content: center;
+    text-align: center;
+    font-family: poppins;
+}
+
+/* Texto de Titulos en homepage*/
 .h2-text {
-    font-size: var(--h2-text-size);
-    font-weight: var(--font-weight-bold);
-    color: var(--color-text-primary);
-    font-family: var(--font-family-primary);
+    font-size: 55px;
+    font-weight: bold;
+    color: white;
+    font-family: poppins;
 }
 
+/* Texto de Subtitulos en homepage */
 .h3-text {
-    font-size: var(--h3-text-size);
-    font-weight: var(--font-weight-bold);
-    color: var(--color-text-primary);
-    font-family: var(--font-family-primary);
+    font-size: 24px;
+    font-weight: medium;
+    color: white;
+    font-family: poppins;
 }
 
-.paragraph-text {
-    font-size: var(--paragraph-md);
-    font-weight: var(--font-weight-regular);
-    color: var(--color-text-primary);
-    font-family: var(--font-family-primary);
+/* Texto normal en homepage*/
+.alltext {
+    font-size: 16px;
+    font-weight: regular;
+    color: white;
+    font-family: Poppins;
+
 }
 
+
+
+/* Aun sin usar (creo) */
 .ui-text {
     font-size: var(--ui-text);
     font-weight: var(--font-weight-regular);
@@ -96,18 +145,36 @@
 }
 
 /* Cards */
+
 .cards-container {
-    background-color: #007bff;
-    padding: 20px;
-    border-radius: 10px;
+    padding: 40px;
+    border-radius: 22px;
+    background-color:#E6E8EA;
+    box-shadow: 5px 4px 2px rgba(0, 0, 0, 0.1);
+    border: none;    
+    transition: transform 0.2s ease-in-out;
+    margin: 0 auto;
+    max-width: 1350px;
+    
 }
 
 .card {
-    background-color: #ffffff;
+    background-color: white;
     border: none;
-    border-radius: 15px;
+    border-radius: 22px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease-in-out;
+    margin: 0 auto;
+}
+
+.card-large {
+    height: 300px;
+}
+.card-medium {
+    height: 250px;
+}
+-card-small {
+    height: 200px;
 }
 
 .card-body {
@@ -123,3 +190,4 @@
     color: #6c757d;
     margin-bottom: 10px;
 }
+

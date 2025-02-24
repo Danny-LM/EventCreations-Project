@@ -2,7 +2,11 @@
 @section('content')
 
 
-<section class="section" id="Hero-Section">
+<!-- ---------------------------------------------------------------seccion principal----------------------------------------------------->
+
+<!-- HeroSection -->
+
+<section class="section" id="hero-section">
   <div class="container">
     <div class="container">
       <h1 class="h1-text">
@@ -21,99 +25,98 @@
     </div>
 </div>
 </section>
-<h2 class=""style="text-align: center;">
-    <br>
-     <br>
-      <em>Create your dream event with our tools!</em><br>
-      
-      </h2>
-<!-- Para corregir bien lo de arriba (luego)
-<section class="section" id="Hero-Section">
-  <div class="container">
-    <h1 class="">
-      "Create unique moments<br>
-      quickly and easily."
-    </h1>
-    <p class="">
-      The ideal platform to plan and organize your events efficiently!
-    </p>
-  </div>
-  <div class="container">
-    <button class="">Create Account</button>
-    <button class="">About Us</button>
-  </div>
-</section> -->
 
-  </section> -->
+<!-- ---------------------------------------------------------------seccion de servicios----------------------------------------------------->
+
+<seccion class="section" id="welcome">
+    <br>
+      <div class="Presentation" id="fpresent">
+      Create your dream event with our tools!
+      </div>
+    <br>
+</h2>
+</section>
+
+<!-- ---------------------------------------------------------------seccion tools----------------------------------------------------->
+<!-- Sección de CardTools -->
+<section class="section" id="tools">
+
 <div class="cards-container">
-  <div class="row row-cols-1 row-cols-md-2 g-4">
+  <div class="row g-4">
    
-  <div class="col">
-      <div class="card">
+  <div class="col-lg-4 col-md-6">
+      <div class="card card-large">
         <div class="icon">📅</div>
         <div class="card-body">
           <h5 class="card-title">Interactive Calendar</h5>
           <p class="card-text">Plan and see your events, set reminders, and stay organized.</p>
-        </div>
-        </div>
-    </div>
+       </div>
+       </div>
+ </div>
 
 
-      <div class="col">
-      <div class="card">
+   <div class="col">
+      <div class="card card-medium">
         <div class="icon">📅</div>
         <div class="card-body">
           <h5 class="card-title">Note Blog</h5>
           <p class="card-text">Write notes, save ideas, and keep track of tasks.</p>
         </div>
         </div>
-      </div>
+    </div>
+
     <div class="col">
-      <div class="card">
+      <div class="card card-small">
         <div class="icon">📅</div>
         <div class="card-body">
           <h5 class="card-title">Guest List</h5>
           <p class="card-text">Manage who's coming to your events and get confirmations.</p>
-          </div>
+        </div>
       </div>
-      </div>
-    <div class="col">
-      <div class="card">
+    </div>
+
+  <div class="col-lg-6 col-md-6">
+      <div class="card-large">
         <div class="icon">📅</div>
         <div class="card-body">
           <h5 class="card-title">Send Invitations</h5>
           <p class="card-text">Send digital invitations via email or social media.</p>
         </div>
     </div>
-  </div>
-    <div class="col">
-      <div class="card">
+
+    <div class="col-lg-6 col-md-6">
+      <div class="card card-medium">
         <div class="icon">📅</div>
         <div class="card-body">
-          <h5 class="card-title">´Photo Gallery</h5>
+          <h5 class="card-title">Photo Gallery</h5>
           <p class="card-text">In the Premium version, share a link where guests can upload photos and memories.</p>
         </div>
-    </div>
+     </div>
+     </div>
+
   </div>
-  </div>
-  
 </div>
+
+</section>
 <!-- ---------------------------------------------------------------seccion media----------------------------------------------------->
 
-
-
-
-
-
-
+<!-- Sección de Presentacion-->
+<section class="section"id ="media">
+  <div class="presentation">
+        <h1 class="h2-text">Event Creations</h1>
+        <h2 class="h3-text">Every detail, perfected to you!</h2>
+        <p class="alltext">Facilitate the planning of weddings, birthdays, corporate events and<br>
+        more with our comprehesive tool. Manage every detail easily and<br>
+        efficiently, while maintaining control at all times.</p>
+          <button class="btn btn-readmore">Read More</button>
+</div>
+</section>
 
 <!-- ---------------------------------------------------------------seccion de precios----------------------------------------------------->
 <!-- Sección de Precios -->
- <br>
-
 <section class="section" id="pricing-section">
   <div class="container mb-5">
-    <h2 class="text-center mb-5">Nuestros Planes</h2>
+    <h2 class="text-center">Nuestros Planes</h2>
     <div class="row justify-content-center"> <!-- Asegura que las columnas se centren -->
     
     

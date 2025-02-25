@@ -186,8 +186,16 @@
 }
 
 .icon {
-    font-size: 40px;
-    color: #6c757d;
-    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.icon img {
+    width: 60px;
+    height: 60px;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    margin: 30px;
+}

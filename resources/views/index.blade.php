@@ -45,8 +45,10 @@
   <div class="row g-4">
    
   <div class="col-lg-4 col-md-6">
-      <div class="card card-large">
-        <div class="icon">📅</div>
+      <div class="card card-medium">
+        <div class="icon">
+        <img src="/images/Calendario.svg" alt="Icono Invitations">
+        </div>
         <div class="card-body">
           <h5 class="card-title">Interactive Calendar</h5>
           <p class="card-text">Plan and see your events, set reminders, and stay organized.</p>
@@ -57,7 +59,9 @@
 
    <div class="col">
       <div class="card card-medium">
-        <div class="icon">📅</div>
+        <div class="icon">
+        <img src="/images/Notas.svg" alt="Icono Invitations">
+        </div>
         <div class="card-body">
           <h5 class="card-title">Note Blog</h5>
           <p class="card-text">Write notes, save ideas, and keep track of tasks.</p>
@@ -66,8 +70,10 @@
     </div>
 
     <div class="col">
-      <div class="card card-small">
-        <div class="icon">📅</div>
+      <div class="card card-medium">
+        <div class="icon">
+        <img src="/images/Lista.svg" alt="Icono Invitations">
+        </div>
         <div class="card-body">
           <h5 class="card-title">Guest List</h5>
           <p class="card-text">Manage who's coming to your events and get confirmations.</p>
@@ -76,25 +82,29 @@
     </div>
 
   <div class="col-lg-6 col-md-6">
-      <div class="card-large">
-        <div class="icon">📅</div>
+      <div class="card card-medium">
+        <div class="icon">
+        <img src="/images/Invitacion.svg" alt="Icono Invitations">
+        </div>
         <div class="card-body">
           <h5 class="card-title">Send Invitations</h5>
           <p class="card-text">Send digital invitations via email or social media.</p>
         </div>
     </div>
-
-    <div class="col-lg-6 col-md-6">
+  </div>
+    <div class="col">
       <div class="card card-medium">
-        <div class="icon">📅</div>
+        <div class="icon">
+        <img src="/images/Fotos.svg" alt="Icono Invitations">
+        </div>
         <div class="card-body">
           <h5 class="card-title">Photo Gallery</h5>
           <p class="card-text">In the Premium version, share a link where guests can upload photos and memories.</p>
         </div>
      </div>
-     </div>
-
   </div>
+</div>
+</div>
 </div>
 
 </section>

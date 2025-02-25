@@ -5,6 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
+                
                 <div class="card-header">{{ __('Dashboard') }}</div>
 
                 <div class="card-body">
@@ -14,7 +15,12 @@
                         </div>
                     @endif
 
-                    {{ __('You are logged in!') }}
+                    {{ __('Welcome!') }}
+                    
+                    <form action="{{ route('logout') }}" method="POST" style="margin-top: 20px;">
+                        @csrf
+                        <button type="submit" class="btn btn-danger">{{ __('Logout') }}</button>
+                    </form>
                 </div>
             </div>
         </div>

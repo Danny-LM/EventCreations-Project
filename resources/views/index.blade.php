@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('content')
+@section('content') 
 
 
 <section class="section" id="Hero-Section">
@@ -44,7 +44,7 @@
   </div>
 </section> -->
 
-  </section> -->
+  </section>
 <div class="cards-container">
   <div class="row row-cols-1 row-cols-md-2 g-4">
    

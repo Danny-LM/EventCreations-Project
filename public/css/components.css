@@ -1,5 +1,5 @@
 
-/* Sections */
+/* ----------------------------------- Sections ----------------------------------- */
 
 
 /* Seccionado de Home page */
@@ -38,8 +38,14 @@
     background-position: center;
 }
 
+#media {
+    background-color: #221D4F;
+    background-size: cover;
+    background-position: center;
+}
 
-/* Texts */
+
+/* ----------------------------------- Texts -----------------------------------  */
 
 /* Texto Inicial GRANDE*/
 .h1-text {  
@@ -74,6 +80,7 @@
     font-weight: bold;
     color: white;
     font-family: poppins;
+    text-align: center;
 }
 
 /* Texto de Subtitulos en homepage */
@@ -82,6 +89,7 @@
     font-weight: medium;
     color: white;
     font-family: poppins;
+    text-align: center;
 }
 
 /* Texto normal en homepage*/
@@ -90,10 +98,9 @@
     font-weight: regular;
     color: white;
     font-family: Poppins;
+    text-align: center;
 
 }
-
-
 
 /* Aun sin usar (creo) */
 .ui-text {
@@ -103,13 +110,37 @@
     font-family: var(--font-family-primary);
 }
 
-/* Buttons */
+/* -----------------------------------  Buttons -----------------------------------  */
+
+/*Botones morados como create event y login*/
 .btn-primary {
-    background-color: var(--btn-primary-bg);
+    background-color: #BB6BD9;
+    border: none;
+    font-size: 16px;
+    font-weight: semibold;
+    color: white;
+    border-radius: 22px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border:  2px solid white;
+    font-size: 16px;
+    font-weight: semibold;
+    color: white;
+    border-radius: 22px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    text-align: center;
+    text-decoration: none;
 }
 
 .btn-primary:hover {
-    background-color: var(--btn-primary-bg-hover);
+    background-color: #221D4F;
 }
 
 .btn-primary:active {
@@ -124,27 +155,8 @@
     background-color: var(--btn-primary-bg-disabled);
 }
 
-/* Custom Buttons */
-.custom-btn {
-    padding: var(--padding-xs) var(--padding-xl);
-    border: 2px solid #141313;
-    border-radius: 30px;
-    color: var(--color-text-primary);
-    background-color: transparent;
-    text-decoration: none;
-    font-size: var(--paragraph-sm);
-    transition: 0.3s ease-in-out;
-    display: inline-block;
-    width: 90px;
-    text-align: center;
-}
 
-.custom-btn:hover {
-    background-color: #007bff;
-    color: var(--color-text-primary);
-}
-
-/* Cards */
+/*-----------------------------------  Cards -----------------------------------  */
 
 .cards-container {
     padding: 40px;
@@ -167,14 +179,8 @@
     margin: 0 auto;
 }
 
-.card-large {
-    height: 300px;
-}
 .card-medium {
     height: 250px;
-}
--card-small {
-    height: 200px;
 }
 
 .card-body {

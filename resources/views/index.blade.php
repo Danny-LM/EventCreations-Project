@@ -16,8 +16,8 @@
         With Event Creations, turn your ideas into unforgettable events<br>with smart organization and unlimited creativity.
       </p>
       <div class="container">
-        <button class="btn btn-primary" onclick="window.location.href='{{ route('register') }}'">Create Account</button>
-        <button class="btn btn-secondary">About Us</button>
+        <button class="btn-primary" style="padding: 6px 48px;" onclick="window.location.href='{{ route('register') }}'">Create Account</button>
+        <button class="btn-secondary" style="padding: 6px 48px;">About Us</button>
       </div>
     </div>
     <div class="container">
@@ -111,14 +111,14 @@
 <!-- ---------------------------------------------------------------seccion media----------------------------------------------------->
 
 <!-- Sección de Presentacion-->
-<section class="section"id ="media">
+<section class="section" id ="media">
   <div class="presentation">
         <h1 class="h2-text">Event Creations</h1>
         <h2 class="h3-text">Every detail, perfected to you!</h2>
         <p class="alltext">Facilitate the planning of weddings, birthdays, corporate events and<br>
         more with our comprehesive tool. Manage every detail easily and<br>
         efficiently, while maintaining control at all times.</p>
-          <button class="btn btn-readmore">Read More</button>
+          <button class="btn-readmore">Read More</button>
 </div>
 </section>
 

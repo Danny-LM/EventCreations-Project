@@ -58,6 +58,7 @@
     align-items: center; /* Centra verticalmente */
     justify-content: center; /* Centra horizontalmente */
     text-align: center; /* Centra el texto horizontalmente */  
+    margin-bottom: 150px;
 }
 
 #comentarios {

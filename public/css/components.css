@@ -3,16 +3,6 @@
 
 
 /* Seccionado de Home page */
-.section {
-    padding-top: var(--padding-xl);
-    padding-bottom: var(--padding-xl);
-}
- 
-/* Aun sin usar (creo) */
-.mini-section {
-    padding-top: var(--padding-md);
-    padding-bottom: var(--padding-md);
-}
 
 /* Primera seccion homepage */
 #hero-section {
@@ -23,27 +13,55 @@
     justify-content: center;
 }
 
-#welcome {
-    background-color: white;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
+#primera_presentacion {
+    background-size: cover;
+    background-position: center;
+    padding: 0px 30px;
+    margin-top: 150px ;
+        
 }
 
 /* Seccion de Herramientas */
 #tools {
-    background-color: white;
     background-size: cover;
     background-position: center;
+    padding: 0px 30px;
+    margin-top: 50px;
 }
 
 #media {
+    
     background-color: #221D4F;
     background-size: cover;
     background-position: center;
+    padding: 50px 30px;
+    margin-top: 150px;
 }
 
+#planes_section {
+    background-color: #E6E8EA;
+    background-size: cover;
+    background-position: center;  
+    padding: 20px 30px; 
+}
+
+#pricing_section {
+    background-color: #E6E8EA;
+    background-size: cover;
+    background-position: center;
+    padding: 0px 30px;      
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    text-align: center; /* Centra el texto horizontalmente */  
+}
+
+#comentarios {
+    background-color: #E6E8EA;
+    background-size: cover;
+    background-position: center;  
+    padding: 20px 30px; 
+}
 
 /* ----------------------------------- Texts -----------------------------------  */
 
@@ -65,13 +83,16 @@
 }
 
 /* Bienvenida */
-#fpresent {
+.Presentation {
     font-size: 40px;
-    font-weight: lighter;
-    color: black;
-    justify-content: center;
-    text-align: center;
+    font-weight: light;
+    color: black; /* Cambia el color del texto a negro para mejor visibilidad sobre el fondo rosa */
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    text-align: center; /* Centra el texto horizontalmente */
     font-family: poppins;
+    
 }
 
 /* Texto de Titulos en homepage*/
@@ -81,13 +102,14 @@
     color: white;
     font-family: poppins;
     text-align: center;
+    justify-content: center;
 }
 
 /* Texto de Subtitulos en homepage */
 .h3-text {
     font-size: 24px;
     font-weight: medium;
-    color: white;
+    color: rgb(255, 255, 255);
     font-family: poppins;
     text-align: center;
 }
@@ -96,12 +118,23 @@
 .alltext {
     font-size: 16px;
     font-weight: regular;
-    color: white;
     font-family: Poppins;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
 
 }
 
+.planes_text {
+    font-size: 45px;
+    font-weight: Semibold;
+    color: black; 
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    font-family: poppins;
+}
 /* Aun sin usar (creo) */
 .ui-text {
     font-size: var(--ui-text);
@@ -136,7 +169,22 @@
     cursor: pointer;
     transition: background-color 0.2s ease-in-out;
     text-align: center;
-    text-decoration: none;
+    text-decoration: none;    
+    
+}
+
+.btn_planes {
+    background-color: #221D4F;
+    font-size: 16px;
+    font-weight: semibold;
+    color: white;
+    border-radius: 22px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    text-align: center;
+    text-decoration: none; 
+    padding: 6px 48px;
+    
 }
 
 .btn-primary:hover {
@@ -153,6 +201,24 @@
 
 .btn-primary:disabled {
     background-color: var(--btn-primary-bg-disabled);
+}
+.linea1 {
+    display: flex;
+    align-items: center;
+    gap: 545px;
+}
+
+.btn-readmore {
+    background-color: white;
+    font-size: 16px;
+    font-weight: bold;
+    color: #221D4F;
+    border-radius: 22px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    text-align: center;
+    padding: 6px 48px;
+    display: inline-block;
 }
 
 
@@ -204,4 +270,36 @@
     max-height: 100%;
     object-fit: cover;
     margin: 30px;
+}
+
+
+/*-----------------------------------  Planes cards -----------------------------------  */
+
+.cards_plancontainer {
+    padding: 40px;
+    border-radius: 22px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 5px 4px 2px rgba(0, 0, 0, 0.1);
+    border: none;    
+    transition: transform 0.2s ease-in-out;
+    max-width: fit-content;
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    text-align: center;
+}
+
+.card_plan {
+    background-color: white;
+    border: none;
+    border-radius: 22px;
+    transition: transform 0.2s ease-in-out;
+    margin: 0 auto;
+    width: 362px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
 }

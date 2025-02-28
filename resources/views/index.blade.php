@@ -2,9 +2,12 @@
 @section('content') 
 
 
+
 <!-- ---------------------------------------------------------------seccion principal----------------------------------------------------->
 
 <!-- HeroSection -->
+ <!-- HeroSection -->
+  <!-- HeroSection -->
 
 <section class="section" id="hero-section">
   <div class="container">

@@ -31,6 +31,7 @@
     background-position: center;
     padding: 0px 30px;
     margin-top: 50px;
+    padding-bottom: 150px;
 }
 
 #media {
@@ -39,7 +40,6 @@
     background-size: cover;
     background-position: center;
     padding: 50px 30px;
-    margin-top: 150px;
 }
 
 #planes_section {
@@ -51,21 +51,20 @@
 
 #pricing_section {
     background-color: #E6E8EA;
-    background-size: cover;
     background-position: center;
     padding: 0px 30px;      
     display: flex;
     align-items: center; /* Centra verticalmente */
     justify-content: center; /* Centra horizontalmente */
     text-align: center; /* Centra el texto horizontalmente */  
-    margin-bottom: 150px;
+    padding-bottom: 150px;
 }
 
 #comentarios {
-    background-color: #2d445c;
+    background-color:  #221D4F;
     background-size: cover;
     background-position: center;  
-    padding: 20px 30px; 
+    padding: 50px 30px; 
 }
 
 /* ----------------------------------- Texts -----------------------------------  */

@@ -139,7 +139,8 @@
 
 <!-- ---------------------------------------------------------------seccion de precios----------------------------------------------------->
 <!-- Sección de Precios -->
-<section class="section" id="pricing_section">
+<section>
+  <div class="section" id="pricing_section">
   <div class="cards_plancontainer">
     <div class="row justify-content-center"> <!-- Asegura que las columnas se centren -->
     
@@ -193,14 +194,18 @@
   </div>
   </section>
 
-  <section class="section" id="comentarios">
-      <div class="planes_text" style= "margin-top:150px; margin-bottom: 30px">Plans & Pricings</div>
-      <div class="linea1">
-      <div class="alltext" style="text-align: left; margin-bottom: 50px">Whether your time-saving automation needs are large or small,<br>
-       we are here to help you scale.</div>
-      </div>
+<section class="section" id="comentarios">
+      <div class="planes_text" style= "color: white; margin-top:50px; margin-bottom: 30px">What our customers think about us?</div>
+
+      
+
+
+
+</div>
+</div>
 
 </section>
+
 
 
 @endsection

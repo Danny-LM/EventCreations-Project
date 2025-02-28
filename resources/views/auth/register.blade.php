@@ -17,7 +17,7 @@
                            id="username" 
                            name="username" 
                            value="{{ old('username') }}" 
-                           placeholder="Your username" 
+                           placeholder="" 
                            required 
                            minlength="3" 
                            maxlength="255" 
@@ -36,7 +36,7 @@
                            id="email" 
                            name="email" 
                            value="{{ old('email') }}" 
-                           placeholder="Your email" 
+                           placeholder="" 
                            required 
                            pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" 
                            title="Debe ser un correo electrónico válido">
@@ -52,7 +52,7 @@
                            class="form-control @error('password') is-invalid @enderror" 
                            id="pass" 
                            name="password" 
-                           placeholder="Your Password" 
+                           placeholder="" 
                            required 
                            minlength="8" 
                            title="La contraseña debe tener al menos 8 caracteres">
@@ -68,7 +68,7 @@
                            class="form-control @error('password_confirmation') is-invalid @enderror" 
                            id="confirm_pass" 
                            name="password_confirmation" 
-                           placeholder="Confirm Password" 
+                           placeholder="" 
                            required>
                     <label for="confirm_pass">Confirm Password</label>
                     @error('password_confirmation')
@@ -77,8 +77,11 @@
                 </div>
 
                 <div class="form-floating">
-                    <button type="submit" class="btn btn-primary w-100">Sign Up</button>
-                </div>
+      <button  class="form-control">sign in</button></div>
+      <center>
+      <div class='line'>
+        <span class='text'>OR</span>
+    </div></center>
             </form>
         </div>
     </div>

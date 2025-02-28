@@ -189,7 +189,18 @@
         </div>
       </div>
 
+    </div>
+  </div>
+  </section>
 
+  <section class="section" id="comentarios">
+      <div class="planes_text" style= "margin-top:150px; margin-bottom: 30px">Plans & Pricings</div>
+      <div class="linea1">
+      <div class="alltext" style="text-align: left; margin-bottom: 50px">Whether your time-saving automation needs are large or small,<br>
+       we are here to help you scale.</div>
+      </div>
 
 </section>
+
+
 @endsection

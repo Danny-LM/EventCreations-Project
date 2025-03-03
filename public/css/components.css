@@ -1,10 +1,7 @@
+@import 'variables';
+@import 'buttons';
 
 /* ----------------------------------- Sections ----------------------------------- */
-
-/* ----------------------------------- Sections ----------------------------------- */
-
-/* ----------------------------------- Sections ----------------------------------- */
-
 
 /* Seccionado de Home page */
 
@@ -22,7 +19,6 @@
     background-position: center;
     padding: 0px 30px;
     margin-top: 150px;
-        
 }
 
 /* Seccion de Herramientas */
@@ -34,7 +30,6 @@
 }
 
 #media {
-    
     background-color: #221D4F;
     background-size: cover;
     background-position: center;
@@ -45,32 +40,32 @@
 #planes_section {
     background-color: #E6E8EA;
     background-size: cover;
-    background-position: center;  
-    padding: 20px 30px; 
+    background-position: center;
+    padding: 20px 30px;
 }
 
 #pricing_section {
     background-color: #E6E8EA;
     background-size: cover;
     background-position: center;
-    padding: 0px 30px;      
+    padding: 0px 30px;
     display: flex;
     align-items: center; /* Centra verticalmente */
     justify-content: center; /* Centra horizontalmente */
-    text-align: center; /* Centra el texto horizontalmente */  
+    text-align: center; /* Centra el texto horizontalmente */
 }
 
 #comentarios {
     background-color: #E6E8EA;
     background-size: cover;
-    background-position: center;  
-    padding: 20px 30px; 
+    background-position: center;
+    padding: 20px 30px;
 }
 
 /* ----------------------------------- Texts -----------------------------------  */
 
 /* Texto Inicial GRANDE*/
-.h1-text {  
+.h1-text {
     font-size: 50px;
     font-weight: bold;
     color: white;
@@ -78,12 +73,11 @@
 }
 
 /* Parrafo de texto incial */
-.paragraph-text { 
+.paragraph-text {
     font-size: 18;
     font-weight: medium;
     color: white;
     font-family: poppins;
-
 }
 
 /* Bienvenida */
@@ -96,7 +90,6 @@
     justify-content: center; /* Centra horizontalmente */
     text-align: center; /* Centra el texto horizontalmente */
     font-family: poppins;
-    
 }
 
 /* Texto de Titulos en homepage*/
@@ -126,19 +119,19 @@
     text-align: center;
     display: flex;
     align-items: center;
-    justify-content: center; 
-
+    justify-content: center;
 }
 
 .planes_text {
     font-size: 45px;
     font-weight: Semibold;
-    color: black; 
+    color: black;
     display: flex;
-    align-items: center; 
-    justify-content: center; 
+    align-items: center;
+    justify-content: center;
     font-family: poppins;
 }
+
 /* Aun sin usar (creo) */
 .ui-text {
     font-size: var(--ui-text);
@@ -147,97 +140,17 @@
     font-family: var(--font-family-primary);
 }
 
-/* -----------------------------------  Buttons -----------------------------------  */
-
-/*Botones morados como create event y login*/
-.btn-primary {
-    background-color: #BB6BD9;
-    border: none;
-    font-size: 16px;
-    font-weight: semibold;
-    color: white;
-    border-radius: 22px;
-    cursor: pointer;
-    transition: background-color 0.2s ease-in-out;
-    text-align: center;
-    text-decoration: none;
-}
-
-.btn-secondary {
-    background-color: transparent;
-    border:  2px solid white;
-    font-size: 16px;
-    font-weight: semibold;
-    color: white;
-    border-radius: 22px;
-    cursor: pointer;
-    transition: background-color 0.2s ease-in-out;
-    text-align: center;
-    text-decoration: none;    
-    
-}
-
-.btn_planes {
-    background-color: #221D4F;
-    font-size: 16px;
-    font-weight: semibold;
-    color: white;
-    border-radius: 22px;
-    cursor: pointer;
-    transition: background-color 0.2s ease-in-out;
-    text-align: center;
-    text-decoration: none; 
-    padding: 6px 48px;
-    
-}
-
-.btn-primary:hover {
-    background-color: #221D4F;
-}
-
-.btn-primary:active {
-    background-color: var(--btn-primary-bg-active);
-}
-
-.btn-primary:focus {
-    background-color: var(--btn-primary-bg);
-}
-
-.btn-primary:disabled {
-    background-color: var(--btn-primary-bg-disabled);
-}
-.linea1 {
-    display: flex;
-    align-items: center;
-    gap: 545px;
-}
-
-.btn-readmore {
-    background-color: white;
-    font-size: 16px;
-    font-weight: bold;
-    color: #221D4F;
-    border-radius: 22px;
-    cursor: pointer;
-    transition: background-color 0.2s ease-in-out;
-    text-align: center;
-    padding: 6px 48px;
-    display: inline-block;
-}
-
-
 /*-----------------------------------  Cards -----------------------------------  */
 
 .cards-container {
     padding: 40px;
     border-radius: 22px;
-    background-color:#E6E8EA;
+    background-color: #E6E8EA;
     box-shadow: 5px 4px 2px rgba(0, 0, 0, 0.1);
-    border: none;    
+    border: none;
     transition: transform 0.2s ease-in-out;
     margin: 0 auto;
     max-width: 1350px;
-    
 }
 
 .card {
@@ -276,7 +189,6 @@
     margin: 30px;
 }
 
-
 /*-----------------------------------  Planes cards -----------------------------------  */
 
 .cards_plancontainer {
@@ -284,7 +196,7 @@
     border-radius: 22px;
     background-color: rgb(255, 255, 255);
     box-shadow: 5px 4px 2px rgba(0, 0, 0, 0.1);
-    border: none;    
+    border: none;
     transition: transform 0.2s ease-in-out;
     max-width: fit-content;
     display: flex;
@@ -305,5 +217,4 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
 }

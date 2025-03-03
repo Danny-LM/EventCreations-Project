@@ -1,0 +1,14 @@
+
+$btn-primary-bg: #BB6BD9;
+$btn-secondary-bg: transparent;
+$btn-planes-bg: #221D4F;
+$btn-readmore-bg: white;
+$btn-primary-hover-bg: #221D4F;
+$btn-primary-active-bg: darken($btn-primary-bg, 10%);
+$btn-primary-disabled-bg: lighten($btn-primary-bg, 20%);
+$btn-readmore-color: #221D4F;
+$border-radius: 22px;
+$font-size: 16px;
+$font-weight-semibold: semibold;
+$font-weight-bold: bold;
+$transition: background-color 0.2s ease-in-out;

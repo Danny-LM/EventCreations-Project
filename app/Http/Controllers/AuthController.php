@@ -4,69 +4,92 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use App\Models\User; // Agregado para manejar el modelo User
+use Illuminate\Support\Facades\Hash; // Agregado para el manejo de contraseñas
 
 class AuthController extends Controller
 {
     /**
-	* Función que muestra la vista de logados o la vista con el formulario de Login
-	*/
-	public function index()
-	{
-	    // Comprobamos si el usuario ya está logado
-	    if (Auth::check()) {	        // Si está logado le mostramos la vista de logados
-	        return view('logados');
-	    }
-	
-	    
-	    return view('index');
-	}
-	
-    /**
-	* Función que se encarga de recibir los datos del formulario de login, comprobar que el usuario existe y
-	* en caso correcto logar al usuario
-	*/
-	public function login(Request $request)
-	{
-	    // Comprobamos que el email y la contraseña han sido introducidos
-	    $request->validate([
-	        'email' => 'required',
-	        'password' => 'required',
-	    ]);
-	
-	    // Almacenamos las credenciales de email y contraseña
-	    $credentials = $request->only('email', 'password');
-	
-	    // Si el usuario existe lo logamos y lo llevamos a la vista de "logados" con un mensaje
-	    if (Auth::attempt($credentials)) {
-	        return redirect()->intended('logados')
-	            ->withSuccess('Logado Correctamente');
-	    }
-	
-	    // Si el usuario no existe devolvemos al usuario al formulario de login con un mensaje de error
-	    return redirect("/")->withSuccess('Los datos introducidos no son correctos');
-	}
-	
-	/**
-	* Función que muestra la vista de logados si el usuario está logado y si no le devuelve al formulario de login
-	* con un mensaje de error
-	*/
-	public function logados()
-	{
-	    if (Auth::check()) {
-	        return view('logados');
-	    }
-	
-	    return redirect("/")->withSuccess('No tienes acceso, por favor inicia sesión');
+     * Muestra la vista de inicio o la vista de usuario autenticado.
+     */
+    public function index()
+    {
+        if (Auth::check()) {
+            return view('logados');
+        }
+        
+        return view('index');
     }
 
     /**
-    * Función para cerrar sesión y redirigir al usuario a la página de inicio
-    */
+     * Muestra el formulario de registro.
+     */
+    public function showRegisterForm()
+    {
+        return view('auth.register'); // Redirige a la vista del formulario de registro
+    }
+
+    /**
+     * Procesa el formulario de registro.
+     */
+    public function register(Request $request)
+    {
+        // Validación de datos del formulario
+        $request->validate([
+            'name' => 'required|string|max:255',
+            'email' => 'required|string|email|max:255|unique:users',
+            'password' => 'required|string|min:6|confirmed',
+        ]);
+
+        // Creación del usuario en la base de datos
+        $user = User::create([
+            'name' => $request->name,
+            'email' => $request->email,
+            'password' => Hash::make($request->password), // Se cifra la contraseña antes de guardarla
+        ]);
+
+        // Autenticación automática después del registro
+        Auth::login($user);
+
+        return redirect()->route('logados')->withSuccess('Registro exitoso');
+    }
+
+    /**
+     * Procesa el formulario de login y autentica al usuario.
+     */
+    public function login(Request $request)
+    {
+        $request->validate([
+            'email' => 'required|email', // Se agregó validación de email
+            'password' => 'required',
+        ]);
+
+        $credentials = $request->only('email', 'password');
+
+        if (Auth::attempt($credentials)) {
+            return redirect()->intended('logados')->withSuccess('Inicio de sesión exitoso');
+        }
+
+        return redirect("/")->withErrors(['email' => 'Los datos introducidos no son correctos']); // Se usa withErrors para mostrar errores correctamente
+    }
+
+    /**
+     * Muestra la vista de usuario autenticado o redirige al login.
+     */
+    public function logados()
+    {
+        if (Auth::check()) {
+            return view('logados');
+        }
+
+        return redirect("/")->withErrors(['auth' => 'No tienes acceso, por favor inicia sesión']);
+    }
+
+    /**
+     * Cierra la sesión del usuario y lo redirige al inicio.
+     */
     public function logout()
     {
-        Auth::logout();  // Cierra la sesión del usuario
+        Auth::logout();
         return redirect('/')->with('success', 'Has cerrado sesión correctamente');
-    }
-}
-
-     
+    }}

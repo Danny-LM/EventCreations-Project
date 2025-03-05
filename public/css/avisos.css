@@ -1,0 +1,9 @@
+.invalid-feedback {
+    font-size: 0.875em;
+    color: #dc3545;
+}
+
+.form-control.is-invalid {
+    border-color: #dc3545;
+    background-color: #f8d7da;
+}

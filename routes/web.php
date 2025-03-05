@@ -6,18 +6,25 @@ use Illuminate\Support\Facades\Route;
 
 // Ruta para la página de inicio (index.blade.php)
 Route::get('/', function () {
-    return view('index'); // Asegúrate de que index.blade.php esté en la carpeta resources/views
-});
+    return view('index'); // Asegúrate de que index.blade.php esté en resources/views
+})->name('index');
 
-// Rutas para autenticación y otras páginas
-Route::post('/custom-login', [AuthController::class, 'login'])->name('custom-login'); // Login
-Route::get('/logados', [AuthController::class, 'logados'])->name('logados'); // Página después del login
-Route::get('/logout', [AuthController::class, 'logout'])->name('logout'); // Logout
+// Rutas de autenticación personalizadas
+Route::get('/logados', [AuthController::class, 'logados'])->name('logados'); // Vista después del login
+Route::post('/login', [AuthController::class, 'login'])->name('login'); // Procesa el login
+Route::post('/logout', [AuthController::class, 'logout'])->name('logout'); // Cierra sesión
 
-// Rutas adicionales
-Route::get('roles', [RoleController::class, 'index']); // Controlador para roles
+// Rutas para registro
+Route::get('/register', [AuthController::class, 'showRegisterForm'])->name('register.form'); // Formulario de registro
+Route::post('/register', [AuthController::class, 'register'])->name('register'); // Procesa el registro
 
-Auth::routes(); // Rutas de autenticación por defecto
+// Ruta para roles (si es necesario)
+Route::get('/roles', [RoleController::class, 'index'])->name('roles.index');
 
-// Ruta de la página de inicio (Home) después de iniciar sesión
+// Rutas de autenticación por defecto de Laravel (opcional)
+Auth::routes(); 
+
+// Ruta del dashboard o home después del login
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+

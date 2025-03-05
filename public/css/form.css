@@ -35,7 +35,7 @@ label {
   width: 100%;
   max-width: 400px;
   min-width: 200px;
-  height: 50px;
+  height: 70px;
   padding: 10px;
   margin: 15px 0;
   border: 3px solid #ccc;
@@ -69,6 +69,24 @@ label {
 .form-control:focus {
   border-color: #221D4F;
   outline: none;
+}
+
+.text {
+  display: inline-block;
+  padding: 0 10px;
+  background-color: #E6E8EA;
+  position: relative;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-30%);
+}
+
+.line {
+  position: relative;
+  text-align: center;
+  width: 400px;
+  height: 2px;
+  background-color: #221D4F;
 }
 
 h1 {

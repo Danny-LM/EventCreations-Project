@@ -1,0 +1,51 @@
+@import 'variables';
+
+.btn {
+  font-size: $font-size;
+  font-weight: $font-weight-semibold;
+  border-radius: $border-radius;
+  cursor: pointer;
+  transition: $transition;
+  text-align: center;
+  text-decoration: none;
+  padding: 6px 48px;
+}
+
+.btn-primary {
+  background-color: $btn-primary-bg;
+  color: white;
+  border: none;
+
+  &:hover {
+    background-color: $btn-primary-hover-bg;
+  }
+
+  &:active {
+    background-color: $btn-primary-active-bg;
+  }
+
+  &:focus {
+    background-color: $btn-primary-bg;
+  }
+
+  &:disabled {
+    background-color: $btn-primary-disabled-bg;
+  }
+}
+
+.btn-secondary {
+  background-color: $btn-secondary-bg;
+  border: 2px solid white;
+  color: white;
+}
+
+.btn_planes {
+  background-color: $btn-planes-bg;
+  color: white;
+}
+
+.btn-readmore {
+  background-color: $btn-readmore-bg;
+  color: $btn-readmore-color;
+  font-weight: $font-weight-bold;
+}

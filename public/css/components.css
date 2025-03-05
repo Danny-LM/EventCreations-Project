@@ -1,16 +1,13 @@
+/* Importar variables */
+@import url('variables.css');
 
 /* ----------------------------------- Sections ----------------------------------- */
-
-/* ----------------------------------- Sections ----------------------------------- */
-
-/* ----------------------------------- Sections ----------------------------------- */
-
 
 /* Seccionado de Home page */
 
 /* Primera seccion homepage */
 #hero-section {
-    background-color: #221D4F;
+    background-color: var(--primary-color);
     height: 90vh;
     display: flex;
     align-items: center;
@@ -21,8 +18,7 @@
     background-size: cover;
     background-position: center;
     padding: 0px 30px;
-    margin-top: 150px;
-        
+    margin-top: var(--padding-large);
 }
 
 /* Seccion de Herramientas */
@@ -31,282 +27,181 @@
     background-position: center;
     padding: 0px 30px;
     margin-top: 50px;
-    padding-bottom: 150px;
+    padding-bottom: var(--padding-large);
 }
 
 #media {
-    
-    background-color: #221D4F;
+    background-color: var(--primary-color);
     background-size: cover;
     background-position: center;
-    padding: 50px 30px;
+    padding: var(--padding-medium);
 }
 
 #planes_section {
-    background-color: #E6E8EA;
+    background-color: var(--light-gray);
     background-size: cover;
     background-position: center;  
     padding: 20px 30px; 
 }
 
 #pricing_section {
-    background-color: #E6E8EA;
+    background-color: var(--light-gray);
     background-position: center;
     padding: 0px 30px;      
     display: flex;
     align-items: center; /* Centra verticalmente */
     justify-content: center; /* Centra horizontalmente */
     text-align: center; /* Centra el texto horizontalmente */  
-    padding-bottom: 150px;
+    padding-bottom: var(--padding-large);
 }
 
 #comentarios {
-    background-color:  #221D4F;
+    background-color: var(--primary-color);
     background-size: cover;
     background-position: center;  
-    padding: 50px 30px; 
+    padding: var(--padding-medium);
 }
 
 /* ----------------------------------- Texts -----------------------------------  */
 
-/* Texto Inicial GRANDE*/
 .h1-text {  
-    font-size: 50px;
+    font-size: var(--h1-size);
     font-weight: bold;
-    color: white;
-    font-family: poppins;
+    color: var(--text-primary);
+    font-family: var(--font-primary);
 }
 
-/* Parrafo de texto incial */
 .paragraph-text { 
-    font-size: 18;
+    font-size: var(--paragraph-size);
     font-weight: medium;
-    color: white;
-    font-family: poppins;
-
+    color: var(--text-primary);
+    font-family: var(--font-primary);
 }
 
-/* Bienvenida */
 .Presentation {
-    font-size: 40px;
+    font-size: var(--text-large);
     font-weight: light;
-    color: black; /* Cambia el color del texto a negro para mejor visibilidad sobre el fondo rosa */
+    color: var(--text-secondary);
     display: flex;
-    align-items: center; /* Centra verticalmente */
-    justify-content: center; /* Centra horizontalmente */
-    text-align: center; /* Centra el texto horizontalmente */
-    font-family: poppins;
-    
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: var(--font-primary);
 }
 
-/* Texto de Titulos en homepage*/
 .h2-text {
-    font-size: 55px;
+    font-size: var(--h2-size);
     font-weight: bold;
-    color: white;
-    font-family: poppins;
+    color: var(--text-primary);
+    font-family: var(--font-primary);
     text-align: center;
     justify-content: center;
 }
 
-/* Texto de Subtitulos en homepage */
 .h3-text {
-    font-size: 24px;
+    font-size: var(--h3-size);
     font-weight: medium;
-    color: rgb(255, 255, 255);
-    font-family: poppins;
+    color: var(--text-primary);
+    font-family: var(--font-primary);
     text-align: center;
 }
 
-/* Texto normal en homepage*/
 .alltext {
-    font-size: 16px;
+    font-size: var(--text-regular);
     font-weight: regular;
-    font-family: Poppins;
+    font-family: var(--font-primary);
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center; 
-
 }
 
 .planes_text {
-    font-size: 45px;
-    font-weight: Semibold;
-    color: black; 
+    font-size: var(--text-extra-large);
+    font-weight: semibold;
+    color: var(--text-secondary);
     display: flex;
-    align-items: center; 
-    justify-content: center; 
-    font-family: poppins;
-}
-/* Aun sin usar (creo) */
-.ui-text {
-    font-size: var(--ui-text);
-    font-weight: var(--font-weight-regular);
-    color: var(--color-text-primary);
-    font-family: var(--font-family-primary);
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-primary);
 }
 
 /* -----------------------------------  Buttons -----------------------------------  */
 
-/*Botones morados como create event y login*/
 .btn-primary {
-    background-color: #BB6BD9;
+    background-color: var(--secondary-color);
     border: none;
-    font-size: 16px;
+    font-size: var(--text-regular);
     font-weight: semibold;
-    color: white;
-    border-radius: 22px;
+    color: var(--text-primary);
+    border-radius: var(--border-radius);
     cursor: pointer;
     transition: background-color 0.2s ease-in-out;
     text-align: center;
     text-decoration: none;
 }
 
+.btn-primary:hover {
+    background-color: var(--btn-hover);
+}
+
 .btn-secondary {
     background-color: transparent;
-    border:  2px solid white;
-    font-size: 16px;
+    border: 2px solid var(--text-primary);
+    font-size: var(--text-regular);
     font-weight: semibold;
-    color: white;
-    border-radius: 22px;
+    color: var(--text-primary);
+    border-radius: var(--border-radius);
     cursor: pointer;
     transition: background-color 0.2s ease-in-out;
     text-align: center;
-    text-decoration: none;    
-    
+    text-decoration: none;
 }
 
 .btn_planes {
-    background-color: #221D4F;
-    font-size: 16px;
+    background-color: var(--primary-color);
+    font-size: var(--text-regular);
     font-weight: semibold;
-    color: white;
-    border-radius: 22px;
+    color: var(--text-primary);
+    border-radius: var(--border-radius);
     cursor: pointer;
     transition: background-color 0.2s ease-in-out;
     text-align: center;
-    text-decoration: none; 
-    padding: 6px 48px;
-    
-}
-
-.btn-primary:hover {
-    background-color: #221D4F;
-}
-
-.btn-primary:active {
-    background-color: var(--btn-primary-bg-active);
-}
-
-.btn-primary:focus {
-    background-color: var(--btn-primary-bg);
-}
-
-.btn-primary:disabled {
-    background-color: var(--btn-primary-bg-disabled);
-}
-.linea1 {
-    display: flex;
-    align-items: center;
-    gap: 545px;
+    text-decoration: none;
+    padding: var(--padding-small);
 }
 
 .btn-readmore {
-    background-color: white;
-    font-size: 16px;
+    background-color: var(--white);
+    font-size: var(--text-regular);
     font-weight: bold;
-    color: #221D4F;
-    border-radius: 22px;
+    color: var(--primary-color);
+    border-radius: var(--border-radius);
     cursor: pointer;
     transition: background-color 0.2s ease-in-out;
     text-align: center;
-    padding: 6px 48px;
+    padding: var(--padding-small);
     display: inline-block;
 }
 
-
-/*-----------------------------------  Cards -----------------------------------  */
+/* ----------------------------------- Cards ----------------------------------- */
 
 .cards-container {
     padding: 40px;
-    border-radius: 22px;
-    background-color:#E6E8EA;
-    box-shadow: 5px 4px 2px rgba(0, 0, 0, 0.1);
-    border: none;    
+    border-radius: var(--border-radius);
+    background-color: var(--light-gray);
+    box-shadow: var(--box-shadow);
+    border: none;
     transition: transform 0.2s ease-in-out;
     margin: 0 auto;
     max-width: 1350px;
-    
 }
 
 .card {
-    background-color: white;
+    background-color: var(--white);
     border: none;
-    border-radius: 22px;
+    border-radius: var(--border-radius);
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease-in-out;
     margin: 0 auto;
 }
-
-.card-medium {
-    height: 250px;
-}
-
-.card-body {
-    text-align: center;
-}
-
-.card-title {
-    font-weight: bold;
-}
-
-.icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.icon img {
-    width: 60px;
-    height: 60px;
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: cover;
-    margin: 30px;
-}
-
-
-/*-----------------------------------  Planes cards -----------------------------------  */
-
-.cards_plancontainer {
-    padding: 40px;
-    border-radius: 22px;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 5px 4px 2px rgba(0, 0, 0, 0.1);
-    border: none;    
-    transition: transform 0.2s ease-in-out;
-    max-width: fit-content;
-    display: flex;
-    align-items: center; /* Centra verticalmente */
-    justify-content: center; /* Centra horizontalmente */
-    text-align: center;
-}
-
-.card_plan {
-    background-color: white;
-    border: none;
-    border-radius: 22px;
-    transition: transform 0.2s ease-in-out;
-    margin: 0 auto;
-    width: 362px;
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-
-/*-----------------------------------  COMENTARIOS CARDS -----------------------------------  */

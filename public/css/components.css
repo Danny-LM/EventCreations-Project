@@ -1,4 +1,7 @@
-@import 'custom.scss';
+/* Importar variables */
+@import url('variables.css');
+@import 'variables';
+@import 'buttons';
 
 /* ----------------------------------- Sections ----------------------------------- */
 
@@ -6,7 +9,7 @@
 
 /* Primera seccion homepage */
 #hero-section {
-    background-color: var(--color-midnight-purple);
+    background-color: var(--primary-color);
     height: 90vh;
     display: flex;
     align-items: center;
@@ -26,38 +29,39 @@
     background-position: center;
     padding: 0px 30px;
     margin-top: 50px;
+    padding-bottom: var(--padding-large);
 }
 
 #media {
-    background-color: var(--color-midnight-purple);
+    background-color: var(--primary-color);
     background-size: cover;
     background-position: center;
-    padding: 50px 30px;
-    margin-top: 150px;
+    padding: var(--padding-medium);
 }
 
 #planes_section {
-    background-color: #E6E8EA;
+    background-color: var(--light-gray);
     background-size: cover;
     background-position: center;
     padding: 20px 30px;
 }
 
 #pricing_section {
-    background-color: #E6E8EA;
-    background-size: cover;
+    background-color: var(--light-gray);
     background-position: center;
     padding: 0px 30px;
     display: flex;
     align-items: center; /* Centra verticalmente */
     justify-content: center; /* Centra horizontalmente */
+    text-align: center; /* Centra el texto horizontalmente */  
+    padding-bottom: var(--padding-large);
 }
 
 #comentarios {
-    background-color: #E6E8EA;
+    background-color: var(--primary-color);
     background-size: cover;
-    background-position: center;
-    padding: 20px 30px;
+    background-position: center;  
+    padding: var(--padding-medium);
 }
 
 /*-----------------------------------  Buttons -----------------------------------  */
@@ -65,61 +69,133 @@
 
 /* ----------------------------------- Texts -----------------------------------  */
 
-/* Texto Inicial GRANDE*/
-.h1-text {
-    font-size: 50px;
-    font-weight: var(--font-weight-bold);
-    color: var(--color-white);
-    font-family: var(--font-family-primary);
+.h1-text {  
+    font-size: var(--h1-size);
+    font-weight: bold;
+    color: var(--text-primary);
+    font-family: var(--font-primary);
 }
 
-/* Parrafo de texto incial */
-.paragraph-text {
-    font-size: 18px;
-    font-weight: var(--font-weight-medium);
-    color: var(--color-white);
-    font-family: var(--font-family-primary);
+.paragraph-text { 
+    font-size: var(--paragraph-size);
+    font-weight: medium;
+    color: var(--text-primary);
+    font-family: var(--font-primary);
 }
 
-/* Bienvenida */
 .Presentation {
-    font-size: 40px;
-    font-weight: var(--font-weight-light);
-    color: var(--color-black); /* Cambia el color del texto a negro para mejor visibilidad sobre el fondo rosa */
+    font-size: var(--text-large);
+    font-weight: light;
+    color: var(--text-secondary);
     display: flex;
-    align-items: center; /* Centra verticalmente */
-    justify-content: center; /* Centra horizontalmente */
-    text-align: center; /* Centra el texto horizontalmente */
-    font-family: var(--font-family-primary);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: var(--font-primary);
 }
 
-/* Texto de Titulos en homepage*/
 .h2-text {
-    font-size: 55px;
-    font-weight: var(--font-weight-bold);
-    color: var(--color-white);
-    font-family: var(--font-family-primary);
+    font-size: var(--h2-size);
+    font-weight: bold;
+    color: var(--text-primary);
+    font-family: var(--font-primary);
     text-align: center;
     justify-content: center;
 }
 
-/* Texto de Subtitulos en homepage */
 .h3-text {
-    font-size: 24px;
-    font-weight: var(--font-weight-medium);
-    color: var(--color-white);
-    font-family: var(--font-family-primary);
+    font-size: var(--h3-size);
+    font-weight: medium;
+    color: var(--text-primary);
+    font-family: var(--font-primary);
     text-align: center;
 }
 
-/* Texto normal en homepage*/
 .alltext {
-    font-size: 16px;
-    font-weight: var(--font-weight-regular);
-    font-family: var(--font-family-primary);
+    font-size: var(--text-regular);
+    font-weight: regular;
+    font-family: var(--font-primary);
     text-align: center;
     display: flex;
     align-items: center;
+    justify-content: center; 
+}
+
+.planes_text {
+    font-size: var(--text-extra-large);
+    font-weight: semibold;
+    color: var(--text-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-primary);
+}
+
+/* -----------------------------------  Buttons -----------------------------------  */
+
+.btn-primary {
+    background-color: var(--secondary-color);
+    border: none;
+    font-size: var(--text-regular);
+    font-weight: semibold;
+    color: var(--text-primary);
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn-primary:hover {
+    background-color: var(--btn-hover);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border: 2px solid var(--text-primary);
+    font-size: var(--text-regular);
+    font-weight: semibold;
+    color: var(--text-primary);
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn_planes {
+    background-color: var(--primary-color);
+    font-size: var(--text-regular);
+    font-weight: semibold;
+    color: var(--text-primary);
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    text-align: center;
+    text-decoration: none;
+    padding: var(--padding-small);
+}
+
+.btn-readmore {
+    background-color: var(--white);
+    font-size: var(--text-regular);
+    font-weight: bold;
+    color: var(--primary-color);
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    text-align: center;
+    padding: var(--padding-small);
+    display: inline-block;
+}
+
+/* ----------------------------------- Cards ----------------------------------- */
+
+.cards-container {
+    padding: 40px;
+    border-radius: var(--border-radius);
+    background-color: var(--light-gray);
+    box-shadow: var(--box-shadow);
     justify-content: center;
 }
 
@@ -155,7 +231,7 @@
 }
 
 .card {
-    background-color: var(--color-white);
+    background-color: var(--white);
     border: none;
     border-radius: var(--border-radius);
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);

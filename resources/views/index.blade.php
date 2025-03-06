@@ -139,7 +139,8 @@
 
 <!-- ---------------------------------------------------------------seccion de precios----------------------------------------------------->
 <!-- Sección de Precios -->
-<section class="section" id="pricing_section">
+<section>
+  <div class="section" id="pricing_section">
   <div class="cards_plancontainer">
     <div class="row justify-content-center"> <!-- Asegura que las columnas se centren -->
     
@@ -189,7 +190,22 @@
         </div>
       </div>
 
+    </div>
+  </div>
+  </section>
 
+<section class="section" id="comentarios">
+      <div class="planes_text" style= "color: white; margin-top:50px; margin-bottom: 30px">What our customers think about us?</div>
+
+      
+
+
+
+</div>
+</div>
 
 </section>
+
+
+
 @endsection

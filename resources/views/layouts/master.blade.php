@@ -14,6 +14,8 @@
     
     <link rel="stylesheet" href="{{asset('css/custom.css')}}">
 
+    <link href="https://cdn.lineicons.com/5.0/lineicons.css" rel="stylesheet" />
+
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-medium sticky-top navbar-custom" style="background-color: #1A1A50;">

@@ -1,4 +1,3 @@
-
 :root {
     /* Primitive Colors */
     --color-white: #ffffff;
@@ -67,15 +66,16 @@
 
     /* Button Color Tokens */
     --btn-primary-bg: var(--color-royal-violet);
-    --btn-primary-label: var(--color-white);
-    --btn-primary-border: var(--color-royal-violet);
-    --btn-primary-bg-hover: var(--color-majestic-purple);
-    --btn-primary-label-hover: var(--color-white);
-    --btn-primary-bg-active: var(--color-imperial-plum);
-    --btn-primary-bg-disabled: var();
-    --btn-primary-label-disabled: var();
-    --btn-secondary-bg-disabled: var();
-    --btn-secondary-label-disabled: var();
-    --focus-ring-primary: var();
-    --focus-ring-secondary: var();
+    --btn-secondary-bg: transparent;
+    --btn-planes-bg: var(--color-midnight-purple);
+    --btn-readmore-bg: white;
+    --btn-primary-hover-bg: var(--color-midnight-purple);
+    --btn-primary-active-bg: #9C42B3; /* Equivalent to darken($btn-primary-bg, 10%) */
+    --btn-primary-disabled-bg: #D9A6E6; /* Equivalent to lighten($btn-primary-bg, 20%) */
+    --btn-readmore-color: var(--color-midnight-purple);
+    --border-radius: 22px;
+    --font-size: 16px;
+    --font-weight-semibold: 600; /* Equivalent to semibold */
+    --font-weight-bold: 700; /* Equivalent to bold */
+    --transition: background-color 0.2s ease-in-out;
 }

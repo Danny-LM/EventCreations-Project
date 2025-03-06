@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('content') 
+@section('content')
 
 
 
@@ -19,8 +19,8 @@
         With Event Creations, turn your ideas into unforgettable events<br>with smart organization and unlimited creativity.
       </p>
       <div class="container">
-        <button class="btn-primary" style="padding: 6px 48px;" onclick="window.location.href='{{ route('register') }}'">Create Account</button>
-        <button class="btn-secondary" style="padding: 6px 48px;">About Us</button>
+        <button class="btn btn-primary" style="padding: 6px 48px;" onclick="window.location.href='{{ route('register') }}'">Create Account</button>
+        <button class="btn btn-secondary" style="padding: 6px 48px;">About Us</button>
       </div>
     </div>
     <div class="container">
@@ -118,7 +118,7 @@
         efficiently, while maintaining control at all times.</p>
         <div class="linea1">
         <img src="/images/Calendario_logo_blanco.svg" alt="Icono Invitations">
-         <button class="btn-readmore" style="padding: 6px 48px; justify-content: center;">Read More</button>
+         <button class="btn btn-readmore" style="padding: 6px 48px; justify-content: center;">Read More</button>
         </div>
 </div>
 

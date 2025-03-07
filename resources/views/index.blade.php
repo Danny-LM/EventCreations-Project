@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('content') 
+@section('content')
 
 
 
@@ -19,8 +19,8 @@
         With Event Creations, turn your ideas into unforgettable events<br>with smart organization and unlimited creativity.
       </p>
       <div class="container">
-        <button class="btn-primary" style="padding: 6px 48px;" onclick="window.location.href='{{ route('register') }}'">Create Account</button>
-        <button class="btn-secondary" style="padding: 6px 48px;">About Us</button>
+        <button class="btn btn-primary" style="padding: 6px 48px;" onclick="window.location.href='{{ route('register') }}'">Create Account</button>
+        <button class="btn btn-secondary" style="padding: 6px 48px;">About Us</button>
       </div>
     </div>
     <div class="container">
@@ -118,7 +118,7 @@
         efficiently, while maintaining control at all times.</p>
         <div class="linea1">
         <img src="/images/Calendario_logo_blanco.svg" alt="Icono Invitations">
-         <button class="btn-readmore" style="padding: 6px 48px; justify-content: center;">Read More</button>
+         <button class="btn btn-readmore" style="padding: 6px 48px; justify-content: center;">Read More</button>
         </div>
 </div>
 
@@ -139,7 +139,8 @@
 
 <!-- ---------------------------------------------------------------seccion de precios----------------------------------------------------->
 <!-- Sección de Precios -->
-<section class="section" id="pricing_section">
+<section>
+  <div class="section" id="pricing_section">
   <div class="cards_plancontainer">
     <div class="row justify-content-center"> <!-- Asegura que las columnas se centren -->
     
@@ -189,7 +190,22 @@
         </div>
       </div>
 
+    </div>
+  </div>
+  </section>
 
+<section class="section" id="comentarios">
+      <div class="planes_text" style= "color: white; margin-top:50px; margin-bottom: 30px">What our customers think about us?</div>
+
+      
+
+
+
+</div>
+</div>
 
 </section>
+
+
+
 @endsection

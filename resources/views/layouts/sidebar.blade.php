@@ -18,47 +18,57 @@
 
 </head>
 <body>
-    <div class="wrapper">
-        <aside id="sidebar">
+    <div class="wrapper d-flex">
+        <!-- Sidebar -->
+        <aside id="sidebar" class="d-flex flex-column">
+            <div class="sidebar-logo">
+                <h3>EventCreations</h3>
+            </div>
             <div class="d-flex">
                 <button id="toggle-btn" type="button">
                     <i class="lni lni-dashboard-square-1"></i>
                 </button>
-                <div class="sidebar-logo">
-                    <a href="#">
-                        <i class="lni lni-www"></i>
-                        <span>EventCreations</span>
-                    </a>
-                </div>
             </div>
             <ul class="sidebar-nav">
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link">
+                    <a href="#" class="sidebar-link" data-route="{{ route('my-home') }}">
                         <i class="lni lni-home-2"></i>
                         <span>Home</span>
                     </a>
                 </li>
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link">
+                    <a href="#" class="sidebar-link" data-route="{{ route('my-events') }}">
                         <i class="lni lni-agenda"></i>
                         <span>My Events</span>
                     </a>
                 </li>
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link">
+                    <a href="#" class="sidebar-link" data-route="{{ route('my-notes') }}">
                         <i class="lni lni-pen-to-square"></i>
                         <span>Notes</span>
                     </a>
                 </li>
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link">
+                    <a href="#" class="sidebar-link" data-route="{{ route('my-schedule') }}">
                         <i class="lni lni-calendar-days"></i>
                         <span>Schedule</span>
                     </a>
                 </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link" data-route="{{ route('my-home') }}">
+                        <i class="lni lni-gear-1"></i>
+                        <span>Settings</span>
+                    </a>
+                </li>
             </ul>
         </aside>
-    </div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-@yield('content')
+        <!-- Main Content -->
+         <div id="main-content" class="flex-grow-1">
+            @yield('content')
+         </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="{{ asset('js/dashboard.js') }}"></script>
+</body>
+</html>

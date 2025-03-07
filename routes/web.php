@@ -1,8 +1,10 @@
 <?php
 
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\RoleController;
 use Illuminate\Support\Facades\Route;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -38,12 +40,26 @@ Auth::routes();
 // Ruta del dashboard o home después del login
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-// Nueva ruta para home.blade.php
-Route::get('/my-home', function () {
-    return view('home');
-});
 
-// Ruta de prueba
+
+/*
+|--------------------------------------------------------------------------
+| Temp Routes
+|--------------------------------------------------------------------------
+| Here are some temporary routes for testing purposes.
+| These routes will be removed in the final version of the project.
+*/
+
+// Test Route
 Route::get('/test', function () {
     return view('test');
 });
+
+// Dashboard Routes
+Route::get('/test-home', [DashboardController::class, 'dashboard'])->name('dashboard');
+Route::get('/my-home', [DashboardController::class, 'home'])->name('my-home');
+Route::get('/my-events', [DashboardController::class, 'events'])->name('my-events');
+Route::get('/my-notes', [DashboardController::class, 'notes'])->name('my-notes');
+Route::get('/my-schedule', [DashboardController::class, 'schedule'])->name('my-schedule');
+Route::get('/my-settings', [DashboardController::class, 'settings'])->name('my-settings');
+

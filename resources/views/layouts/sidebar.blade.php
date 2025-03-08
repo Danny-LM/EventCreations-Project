@@ -30,34 +30,74 @@
                 </button>
             </div>
             <ul class="sidebar-nav">
+                
+                <!-- Overview Page -->
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link" data-route="{{ route('my-home') }}">
+                    <a href="#" class="sidebar-link" data-route="{{ route('my-home') }}" aria-label="Go to Home">
                         <i class="lni lni-home-2"></i>
                         <span>Home</span>
                     </a>
                 </li>
+
+                <!-- User Management -->
+                <li class="sidebar-item"> <!-- (Admin Only) -->
+                    <a href="#" class="sidebar-link" data-route="{{ route('my-home') }}"> <!-- (modify later) -->
+                        <i class="lni lni-user-multiple-4"></i>
+                        <span>Users [Admin]</span>
+                    </a>
+                </li>
+                <li class="sidebar-item"> <!-- (Admin Only) -->
+                    <a href="#" class="sidebar-link" data-route="{{ route('my-home') }}"> <!-- (modify later) -->
+                        <i class="lni lni-shield-2-check"></i>
+                        <span>Roles & Permissions [Admin]</span>
+                    </a>
+                </li>
+
+                <!-- Event Management -->
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link" data-route="{{ route('my-events') }}">
+                    <a href="#" class="sidebar-link" data-route="{{ route('my-events') }}" aria-label="Go to Your Events">
                         <i class="lni lni-agenda"></i>
                         <span>My Events</span>
                     </a>
                 </li>
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link" data-route="{{ route('my-notes') }}">
+                    <a href="#" class="sidebar-link" data-route="{{ route('my-notes') }}" aria-label="Go to Your Notes">
                         <i class="lni lni-pen-to-square"></i>
                         <span>Notes</span>
                     </a>
                 </li>
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link" data-route="{{ route('my-schedule') }}">
+                    <a href="#" class="sidebar-link" data-route="{{ route('my-schedule') }}" aria-label="Go to Your Schedule">
                         <i class="lni lni-calendar-days"></i>
                         <span>Schedule</span>
                     </a>
                 </li>
+
+                <!-- Analytics & Reports -->
+                <li class="sidebar-item"> <!-- (Admin Only) -->
+                    <a href="#" class="sidebar-link" data-route="{{ route('my-home') }}"> <!-- (modify later) -->
+                        <i class="lni lni-bar-chart-4"></i>
+                        <span>Analytics [Admin]</span>
+                    </a>
+                </li>
+                <li class="sidebar-item"> <!-- (Admin Only) -->
+                    <a href="#" class="sidebar-link" data-route="{{ route('my-home') }}"> <!-- (modify later) -->
+                        <i class="lni lni-file-multiple"></i>
+                        <span>Reports [Admin]</span>
+                    </a>
+                </li>
+
+                <!-- Support & Help -->
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link" data-route="{{ route('my-home') }}">
-                        <i class="lni lni-gear-1"></i>
-                        <span>Settings</span>
+                    <a href="#" class="sidebar-link" data-route="{{ route('my-home') }}"> <!-- (modify later) -->
+                        <i class="lni lni-question-mark"></i>
+                        <span>Support</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link" data-route="{{ route('my-home') }}"> <!-- (modify later) -->
+                        <i class="lni lni-book-1"></i>
+                        <span>Documentation</span>
                     </a>
                 </li>
             </ul>

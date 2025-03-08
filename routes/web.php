@@ -61,5 +61,3 @@ Route::get('/my-home', [DashboardController::class, 'home'])->name('my-home');
 Route::get('/my-events', [DashboardController::class, 'events'])->name('my-events');
 Route::get('/my-notes', [DashboardController::class, 'notes'])->name('my-notes');
 Route::get('/my-schedule', [DashboardController::class, 'schedule'])->name('my-schedule');
-Route::get('/my-settings', [DashboardController::class, 'settings'])->name('my-settings');
-

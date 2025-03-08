@@ -32,9 +32,4 @@ class DashboardController extends Controller
     {
         return view('partials.user.schedule');
     }
-
-    public function settings()
-    {
-        return view('partials.user.settings');
-    }
 }

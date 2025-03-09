@@ -1,56 +1,50 @@
-<link rel="stylesheet" href="/css/custom.css">
-
 <section class="main-contents">
   <!----------------------------------- Header ----------------------------------->
   <div class="header-background">
-    <!-- Background -->
-    <div class="header-overlay"></div>
-    <div class="container">
-      <!-- Dynamic Messaje -->
-      <div class="header-content text-center">
-        <h2 id="dynamic-message">Bienvenido a EventCreations</h2>
+    <div class="container position-relative">
+      <!-- Dynamic Message -->
+      <div class="header-content">
+        <h2 id="dynamic-message">Welcome to EventCreations!</h2>
       </div>
-      <!-- Search Bar -->
-      <div class="search-bar">
-        <form class="d-flex search-form">
-          <div class="search-box">
-            <span class="search-icon">
-              <i class="lni lni-search-1"></i>
-            </span>
-            <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search">
+
+      <div class="header-nav">
+        <div class="d-flex align-items-center">
+          <!-- Search Bar -->
+          <div class="search-bar me-3">
+            <form class="d-flex search-form">
+              <div class="search-box">
+                <span class="search-icon">
+                  <i class="lni lni-search-1"></i>
+                </span>
+                <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search">
+              </div>
+            </form>
           </div>
-        </form>
-      </div>
-      <!-- Buttons & User Profile -->
-      <div class="header-home-buttons">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <!-- Theme Toggle -- >
-          <li class="nav-item">
-            <a class="nav-link active theme-toggle" aria-current="page" href="#">
-              <i class="lni lni-sun-1 theme-icon-light"></i> < !-- Light Icon Theme -- >
-              <i class="lni lni-moon-half-right-5 theme-icon-dark" style="display: none;"></i> < !-- Dark Icon Theme -- >
-            </a>
-          </li> -->
-          <!-- Settings -->
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">
-              <i class="lni lni-gear-1"></i>
-            </a>
-          </li>
-          <!-- Notifications -->
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">
-              <i class="lni lni-bell-1"></i>
-            </a>
-          </li>
-          <!-- User Profile -->
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">
-              <i class="lni lni-user-4"></i>
-              <span class="d-none d-sm-inline">My Profile</span>
-            </a>
-          </li>
-        </ul>
+
+          <!-- Nav Buttons -->
+          <div class="header-home-buttons">
+            <ul class="navbar-nav d-flex flex-row">
+              <!-- Settings -->
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="lni lni-gear-1"></i>
+                </a>
+              </li>
+              <!-- Notifications -->
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="lni lni-bell-1"></i>
+                </a>
+              </li>
+              <!-- User Profile -->
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="lni lni-user-4"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -220,4 +214,4 @@
 
 </section>
 <script src="{{ asset('js/dynamic-messages.js') }}"></script>
-<!-- <script src="{{ asset('js/themes.js') }}"></script> -->
+<script src="{{ asset('js/themes.js') }}"></script>

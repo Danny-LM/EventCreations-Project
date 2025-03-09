@@ -1,7 +1,8 @@
 
 // Dynamic messages
 const messages = [
-    "Welcome to EventCreations!"
+    "Welcome to EventCreations!",
+    "Check your lists, a great event is about to begin!"
 ];
 
 // Select the element to change

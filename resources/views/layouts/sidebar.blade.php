@@ -21,13 +21,13 @@
     <div class="wrapper d-flex">
         <!-- Sidebar -->
         <aside id="sidebar" class="d-flex flex-column">
-            <div class="sidebar-logo">
-                <h3>EventCreations</h3>
-            </div>
             <div class="d-flex">
                 <button id="sidebar-toggle-btn" type="button">
                     <i class="lni lni-dashboard-square-1"></i>
                 </button>
+                <div class="sidebar-logo">
+                    <h3>EventCreations</h3>
+                </div>
             </div>
             <ul class="sidebar-nav">
                 

@@ -1,4 +1,11 @@
 // dashboard.js
+const hamBurger = document.querySelector("#sidebar-toggle-btn");
+
+hamBurger.addEventListener("click", function () {
+    console.log("clicked");
+    document.querySelector("#sidebar").classList.toggle("expand");
+});
+
 
 // Wait for the DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', function () {

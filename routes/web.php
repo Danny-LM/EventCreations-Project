@@ -23,7 +23,7 @@ Route::get('/', function () {
 })->name('index');
 
 // Rutas de autenticación personalizadas
-Route::get('/logados', [AuthController::class, 'logados'])->name('logados'); // Vista después del login
+//Route::get('/logados', [AuthController::class, 'logados'])->name('logados'); // Vista después del login
 Route::post('/login', [AuthController::class, 'login'])->name('login'); // Procesa el login
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout'); // Cierra sesión
 

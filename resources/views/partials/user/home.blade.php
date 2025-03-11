@@ -5,7 +5,7 @@
     <div class="container position-relative">
       <!-- Dynamic Message -->
       <div class="header-content">
-        <h2 id="dynamic-message">Welcome to EventCreations!</h2>
+        <h2 class="dash-home-text" id="dynamic-message">Welcome to EventCreations!</h2>
       </div>
 
       <div class="header-nav">

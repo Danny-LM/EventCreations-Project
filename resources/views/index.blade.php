@@ -9,24 +9,30 @@
  <!-- HeroSection -->
   <!-- HeroSection -->
 
-<section class="section" id="hero-section">
+  <section class="section" id="hero-section">
   <div class="container">
-    <div class="container">
-      <h1 class="h1-text">
-        "Create unique moments<br>quickly and easily."
-      </h1>
-      <p class="paragraph-text">
-        With Event Creations, turn your ideas into unforgettable events<br>with smart organization and unlimited creativity.
-      </p>
-      <div class="container">
-        <button class="btn btn-primary" style="padding: 6px 48px;" onclick="window.location.href='{{ route('register') }}'">Create Account</button>
-        <button class="btn btn-secondary" style="padding: 6px 48px;">About Us</button>
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h1 class="h1-text" style= "margin-bottom: 30px">
+          "Create unique moments<br>quickly and easily."
+        </h1>
+        <p class="paragraph-text" style= "margin-bottom: 30px">
+          With Event Creations, turn your ideas into unforgettable events<br>with smart organization and unlimited creativity.
+        </p>
+        <div>
+          <button class="btn btn-primary" style="padding: 6px 48px;" onclick="window.location.href='{{ route('register') }}'">Create Account</button>
+          <button class="btn btn-secondary" style="padding: 6px 48px;">About Us</button>
+        </div>
       </div>
-    </div>
-    <div class="container">
-      <img src="https://placehold.jp/250x250.png" alt="" class="">
-    </div>
+      <div class="col-md-6 text-center">
+        <div class="HeroImg">
+        <img src="/images/CalendarioPrincipal.svg">   
+        </div>
+        
+      </div>
 </div>
+          <div class="triangle"></div>
+        </div>
 </section>
 
 <!-- ---------------------------------------------------------------seccion de servicios----------------------------------------------------->
@@ -41,7 +47,6 @@
 
 <div class="cards-container">
   <div class="row g-4">
-   
   <div class="col-lg-4 col-md-6">
       <div class="card card-medium">
         <div class="icon">
@@ -118,7 +123,7 @@
         efficiently, while maintaining control at all times.</p>
         <div class="linea1">
         <img src="/images/Calendario_logo_blanco.svg" alt="Icono Invitations">
-         <button class="btn btn-readmore" style="padding: 6px 48px; justify-content: center;">Read More</button>
+         <button class="btn btn-readmore" style="padding: 6px 48px">Read More</button>
         </div>
 </div>
 
@@ -197,9 +202,45 @@
 <section class="section" id="comentarios">
       <div class="planes_text" style= "color: white; margin-top:50px; margin-bottom: 30px">What our customers think about us?</div>
 
-      
+      <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
+  
 
+<body>
+      <div class="swiper mySwiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">1</div>
+    <div class="swiper-slide">2</div>
+    <div class="swiper-slide">3</div>
+    <div class="swiper-slide">4</div>
+    <div class="swiper-slide">5</div>
+  </div>
+  <div class="swiper-pagination"></div>
+</div>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    cssMode: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+    },
+    mousewheel: true,
+    keyboard: true,
+  });
+</script>
+</body>
 
 </div>
 </div>

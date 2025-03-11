@@ -1,4 +1,5 @@
-<section class="main-contents">
+
+<section class="dashboard-home">
   <!----------------------------------- Header ----------------------------------->
   <div class="header-background">
     <div class="container position-relative">
@@ -51,12 +52,12 @@
 
   <!----------------------------------- Cards Nose ----------------------------------->
   <div class="d-flex flex-wrap gap-3">
-    <div class="custom-card">
+    <li class="custom-card">
       <span>Birthday</span>
       <div class="icon-circle">
           <i class="lni lni-cake-1"></i>
       </div>
-    </div>
+    </li>
 
     <div class="custom-card">
       <span>Wedding</span>

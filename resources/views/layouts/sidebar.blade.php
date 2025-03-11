@@ -41,13 +41,13 @@
 
                 <!-- User Management -->
                 <li class="sidebar-item"> <!-- (Admin Only) -->
-                    <a href="#" class="sidebar-link" data-route="{{ route('my-home') }}"> <!-- (modify later) -->
+                    <a href="#" class="sidebar-link" data-route="{{ route('my-users') }}"> <!-- (modify later) -->
                         <i class="lni lni-user-multiple-4"></i>
                         <span>Users [Admin]</span>
                     </a>
                 </li>
                 <li class="sidebar-item"> <!-- (Admin Only) -->
-                    <a href="#" class="sidebar-link" data-route="{{ route('my-home') }}"> <!-- (modify later) -->
+                    <a href="#" class="sidebar-link" data-route="{{ route('permissions') }}"> <!-- (modify later) -->
                         <i class="lni lni-shield-2-check"></i>
                         <span>Roles & Permissions [Admin]</span>
                     </a>
@@ -75,13 +75,13 @@
 
                 <!-- Analytics & Reports -->
                 <li class="sidebar-item"> <!-- (Admin Only) -->
-                    <a href="#" class="sidebar-link" data-route="{{ route('my-home') }}"> <!-- (modify later) -->
+                    <a href="#" class="sidebar-link" data-route="{{ route('my-analytics') }}"> <!-- (modify later) -->
                         <i class="lni lni-bar-chart-4"></i>
                         <span>Analytics [Admin]</span>
                     </a>
                 </li>
                 <li class="sidebar-item"> <!-- (Admin Only) -->
-                    <a href="#" class="sidebar-link" data-route="{{ route('my-home') }}"> <!-- (modify later) -->
+                    <a href="#" class="sidebar-link" data-route="{{ route('my-reports') }}"> <!-- (modify later) -->
                         <i class="lni lni-file-multiple"></i>
                         <span>Reports [Admin]</span>
                     </a>
@@ -89,13 +89,13 @@
 
                 <!-- Support & Help -->
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link" data-route="{{ route('my-home') }}"> <!-- (modify later) -->
+                    <a href="#" class="sidebar-link" data-route="{{ route('support') }}"> <!-- (modify later) -->
                         <i class="lni lni-question-mark"></i>
                         <span>Support</span>
                     </a>
                 </li>
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link" data-route="{{ route('my-home') }}"> <!-- (modify later) -->
+                    <a href="#" class="sidebar-link" data-route="{{ route('my-documentation') }}"> <!-- (modify later) -->
                         <i class="lni lni-book-1"></i>
                         <span>Documentation</span>
                     </a>

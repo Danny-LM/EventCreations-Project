@@ -61,3 +61,10 @@ Route::get('/my-home', [DashboardController::class, 'home'])->name('my-home');
 Route::get('/my-events', [DashboardController::class, 'events'])->name('my-events');
 Route::get('/my-notes', [DashboardController::class, 'notes'])->name('my-notes');
 Route::get('/my-schedule', [DashboardController::class, 'schedule'])->name('my-schedule');
+Route::get('/support', [DashboardController::class, 'support'])->name('support');
+Route::get('/my-documentation', [DashboardController::class, 'documentation'])->name('my-documentation');
+
+Route::get('/my-users', [DashboardController::class, 'users'])->name('my-users');
+Route::get('/permissions', [DashboardController::class, 'permissions'])->name('permissions');
+Route::get('/my-analytics', [DashboardController::class, 'analytics'])->name('my-analytics');
+Route::get('/my-reports', [DashboardController::class, 'reports'])->name('my-reports');

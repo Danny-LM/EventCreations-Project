@@ -15,6 +15,7 @@
     /* Tokens */
     /* Basic */
     --bg-primary: var(--color-midnight-purple);
+
     --sidebar-bg: var(--color-midnight-purple);
     --dashboard-bg: var(--color-off-white);
 

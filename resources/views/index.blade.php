@@ -28,7 +28,6 @@
         <div class="HeroImg">
         <img src="/images/CalendarioPrincipal.svg">   
         </div>
-        
       </div>
 </div>
           <div class="triangle"></div>
@@ -209,8 +208,6 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
   
-
-<body>
       <div class="swiper mySwiper">
   <div class="swiper-wrapper">
     <div class="swiper-slide">1</div>

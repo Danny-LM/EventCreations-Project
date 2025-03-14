@@ -7,8 +7,8 @@
 
 /* Seccionado de Home page */
 
-
 /* Primera seccion homepage */
+
 #hero-section {
     background-color: var(--primary-color);
     height: 90vh;
@@ -24,11 +24,39 @@
     border-bottom: 124px solid var(--color-royal-violet);
     display: inline-block;
     position: relative;
-    top: 12.8vh;
-    left: 95vh;
+    bottom: -90px;
+    left: 672px;
     box-shadow: 5px 4px 2px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease-in-out;
-  }
+}
+
+@media (max-width: 1200px) {
+    .triangle {
+        border-left: 600px solid transparent;
+        border-bottom: 100px solid var(--color-royal-violet);
+    }
+}
+
+@media (max-width: 992px) {
+    .triangle {
+        border-left: 500px solid transparent;
+        border-bottom: 80px solid var(--color-royal-violet);
+    }
+}
+
+@media (max-width: 768px) {
+    .triangle {
+        border-left: 400px solid transparent;
+        border-bottom: 60px solid var(--color-royal-violet);
+    }
+}
+
+@media (max-width: 576px) {
+    .triangle {
+        border-left: 300px solid transparent;
+        border-bottom: 50px solid var(--color-royal-violet);
+    }
+}
 
   @media (max-width: 768px) {
     .HeroImg {
@@ -38,31 +66,31 @@
 
 
 #primera_presentacion {
-    background-size: cover;
-    background-position: center;
-    padding: 0px 30px;
     margin-top: 150px;
-}
+    background-color: var(--color-white);
+    padding: 0px 30px;
+    background-position: center;
+    
+}    
 
 /* Seccion de Herramientas */
 #tools {
-    background-size: cover;
-    background-position: center;
-    padding: 0px 30px;
     margin-top: 50px;
+    background-color:   var(--color-white);
+    padding: 0px 30px;
+    background-position: center;
     padding-bottom: var(--padding-large);
+    background-size: cover;
 }
 
 #media {
     background-color: var(--primary-color);
-    background-size: cover;
     background-position: center;
     padding: var(--padding-medium);
 }
 
 #planes_section {
     background-color: var(--light-gray);
-    background-size: cover;
     background-position: center;
     padding: 20px 30px;
 }
@@ -317,38 +345,3 @@
     align-items: center;
 }
 
-
-body {
-    position: relative;
-    height: 100%;
-  }
-  
-  body {
-    background: #eee;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    color: #000;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .swiper {
-    width: 100%;
-    height: 100%;
-  }
-  
-  .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }

@@ -1,9 +1,10 @@
-<!----------------------------------- Nav Bar----------------------------------->
-<section>
-</section>
+<section class="dashboard-events">
+  <!----------------------------------- Header ----------------------------------->
+  <div class="container">
+    <x-header></x-header>
+  </div>
 
 <!----------------------------------- Dashboard ----------------------------------->
-<section class="main-content">
   <div class="container">
     <h1>Bienvenido a tus Eventos</h1>
   </div>

@@ -113,6 +113,16 @@
     padding: var(--padding-medium);
 }
 
+#contacto {
+    background-color: var(--primary-color);
+    background-position: center;
+    padding-bottom: var(--padding-large);
+    background-size: cover;
+    margin-top: 50px;
+}
+
+
+
 /*-----------------------------------  Buttons -----------------------------------  */
 
 
@@ -345,3 +355,55 @@
     align-items: center;
 }
 
+/*-----------------------------------  Planes cards -----------------------------------  */
+
+
+
+/*Contenedor del Slider*/
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    background: var(--color-midnight-purple);
+    padding: 20px;
+}
+
+
+/*Contenedor de las Slides*/
+.slides {
+    display: flex;
+    justify-content: center;
+    transition: transform 0.5s ease-in-out;
+}
+
+
+/* Estilo de las Cards */
+.card {
+    flex: 0 0 33.3333%; /* Cada card ocupa un tercio del ancho del contenedor */
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: black;
+    margin: 0 20px; /* Espacio entre las cards */
+    height: 225px;
+}
+
+/*Botones para los sliders*/
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 35px;
+    z-index: 1;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }

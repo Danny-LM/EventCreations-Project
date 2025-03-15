@@ -1,9 +1,10 @@
-<!----------------------------------- Nav Bar----------------------------------->
-<section>
-</section>
+<section class="dashboard-home">
+  <!----------------------------------- Header ----------------------------------->
+  <div class="container">
+      <x-header></x-header>
+  </div>
 
 <!----------------------------------- Dashboard ----------------------------------->
-<section class="main-content">
   <div class="container">
     <h1>Welcome to your support page</h1>
   </div>

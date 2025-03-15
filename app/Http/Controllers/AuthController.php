@@ -67,7 +67,7 @@ class AuthController extends Controller
         $credentials = $request->only('email', 'password');
 
         if (Auth::attempt($credentials)) {
-            return redirect()->intended('logados')->withSuccess('Inicio de sesión exitoso');
+            return redirect()->intended('home')->withSuccess('Inicio de sesión exitoso');
         }
 
         return redirect("/")->withErrors(['email' => 'Los datos introducidos no son correctos']); // Se usa withErrors para mostrar errores correctamente

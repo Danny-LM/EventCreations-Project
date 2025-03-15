@@ -1,0 +1,117 @@
+:root {
+    /* Primitive Colors */
+    --color-white: #ffffff;
+    --color-off-white: #fafbfe;
+    --color-steel-gray: #979797;
+    --color-black: #000000;
+
+    /* Primary Colors */
+    --color-royal-violet: #BB6BD9;
+    --color-majestic-purple: #9C42B3;
+    --color-imperial-plum: #7D1F94;
+    --color-midnight-purple: #221D4F;
+    --test: var(--color-black); /* Test color */
+
+    /* Tokens */
+    /* Basic */
+    --bg-primary: var(--color-midnight-purple);
+
+    --sidebar-bg: var(--color-midnight-purple);
+    --dashboard-bg: var(--color-off-white);
+
+    /* Corner */
+    --corner-xs: 4px;
+    --corner-sm: 8px;
+    --corner-md: 12px;
+    --corner-lg: 16px;
+    --corner-xl: 20px;
+    --corner-xxl: 24px;
+
+    /* Border */
+    --border-xs: 1px;
+    --border-sm: 2px;
+    --border-md: 4px;
+    --border-lg: 8px;
+    --border-xl: 12px;
+    --border-xxl: 16px;
+
+    /* Padding */
+    --padding-xs: 4px;
+    --padding-sm: 8px;
+    --padding-md: 12px;
+    --padding-lg: 16px;
+    --padding-xl: 20px;
+    --padding-xxl: 24px;
+
+    /* Text Sizes */
+    --ui-text: 16px;
+    --paragraph-sm: 14px;
+    --paragraph-md: 16px;
+    --paragraph-lg: 20px;
+    --h3-text-size: 24px;
+    --h2-text-size: 28px;
+    --h1-text-size: 34px;
+
+    /* Text Color */
+    --color-text-primary: var(--color-white);
+    --color-text-secondary: var(--color-black);
+
+    /* Font Family */
+    --font-family-primary: 'Poppins', sans-serif;
+
+    /* Font Weights */
+    --font-weight-light: 300;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+
+    /* Text Styles */
+    --text-underline: underline;
+
+    /* Button Color Tokens */
+    --btn-primary-bg: var(--color-royal-violet);
+    --btn-primary-label: var(--color-white);
+    --btn-primary-border: var(--color-royal-violet);
+    --btn-primary-bg-hover: var(--color-majestic-purple);
+    --btn-primary-label-hover: var(--color-white);
+    --btn-primary-bg-active: var(--color-imperial-plum);
+    --btn-primary-bg-disabled: var();
+    --btn-primary-label-disabled: var();
+    --btn-secondary-bg-disabled: var();
+    --btn-secondary-label-disabled: var();
+    --focus-ring-primary: var();
+    --focus-ring-secondary: var();
+
+    /* 🎨 Colores */
+    --primary-color: #221D4F;
+    --secondary-color: #BB6BD9;
+    --light-gray: #E6E8EA;
+    --white: #FFFFFF;
+    --black: #000000;
+    --text-primary: #FFFFFF;
+    --text-secondary: #000000;
+    --btn-hover: #221D4F;
+
+    /* 📏 Espaciado */
+    --padding-small: 6px 48px;
+    --padding-medium: 50px 30px;
+    --padding-large: 150px;
+
+    /* 📐 Tamaños de fuente */
+    --h1-size: 50px;
+    --h2-size: 55px;
+    --h3-size: 24px;
+    --paragraph-size: 18px;
+    --text-regular: 16px;
+    --text-large: 40px;
+    --text-extra-large: 45px;
+
+    /* 🔠 Tipografías */
+    --font-primary: 'Poppins', sans-serif;
+
+    /* 🎭 Sombras */
+    --box-shadow: 5px 4px 2px rgba(0, 0, 0, 0.1);
+
+    /* 🟦 Bordes */
+    --border-radius: 22px;
+}

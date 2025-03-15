@@ -5,8 +5,8 @@
 
 /* Seccionado de Home page */
 
-
 /* Primera seccion homepage */
+
 #hero-section {
     background-color: var(--primary-color);
     height: 90vh;
@@ -22,11 +22,39 @@
     border-bottom: 124px solid var(--color-royal-violet);
     display: inline-block;
     position: relative;
-    top: 12.8vh;
-    left: 95vh;
+    bottom: -90px;
+    left: 672px;
     box-shadow: 5px 4px 2px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease-in-out;
-  }
+}
+
+@media (max-width: 1200px) {
+    .triangle {
+        border-left: 600px solid transparent;
+        border-bottom: 100px solid var(--color-royal-violet);
+    }
+}
+
+@media (max-width: 992px) {
+    .triangle {
+        border-left: 500px solid transparent;
+        border-bottom: 80px solid var(--color-royal-violet);
+    }
+}
+
+@media (max-width: 768px) {
+    .triangle {
+        border-left: 400px solid transparent;
+        border-bottom: 60px solid var(--color-royal-violet);
+    }
+}
+
+@media (max-width: 576px) {
+    .triangle {
+        border-left: 300px solid transparent;
+        border-bottom: 50px solid var(--color-royal-violet);
+    }
+}
 
   @media (max-width: 768px) {
     .HeroImg {
@@ -36,31 +64,31 @@
 
 
 #primera_presentacion {
-    background-size: cover;
-    background-position: center;
-    padding: 0px 30px;
     margin-top: 150px;
-}
+    background-color: var(--color-white);
+    padding: 0px 30px;
+    background-position: center;
+    
+}    
 
 /* Seccion de Herramientas */
 #tools {
-    background-size: cover;
-    background-position: center;
-    padding: 0px 30px;
     margin-top: 50px;
+    background-color:   var(--color-white);
+    padding: 0px 30px;
+    background-position: center;
     padding-bottom: var(--padding-large);
+    background-size: cover;
 }
 
 #media {
     background-color: var(--primary-color);
-    background-size: cover;
     background-position: center;
     padding: var(--padding-medium);
 }
 
 #planes_section {
     background-color: var(--light-gray);
-    background-size: cover;
     background-position: center;
     padding: 20px 30px;
 }
@@ -81,6 +109,221 @@
     background-size: cover;
     background-position: center;  
     padding: var(--padding-medium);
+}
+
+#contacto {
+    background-color: var(--primary-color);
+    background-position: center;
+    padding-bottom: var(--padding-large);
+    background-size: cover;
+    margin-top: 50px;
+}
+
+
+
+/*-----------------------------------  Buttons -----------------------------------  */
+/*-----------------------------------  Sidebar -----------------------------------  */
+::after,
+::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    display: flex;
+}
+
+#main-content {
+    background-color: var(--dashboard-bg);
+
+    min-height: 100vh;
+    width: 100%;
+
+    margin-left: 70px;
+
+    overflow: hidden;
+    transition: all 0.35s ease-in-out;
+}
+
+#sidebar {
+    background-color: var(--sidebar-bg);
+
+    height: 100vh;
+    width: 70px;
+    min-width: 70px;
+
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 1000;
+
+    transition: all .35s ease-in-out;
+}
+
+#sidebar.expand {
+    width: 300px;
+    min-width: 300px;
+}
+
+#sidebar.expand + #main-content {
+    padding-left: 240px;
+}
+
+#sidebar-toggle-btn {
+    background-color: transparent; /* Sets background color to transparent */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    border: 0; /* Removes border */
+    padding: 1rem 1.5rem; /* Adds padding */
+}
+
+#sidebar-toggle-btn i {
+    font-size: 1.5rem; /* Sets font size */
+    color: var(--text-primary); /* Sets text color using a CSS variable */
+}
+
+.sidebar-logo {
+    margin: auto 0; /* Centers the logo vertically */
+    color: var(--text-primary); /* Sets text color using a CSS variable */
+}
+
+.sidebar-logo a {
+    color: var(--text-primary); /* Sets link color using a CSS variable */
+    font-size: 1.15rem; /* Sets font size */
+    font-weight: 600; /* Sets font weight */
+}
+
+#sidebar:not(.expand) .sidebar-logo,
+#sidebar:not(.expand) a.sidebar-link span {
+    display: none; /* Hides elements when the sidebar is not expanded */
+}
+
+.sidebar-nav {
+    padding: 2rem 0; /* Adds padding to the top and bottom */
+    flex: 1 1 auto; /* Allows the nav to grow and shrink as needed */
+}
+
+a.sidebar-link {
+    padding: .625rem 1.625rem; /* Adds padding */
+    color: var(--text-primary); /* Sets link color using a CSS variable */
+    display: block; /* Displays the link as a block element */
+    font-size: 0.9rem; /* Sets font size */
+    white-space: nowrap; /* Prevents text from wrapping */
+    border-left: 3px solid transparent; /* Adds a transparent left border */
+    text-decoration: none; /* Removes underline from links */
+}
+
+.sidebar-link i {
+    font-size: 1.1rem; /* Sets font size */
+    margin-right: .75rem; /* Adds right margin */
+    text-decoration: none; /* Removes underline from icons */
+}
+
+a.sidebar-link:hover {
+    background-color: rgba(255, 255, 255, .075); /* Sets background color on hover */
+    border-left: 3px solid var(--dashboard-bg); /* Changes left border color on hover */
+    text-decoration: none; /* Ensures no underline on hover */
+}
+
+a.sidebar-link:active {
+    background-color: rgba(255, 255, 255, .075); /* Sets background color when active */
+    border-left: 3px solid var(--dashboard-bg); /* Changes left border color when active */
+    font-weight: 500; /* Sets font weight when active */
+    text-decoration: none; /* Ensures no underline when active */
+}
+
+.sidebar-item {
+    position: relative; /* Sets position relative for positioning child elements */
+}
+
+#sidebar:not(.expand) .sidebar-item .sidebar-dropdown {
+    position: absolute; /* Positions dropdown absolutely within the sidebar item */
+    top: 0; /* Aligns dropdown to the top */
+    left: 70px; /* Positions dropdown to the right of the sidebar */
+    background-color: var(--sidebar-bg); /* Sets background color using a CSS variable */
+    padding: 0; /* Removes padding */
+    min-width: 15rem; /* Sets minimum width */
+    display: none; /* Hides dropdown by default */
+}
+
+#sidebar:not(.expand) .sidebar-item:hover .has-dropdown + .sidebar-dropdown {
+    display: block; /* Displays dropdown on hover */
+    max-height: 15em; /* Sets maximum height */
+    width: 100%; /* Sets width to 100% */
+    opacity: 1; /* Sets opacity to fully visible */
+}
+
+/*-----------------------------------  Dashboard Home -----------------------------------  */
+.header-background {
+    position: relative; /* Sets position relative for positioning child elements */
+    width: 100%; /* Sets width to 100% of the parent element */
+    height: 200px; /* Sets height */
+    background: linear-gradient(to right, #1c044d, #4d007d); /* Sets background gradient */
+    display: flex; /* Uses flexbox layout */
+    align-items: center; /* Centers items vertically */
+    justify-content: center; /* Centers items horizontally */
+    text-align: center; /* Centers text */
+}
+
+.header-content h2 {
+    font-size: 1.8rem; /* Sets font size */
+    font-weight: bold; /* Sets font weight */
+    color: white; /* Sets text color */
+    text-align: center; /* Centers text */
+}
+
+.header-nav {
+    position: absolute; /* Positions nav absolutely within the header */
+    top: -60px; /* Positions nav 60px above the top */
+    right: 20px; /* Positions nav 20px from the right */
+    display: flex; /* Uses flexbox layout */
+    align-items: center; /* Centers items vertically */
+    gap: 15px; /* Adds gap between items */
+}
+
+.header-home-buttons ul {
+    list-style: none; /* Removes default list styling */
+    padding: 0; /* Removes padding */
+    margin: 0; /* Removes margin */
+    display: flex; /* Uses flexbox layout */
+}
+
+.header-home-buttons li {
+    margin-left: 15px; /* Adds left margin */
+}
+
+.nav-link i {
+    font-size: 1.8rem; /* Sets font size */
+    color: white; /* Sets icon color */
+    transition: color 0.3s; /* Adds transition effect for color */
+}
+
+.nav-link:hover i {
+    color: #480075; /* Changes icon color on hover */
+}
+
+.search-bar {
+    margin-right: 10px; /* Adds right margin */
+}
+
+.search-box {
+    display: flex; /* Uses flexbox layout */
+    align-items: center; /* Centers items vertically */
+    background: white; /* Sets background color */
+    border-radius: 20px; /* Rounds corners */
+    padding: 5px 10px; /* Adds padding */
+    min-width: 80px; /* Sets minimum width */
+}
+
+.search-icon {
+    margin-right: 5px; /* Adds right margin */
+    color: #666; /* Sets icon color */
+}
+
+.search-box input {
+    border: none; /* Removes border */
+    outline: none; /* Removes outline */
+    width: 100%; /* Sets width to 100% of the parent element */
 }
 
 /*-----------------------------------  Sidebar -----------------------------------  */
@@ -516,38 +759,55 @@ a.sidebar-link:active {
     align-items: center;
 }
 
+/*-----------------------------------  Planes cards -----------------------------------  */
 
-body {
+
+
+/*Contenedor del Slider*/
+.slider {
     position: relative;
-    height: 100%;
-  }
-  
-  body {
-    background: #eee;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    color: #000;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .swiper {
     width: 100%;
-    height: 100%;
-  }
-  
-  .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
+    max-width: 100%;
+    overflow: hidden;
+    background: var(--color-midnight-purple);
+    padding: 20px;
+}
+
+
+/*Contenedor de las Slides*/
+.slides {
     display: flex;
     justify-content: center;
-    align-items: center;
-  }
-  
-  .swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+    transition: transform 0.5s ease-in-out;
+}
+
+
+/* Estilo de las Cards */
+.card {
+    flex: 0 0 33.3333%; /* Cada card ocupa un tercio del ancho del contenedor */
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: black;
+    margin: 0 20px; /* Espacio entre las cards */
+    height: 225px;
+}
+
+/*Botones para los sliders*/
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 35px;
+    z-index: 1;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }

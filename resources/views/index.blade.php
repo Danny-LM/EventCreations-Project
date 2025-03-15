@@ -28,7 +28,6 @@
         <div class="HeroImg">
         <img src="/images/CalendarioPrincipal.svg">   
         </div>
-        
       </div>
 </div>
           <div class="triangle"></div>
@@ -199,54 +198,58 @@
   </div>
   </section>
 
+<!-- ---------------------------------------------------------------seccion de contacto----------------------------------------------------->
 <section class="section" id="comentarios">
-      <div class="planes_text" style= "color: white; margin-top:50px; margin-bottom: 30px">What our customers think about us?</div>
 
-      <meta charset="utf-8" />
-  <title>Swiper demo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
-  <!-- Link Swiper's CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+      <div class="planes_text" style= "margin-top:50px; margin-bottom: 80px; color: #ffffff;">What our customers think about us?</div>
 
-  
+<div class="slider">
+        <div class="slides">
+            <div class="card">
+                <p>"La mejor experiencia que he tenido, totalmente recomendado."</p>
+                <strong>Juan Pérez</strong><br>
+                <small>Cliente satisfecho</small>
+            </div>
+            <div class="card">
+                <p>"Increíble servicio, atención personalizada y mucha dedicación. Volveré sin dudarlo."</p>
+                <strong>María López</strong><br>
+                <small>Compradora frecuente</small>
+            </div>
+            <div class="card">
+                <p>"Superaron mis expectativas, el diseño y calidad de los productos es excelente."</p>
+                <strong>Carlos Méndez</strong><br>
+                <small>Empresario</small>
+            </div>
+            <!-- Agrega más cards aquí si es necesario -->
+        </div>
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+    </div>
 
-<body>
-      <div class="swiper mySwiper">
-  <div class="swiper-wrapper">
-    <div class="swiper-slide">1</div>
-    <div class="swiper-slide">2</div>
-    <div class="swiper-slide">3</div>
-    <div class="swiper-slide">4</div>
-    <div class="swiper-slide">5</div>
-  </div>
-  <div class="swiper-pagination"></div>
-</div>
+    <button class="btn-secondary" style="border:none; position: absolute; left: 82%"> + Add a testimonial</button>
 
-<!-- Swiper JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+    let index = 0;
+    const slides = document.querySelector(".slides");
+    const totalSlides = document.querySelectorAll(".card").length;
+    const slidesToShow = 3; // Número de slides a mostrar
+    const slideWidth = 100 / slidesToShow; // Ancho de cada slide en porcentaje
 
-<!-- Initialize Swiper -->
-<script>
-  var swiper = new Swiper(".mySwiper", {
-    cssMode: true,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    pagination: {
-      el: ".swiper-pagination",
-    },
-    mousewheel: true,
-    keyboard: true,
-  });
+    document.querySelector(".prev").addEventListener("click", () => moveSlide(-1));
+    document.querySelector(".next").addEventListener("click", () => moveSlide(1));
+
+    function moveSlide(step) {
+        index = (index + step + totalSlides) % totalSlides;
+        slides.style.transform = `translateX(-${index * slideWidth}%)`;
+    }
 </script>
-</body>
-
-</div>
-</div>
 
 </section>
 
+<section class="section" id="contacto">
+      
+      <div class="alltext" style="color: white">Whether your time-saving aut</div>
+      </div>
 
-
+</section>
 @endsection

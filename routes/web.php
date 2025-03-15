@@ -1,8 +1,10 @@
 <?php
 
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\RoleController;
 use Illuminate\Support\Facades\Route;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -21,7 +23,7 @@ Route::get('/', function () {
 })->name('index');
 
 // Rutas de autenticación personalizadas
-Route::get('/logados', [AuthController::class, 'logados'])->name('logados'); // Vista después del login
+//Route::get('/logados', [AuthController::class, 'logados'])->name('logados'); // Vista después del login
 Route::post('/login', [AuthController::class, 'login'])->name('login'); // Procesa el login
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout'); // Cierra sesión
 
@@ -38,12 +40,31 @@ Auth::routes();
 // Ruta del dashboard o home después del login
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-// Nueva ruta para home.blade.php
-Route::get('/my-home', function () {
-    return view('home');
-});
 
-// Ruta de prueba
+
+/*
+|--------------------------------------------------------------------------
+| Temp Routes
+|--------------------------------------------------------------------------
+| Here are some temporary routes for testing purposes.
+| These routes will be removed in the final version of the project.
+*/
+
+// Test Route
 Route::get('/test', function () {
     return view('test');
 });
+
+// Dashboard Routes
+Route::get('/test-home', [DashboardController::class, 'dashboard'])->name('dashboard');
+Route::get('/my-home', [DashboardController::class, 'home'])->name('my-home');
+Route::get('/my-events', [DashboardController::class, 'events'])->name('my-events');
+Route::get('/my-notes', [DashboardController::class, 'notes'])->name('my-notes');
+Route::get('/my-schedule', [DashboardController::class, 'schedule'])->name('my-schedule');
+Route::get('/support', [DashboardController::class, 'support'])->name('support');
+Route::get('/my-documentation', [DashboardController::class, 'documentation'])->name('my-documentation');
+
+Route::get('/my-users', [DashboardController::class, 'users'])->name('my-users');
+Route::get('/permissions', [DashboardController::class, 'permissions'])->name('permissions');
+Route::get('/my-analytics', [DashboardController::class, 'analytics'])->name('my-analytics');
+Route::get('/my-reports', [DashboardController::class, 'reports'])->name('my-reports');

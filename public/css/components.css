@@ -1,11 +1,10 @@
 /* Importar variables */
-@import url('variables.css');
-@import 'variables';
-@import 'buttons';
+@import 'variables.css';
 
 /* ----------------------------------- Sections ----------------------------------- */
 
 /* Seccionado de Home page */
+
 
 /* Primera seccion homepage */
 #hero-section {
@@ -15,6 +14,26 @@
     align-items: center;
     justify-content: center;
 }
+
+
+.triangle {
+    border-left: 730px solid transparent;
+    border-right: 0px solid transparent;
+    border-bottom: 124px solid var(--color-royal-violet);
+    display: inline-block;
+    position: relative;
+    top: 12.8vh;
+    left: 95vh;
+    box-shadow: 5px 4px 2px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+  }
+
+  @media (max-width: 768px) {
+    .HeroImg {
+        display: none;
+    }
+}
+
 
 #primera_presentacion {
     background-size: cover;
@@ -64,8 +83,209 @@
     padding: var(--padding-medium);
 }
 
-/*-----------------------------------  Buttons -----------------------------------  */
+/*-----------------------------------  Sidebar -----------------------------------  */
+::after,
+::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
+.wrapper {
+    display: flex;
+}
+
+#main-content {
+    background-color: var(--dashboard-bg);
+
+    min-height: 100vh;
+    width: 100%;
+
+    margin-left: 70px;
+
+    overflow: hidden;
+    transition: all 0.35s ease-in-out;
+}
+
+#sidebar {
+    background-color: var(--sidebar-bg);
+
+    height: 100vh;
+    width: 70px;
+    min-width: 70px;
+
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 1000;
+
+    transition: all .35s ease-in-out;
+}
+
+#sidebar.expand {
+    width: 300px;
+    min-width: 300px;
+}
+
+#sidebar.expand + #main-content {
+    padding-left: 240px;
+}
+
+#sidebar-toggle-btn {
+    background-color: transparent; /* Sets background color to transparent */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    border: 0; /* Removes border */
+    padding: 1rem 1.5rem; /* Adds padding */
+}
+
+#sidebar-toggle-btn i {
+    font-size: 1.5rem; /* Sets font size */
+    color: var(--text-primary); /* Sets text color using a CSS variable */
+}
+
+.sidebar-logo {
+    margin: auto 0; /* Centers the logo vertically */
+    color: var(--text-primary); /* Sets text color using a CSS variable */
+}
+
+.sidebar-logo a {
+    color: var(--text-primary); /* Sets link color using a CSS variable */
+    font-size: 1.15rem; /* Sets font size */
+    font-weight: 600; /* Sets font weight */
+}
+
+#sidebar:not(.expand) .sidebar-logo,
+#sidebar:not(.expand) a.sidebar-link span {
+    display: none; /* Hides elements when the sidebar is not expanded */
+}
+
+.sidebar-nav {
+    padding: 2rem 0; /* Adds padding to the top and bottom */
+    flex: 1 1 auto; /* Allows the nav to grow and shrink as needed */
+}
+
+a.sidebar-link {
+    padding: .625rem 1.625rem; /* Adds padding */
+    color: var(--text-primary); /* Sets link color using a CSS variable */
+    display: block; /* Displays the link as a block element */
+    font-size: 0.9rem; /* Sets font size */
+    white-space: nowrap; /* Prevents text from wrapping */
+    border-left: 3px solid transparent; /* Adds a transparent left border */
+    text-decoration: none; /* Removes underline from links */
+}
+
+.sidebar-link i {
+    font-size: 1.1rem; /* Sets font size */
+    margin-right: .75rem; /* Adds right margin */
+    text-decoration: none; /* Removes underline from icons */
+}
+
+a.sidebar-link:hover {
+    background-color: rgba(255, 255, 255, .075); /* Sets background color on hover */
+    border-left: 3px solid var(--dashboard-bg); /* Changes left border color on hover */
+    text-decoration: none; /* Ensures no underline on hover */
+}
+
+a.sidebar-link:active {
+    background-color: rgba(255, 255, 255, .075); /* Sets background color when active */
+    border-left: 3px solid var(--dashboard-bg); /* Changes left border color when active */
+    font-weight: 500; /* Sets font weight when active */
+    text-decoration: none; /* Ensures no underline when active */
+}
+
+.sidebar-item {
+    position: relative; /* Sets position relative for positioning child elements */
+}
+
+#sidebar:not(.expand) .sidebar-item .sidebar-dropdown {
+    position: absolute; /* Positions dropdown absolutely within the sidebar item */
+    top: 0; /* Aligns dropdown to the top */
+    left: 70px; /* Positions dropdown to the right of the sidebar */
+    background-color: var(--sidebar-bg); /* Sets background color using a CSS variable */
+    padding: 0; /* Removes padding */
+    min-width: 15rem; /* Sets minimum width */
+    display: none; /* Hides dropdown by default */
+}
+
+#sidebar:not(.expand) .sidebar-item:hover .has-dropdown + .sidebar-dropdown {
+    display: block; /* Displays dropdown on hover */
+    max-height: 15em; /* Sets maximum height */
+    width: 100%; /* Sets width to 100% */
+    opacity: 1; /* Sets opacity to fully visible */
+}
+
+/*-----------------------------------  Dashboard Home -----------------------------------  */
+.header-background {
+    position: relative; /* Sets position relative for positioning child elements */
+    width: 100%; /* Sets width to 100% of the parent element */
+    height: 200px; /* Sets height */
+    background: linear-gradient(to right, #1c044d, #4d007d); /* Sets background gradient */
+    display: flex; /* Uses flexbox layout */
+    align-items: center; /* Centers items vertically */
+    justify-content: center; /* Centers items horizontally */
+    text-align: center; /* Centers text */
+}
+
+.header-content h2 {
+    font-size: 1.8rem; /* Sets font size */
+    font-weight: bold; /* Sets font weight */
+    color: white; /* Sets text color */
+    text-align: center; /* Centers text */
+}
+
+.header-nav {
+    position: absolute; /* Positions nav absolutely within the header */
+    top: -60px; /* Positions nav 60px above the top */
+    right: 20px; /* Positions nav 20px from the right */
+    display: flex; /* Uses flexbox layout */
+    align-items: center; /* Centers items vertically */
+    gap: 15px; /* Adds gap between items */
+}
+
+.header-home-buttons ul {
+    list-style: none; /* Removes default list styling */
+    padding: 0; /* Removes padding */
+    margin: 0; /* Removes margin */
+    display: flex; /* Uses flexbox layout */
+}
+
+.header-home-buttons li {
+    margin-left: 15px; /* Adds left margin */
+}
+
+.nav-link i {
+    font-size: 1.8rem; /* Sets font size */
+    color: white; /* Sets icon color */
+    transition: color 0.3s; /* Adds transition effect for color */
+}
+
+.nav-link:hover i {
+    color: #480075; /* Changes icon color on hover */
+}
+
+.search-bar {
+    margin-right: 10px; /* Adds right margin */
+}
+
+.search-box {
+    display: flex; /* Uses flexbox layout */
+    align-items: center; /* Centers items vertically */
+    background: white; /* Sets background color */
+    border-radius: 20px; /* Rounds corners */
+    padding: 5px 10px; /* Adds padding */
+    min-width: 80px; /* Sets minimum width */
+}
+
+.search-icon {
+    margin-right: 5px; /* Adds right margin */
+    color: #666; /* Sets icon color */
+}
+
+.search-box input {
+    border: none; /* Removes border */
+    outline: none; /* Removes outline */
+    width: 100%; /* Sets width to 100% of the parent element */
+}
 
 /* ----------------------------------- Texts -----------------------------------  */
 
@@ -295,3 +515,39 @@
     justify-content: center;
     align-items: center;
 }
+
+
+body {
+    position: relative;
+    height: 100%;
+  }
+  
+  body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }

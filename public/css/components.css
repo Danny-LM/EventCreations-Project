@@ -684,10 +684,10 @@ a.sidebar-link:active {
 }
 
 .search-box input {
-    border: none; /* Removes border */
-    outline: none; /* Removes outline */
-    width: 100%; /* Sets width to 100% of the parent element */
-}
+    border: none;
+    outline: none;
+    width: 100%;
+} */
 
 /*-----------------------------------  Sidebar -----------------------------------  */
 ::after,

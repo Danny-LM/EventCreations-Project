@@ -36,7 +36,7 @@
                 <!-- User Profile -->
                  <div class="d-flex align-items-center gap-3">
                     <div class="profile-image">
-                        <img src="https://placehold.jp/50x50.png" alt="User Profile">
+                        <img src="https://placehold.jp/100x100.png" alt="User Profile">
                         <div class="edit-icon">
                             <i class="lni lni-pencil-1"></i>
                         </div>

@@ -14,6 +14,8 @@
     
     <link rel="stylesheet" href="{{asset('css/custom.css')}}">
 
+    <link href="https://cdn.lineicons.com/5.0/lineicons.css" rel="stylesheet" />
+
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-medium sticky-top navbar-custom" style="background-color: #1A1A50;">
@@ -40,11 +42,11 @@
                     <a class="nav-link custom-btn" href="{{ route('register') }}" style="color: white; font-weight:bolt;"><b>Sign up</b></a>
                 </li>
                 <li class="nav-item mx-3">
-                    <a class="nav-link custom-btn" href="{{ route('login') }}" style="background: rgb(165, 105, 200); color: white; font-weight:bolt;"><b>Login</b></a>
+                    <a class="btn-primary" href="{{ route('login') }}" style="padding: 4px 30px;"><b>Login</b></a>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
+
 @yield('content')
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">

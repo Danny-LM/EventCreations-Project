@@ -51,7 +51,7 @@ $label-left-position:-8.5rem; // Mover los labels - izquierda + derechas
     width: 100%; // Ocupa el 100% del ancho del contenedor
     max-width: 400px; // Ancho máximo
     min-width: 200px; // Ancho mínimo
-    height: 50px; // Altura del botón
+    height: 70px; // Altura del botón
     padding: 10px; // Padding interno
     margin: 15px 0; // Margen externo
     border: 3px solid #ccc; // Borde
@@ -92,6 +92,22 @@ $label-left-position:-8.5rem; // Mover los labels - izquierda + derechas
   .form-control:focus {
     border-color: #221D4F; 
     outline: none; 
+  }
+  .text{
+    display: inline-block;
+    padding: 0 10px; 
+    background-color: #E6E8EA; 
+    position: relative;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-30%);
+  }
+  .line{
+    position: relative;
+    text-align: center;
+   width: 400px;
+    height: 2px;
+    background-color: #221D4F;
   }
 
 h1{

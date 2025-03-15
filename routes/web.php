@@ -1,23 +1,70 @@
 <?php
 
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\RoleController;
 use Illuminate\Support\Facades\Route;
 
+
+/*
+|--------------------------------------------------------------------------
+| Web Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register web routes for your application. These
+| routes are loaded by the RouteServiceProvider within a group which
+| contains the "web" middleware group. Now create something great!
+|
+*/
+
 // Ruta para la página de inicio (index.blade.php)
 Route::get('/', function () {
-    return view('index'); // Asegúrate de que index.blade.php esté en la carpeta resources/views
+    return view('index'); // Asegúrate de que index.blade.php esté en resources/views
+})->name('index');
+
+// Rutas de autenticación personalizadas
+//Route::get('/logados', [AuthController::class, 'logados'])->name('logados'); // Vista después del login
+Route::post('/login', [AuthController::class, 'login'])->name('login'); // Procesa el login
+Route::post('/logout', [AuthController::class, 'logout'])->name('logout'); // Cierra sesión
+
+// Rutas para registro
+Route::get('/register', [AuthController::class, 'showRegisterForm'])->name('register.form'); // Formulario de registro
+Route::post('/register', [AuthController::class, 'register'])->name('register'); // Procesa el registro
+
+// Ruta para roles (si es necesario)
+Route::get('/roles', [RoleController::class, 'index'])->name('roles.index');
+
+// Rutas de autenticación por defecto de Laravel (opcional)
+Auth::routes(); 
+
+// Ruta del dashboard o home después del login
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+
+
+/*
+|--------------------------------------------------------------------------
+| Temp Routes
+|--------------------------------------------------------------------------
+| Here are some temporary routes for testing purposes.
+| These routes will be removed in the final version of the project.
+*/
+
+// Test Route
+Route::get('/test', function () {
+    return view('test');
 });
 
-// Rutas para autenticación y otras páginas
-Route::post('/custom-login', [AuthController::class, 'login'])->name('custom-login'); // Login
-Route::get('/logados', [AuthController::class, 'logados'])->name('logados'); // Página después del login
-Route::get('/logout', [AuthController::class, 'logout'])->name('logout'); // Logout
+// Dashboard Routes
+Route::get('/test-home', [DashboardController::class, 'dashboard'])->name('dashboard');
+Route::get('/my-home', [DashboardController::class, 'home'])->name('my-home');
+Route::get('/my-events', [DashboardController::class, 'events'])->name('my-events');
+Route::get('/my-notes', [DashboardController::class, 'notes'])->name('my-notes');
+Route::get('/my-schedule', [DashboardController::class, 'schedule'])->name('my-schedule');
+Route::get('/support', [DashboardController::class, 'support'])->name('support');
+Route::get('/my-documentation', [DashboardController::class, 'documentation'])->name('my-documentation');
 
-// Rutas adicionales
-Route::get('roles', [RoleController::class, 'index']); // Controlador para roles
-
-Auth::routes(); // Rutas de autenticación por defecto
-
-// Ruta de la página de inicio (Home) después de iniciar sesión
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/my-users', [DashboardController::class, 'users'])->name('my-users');
+Route::get('/permissions', [DashboardController::class, 'permissions'])->name('permissions');
+Route::get('/my-analytics', [DashboardController::class, 'analytics'])->name('my-analytics');
+Route::get('/my-reports', [DashboardController::class, 'reports'])->name('my-reports');

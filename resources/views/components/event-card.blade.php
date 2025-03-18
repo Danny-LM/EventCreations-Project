@@ -1,5 +1,5 @@
 <div class="col">
-    <div class="card event-card shadow-sm h-100">
+    <div class="my-card event-card shadow-sm h-100">
         <!-- Image -->
         
         <!-- Content -->

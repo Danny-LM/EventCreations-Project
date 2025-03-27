@@ -55,16 +55,18 @@ Route::get('/test', function () {
     return view('test');
 });
 
-// Dashboard Routes
-Route::get('/test-home', [DashboardController::class, 'dashboard'])->name('dashboard');
-Route::get('/my-home', [DashboardController::class, 'home'])->name('my-home');
-Route::get('/my-events', [DashboardController::class, 'events'])->name('my-events');
-Route::get('/my-notes', [DashboardController::class, 'notes'])->name('my-notes');
-Route::get('/my-schedule', [DashboardController::class, 'schedule'])->name('my-schedule');
-Route::get('/support', [DashboardController::class, 'support'])->name('support');
-Route::get('/my-documentation', [DashboardController::class, 'documentation'])->name('my-documentation');
 
-Route::get('/my-users', [DashboardController::class, 'users'])->name('my-users');
-Route::get('/permissions', [DashboardController::class, 'permissions'])->name('permissions');
-Route::get('/my-analytics', [DashboardController::class, 'analytics'])->name('my-analytics');
-Route::get('/my-reports', [DashboardController::class, 'reports'])->name('my-reports');
+// Route::get('/dash', [DashboardController::class, 'dashboard'])->name('dashboard');
+
+/*
+|--------------------------------------------------------------------------
+| Dashboard Routes
+|--------------------------------------------------------------------------
+*/
+
+Route::prefix('dashboard')->group(function () {
+    // Dashboard Section Routes
+    Route::get('/{section}', [DashboardController::class, 'show'])
+        ->name('dashboard')
+        ->where('section', 'my-home|my-events|my-notes|my-schedule|support|documentation|users|permissions|analytics|reports');
+});

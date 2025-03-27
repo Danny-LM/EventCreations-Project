@@ -33,7 +33,10 @@
                 
                 <!-- Overview Page -->
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link" data-route="{{ route('my-home') }}" aria-label="Go to Home">
+                    <a href="#"
+                        class="sidebar-link"
+                        data-route="{{ route('dashboard', ['section' => 'my-home']) }}"
+                        aria-label="Go to your home">
                         <i class="lni lni-home-2"></i>
                         <span>Home</span>
                     </a>
@@ -41,13 +44,19 @@
 
                 <!-- User Management -->
                 <li class="sidebar-item"> <!-- (Admin Only) -->
-                    <a href="#" class="sidebar-link" data-route="{{ route('my-users') }}"> <!-- (modify later) -->
+                    <a href="#"
+                        class="sidebar-link"
+                        data-route="{{ route('dashboard', ['section' => 'users']) }}"
+                        aria-label="Go to your users">
                         <i class="lni lni-user-multiple-4"></i>
                         <span>Users [Admin]</span>
                     </a>
                 </li>
                 <li class="sidebar-item"> <!-- (Admin Only) -->
-                    <a href="#" class="sidebar-link" data-route="{{ route('permissions') }}"> <!-- (modify later) -->
+                    <a href="#"
+                        class="sidebar-link"
+                        data-route="{{ route('dashboard', ['section' => 'permissions']) }}"
+                        aria-label="Go to your roles and permissions">
                         <i class="lni lni-shield-2-check"></i>
                         <span>Roles & Permissions [Admin]</span>
                     </a>
@@ -55,33 +64,48 @@
 
                 <!-- Event Management -->
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link" data-route="{{ route('my-events') }}" aria-label="Go to Your Events">
+                    <a href="#"
+                        class="sidebar-link"
+                        data-route="{{ route('dashboard', ['section' => 'my-events']) }}"
+                        aria-label="Go to your events">
                         <i class="lni lni-agenda"></i>
                         <span>My Events</span>
                     </a>
                 </li>
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link" data-route="{{ route('my-notes') }}" aria-label="Go to Your Notes">
+                    <a href="#"
+                        class="sidebar-link"
+                        data-route="{{ route('dashboard', ['section' => 'my-notes']) }}"
+                        aria-label="Go to your notes">
                         <i class="lni lni-pen-to-square"></i>
-                        <span>Notes</span>
+                        <span>My Notes</span>
                     </a>
                 </li>
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link" data-route="{{ route('my-schedule') }}" aria-label="Go to Your Schedule">
+                    <a href="#"
+                        class="sidebar-link"
+                        data-route="{{ route('dashboard', ['section' => 'my-schedule']) }}"
+                        aria-label="Go to your schedule">
                         <i class="lni lni-calendar-days"></i>
-                        <span>Schedule</span>
+                        <span>My Schedule</span>
                     </a>
                 </li>
 
                 <!-- Analytics & Reports -->
                 <li class="sidebar-item"> <!-- (Admin Only) -->
-                    <a href="#" class="sidebar-link" data-route="{{ route('my-analytics') }}"> <!-- (modify later) -->
+                    <a href="#"
+                        class="sidebar-link"
+                        data-route="{{ route('dashboard', ['section' => 'analytics']) }}"
+                        aria-label="Go to your analytics">
                         <i class="lni lni-bar-chart-4"></i>
                         <span>Analytics [Admin]</span>
                     </a>
                 </li>
                 <li class="sidebar-item"> <!-- (Admin Only) -->
-                    <a href="#" class="sidebar-link" data-route="{{ route('my-reports') }}"> <!-- (modify later) -->
+                    <a href="#"
+                        class="sidebar-link"
+                        data-route="{{ route('dashboard', ['section' => 'reports']) }}"
+                        aria-label="Go to your reports">
                         <i class="lni lni-file-multiple"></i>
                         <span>Reports [Admin]</span>
                     </a>
@@ -89,13 +113,19 @@
 
                 <!-- Support & Help -->
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link" data-route="{{ route('support') }}"> <!-- (modify later) -->
+                    <a href="#"
+                        class="sidebar-link"
+                        data-route="{{ route('dashboard', ['section' => 'support']) }}"
+                        aria-label="Go to your support">
                         <i class="lni lni-question-mark"></i>
                         <span>Support</span>
                     </a>
                 </li>
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link" data-route="{{ route('my-documentation') }}"> <!-- (modify later) -->
+                    <a href="#"
+                        class="sidebar-link"
+                        data-route="{{ route('dashboard', ['section' => 'documentation']) }}"
+                        aria-label="Go to your documentation">
                         <i class="lni lni-book-1"></i>
                         <span>Documentation</span>
                     </a>
@@ -105,10 +135,14 @@
 
         <!-- Main Content -->
          <div id="main-content" class="flex-grow-1">
-            @yield('content')
+            @isset($content)
+                @include($content)
+            @endisset
          </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
     <script src="{{ asset('js/dashboard.js') }}"></script>
 </body>
 </html>

@@ -17,3 +17,8 @@
     </div>
   </div>
 </section>
+
+controllador
+formulario
+ruta que va controllador
+ruta que va al formulario

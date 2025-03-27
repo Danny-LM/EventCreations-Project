@@ -35,7 +35,7 @@ Route::post('/register', [AuthController::class, 'register'])->name('register');
 Route::get('/roles', [RoleController::class, 'index'])->name('roles.index');
 
 // Rutas de autenticación por defecto de Laravel (opcional)
-Auth::routes(); 
+// Auth::routes();
 
 // Ruta del dashboard o home después del login
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
@@ -64,9 +64,10 @@ Route::get('/test', function () {
 |--------------------------------------------------------------------------
 */
 
-Route::prefix('dashboard')->group(function () {
-    // Dashboard Section Routes
-    Route::get('/{section}', [DashboardController::class, 'show'])
-        ->name('dashboard')
-        ->where('section', 'my-home|my-events|my-notes|my-schedule|support|documentation|users|permissions|analytics|reports');
-});
+Route::get('/{section}', [DashboardController::class, 'show'])
+    ->name('dashboard')
+    ->where('section', 'my-home|my-events|my-notes|my-schedule|support|documentation|users|permissions|analytics|reports');
+
+    // Route::prefix('dashboard')->group(function () {
+//     // Dashboard Section Routes
+// });

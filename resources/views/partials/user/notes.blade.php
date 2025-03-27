@@ -1,11 +1,19 @@
-<section class="dashboard-notes">
+<section class="dashboard-events">
   <!----------------------------------- Header ----------------------------------->
   <div class="container">
-      <x-header></x-header>
+    <x-header></x-header>
   </div>
 
-<!----------------------------------- Dashboard ----------------------------------->
-  <div class="container">
-    <h1>Bienvenido a tus Notas</h1>
+<!----------------------------------- Content ----------------------------------->
+  <div class="container extra-margin margin-bottom">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4">
+      <x-event-card></x-event-card>
+      <x-event-card></x-event-card>
+      <x-event-card></x-event-card>
+      <x-event-card></x-event-card>
+      <x-event-card></x-event-card>
+      <x-event-card></x-event-card> 
+      <x-new-element-card text="New Event"></x-new-event-card>
+    </div>
   </div>
 </section>

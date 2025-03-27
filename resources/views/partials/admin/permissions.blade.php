@@ -1,10 +1,11 @@
-<!----------------------------------- Nav Bar----------------------------------->
-<section>
-</section>
-
-<!----------------------------------- Dashboard ----------------------------------->
-<section class="main-content">
+<section class="dashboard-home">
+  <!----------------------------------- Header ----------------------------------->
   <div class="container">
-    <h1>Welcome to Permissions & Roles</h1>
+      <x-header></x-header>
+  </div>
+
+<!----------------------------------- Content ----------------------------------->
+  <div class="container extra-margin margin-bottom">
+    <h1>Welcome to permisions & roles</h1>
   </div>
 </section>

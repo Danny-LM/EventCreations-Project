@@ -1,10 +1,11 @@
-<!----------------------------------- Nav Bar----------------------------------->
-<section>
-</section>
-
-<!----------------------------------- Dashboard ----------------------------------->
-<section class="main-content">
+<section class="dashboard-home">
+  <!----------------------------------- Header ----------------------------------->
   <div class="container">
-    <h1>Welcome to your Users</h1>
+      <x-header></x-header>
+  </div>
+
+<!----------------------------------- Content ----------------------------------->
+  <div class="container extra-margin margin-bottom">
+    <h1>Welcome to your users page</h1>
   </div>
 </section>

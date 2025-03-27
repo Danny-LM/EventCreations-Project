@@ -4,8 +4,8 @@
       <x-header></x-header>
   </div>
 
-<!----------------------------------- Dashboard ----------------------------------->
-  <div class="container">
+<!----------------------------------- Content ----------------------------------->
+  <div class="container extra-margin margin-bottom">
     <h1>Welcome to your support page</h1>
   </div>
 </section>

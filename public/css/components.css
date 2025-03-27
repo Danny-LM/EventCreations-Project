@@ -10,7 +10,7 @@
 }
 
 .container.extra-margin {
-    margin-top: 100px;
+    margin-top: 60px;
 }
 
 .container.margin-bottom {
@@ -268,6 +268,7 @@ a.sidebar-link:active {
     width: 100%;
     height: 200px;
     background: linear-gradient(to right, #1c044d, #4d007d);
+    border-radius: 20px;
 }
 
 
@@ -295,12 +296,12 @@ a.sidebar-link:active {
 /* Dashboard - Profile Header */
 .profile-header {
     width: 90%;
-    border-radius: 24px;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 36px;
+    padding: 20px;
     background-color: #f8f9fa;
     border-bottom: 1px solid #dee2e6;
 }
@@ -347,7 +348,7 @@ a.sidebar-link:active {
     font-weight: 600;
 }
 
-.nav-buttons {
+/* .nav-buttons {
     display: flex;
     gap: 12px;
 }
@@ -372,7 +373,7 @@ a.sidebar-link:active {
     color: #fff;
     font-weight: 600;
     box-shadow: 0 4px 8px rgba(77, 0, 125, 0.3);
-}
+} */
 
 /* Dashboard - Cards */
 .custom-card {
@@ -451,6 +452,7 @@ a.sidebar-link:active {
     right: 1rem;
 }
 
+/* New Element Card */
 .new-element-card {
     max-width: 300px;
     height: auto;
@@ -458,6 +460,9 @@ a.sidebar-link:active {
     cursor: pointer;
     margin: 1rem auto;
 }
+
+/* Note Cards */
+
 
 /* .search-bar {
     margin-right: 10px;

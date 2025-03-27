@@ -409,7 +409,7 @@ a.sidebar-link:active {
 /* Event Cards */
 .my-card {
     flex: 0 0 33.3333%;
-    padding: 12 px;
+    padding: 12px;
     background: white;
     border-radius: 10px;
     text-align: center;
@@ -420,7 +420,7 @@ a.sidebar-link:active {
 }
 
 .event-card {
-    max-width: 400px;
+    max-width: 300px;
     cursor: pointer;
     border-radius: 8px;
     margin: 0 auto;
@@ -451,8 +451,8 @@ a.sidebar-link:active {
     right: 1rem;
 }
 
-.new-event-card {
-    max-width: 400px;
+.new-element-card {
+    max-width: 300px;
     height: auto;
     border-radius: 8px;
     cursor: pointer;

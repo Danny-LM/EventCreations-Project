@@ -45,7 +45,7 @@
                 </div>
 
                 <!-- Nav Buttons -->
-                <div class="d-flex gap-3 nav-buttons">
+                <!-- <div class="d-flex gap-3 nav-buttons">
                     <div class="nav-btn">
                         <i class="lni lni-world"></i>
                         <span>Overview</span>
@@ -58,7 +58,7 @@
                         <i class="lni lni-briefcase"></i>
                         <span>Projects</span>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>

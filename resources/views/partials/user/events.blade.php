@@ -13,7 +13,7 @@
       <x-event-card></x-event-card>
       <x-event-card></x-event-card>
       <x-event-card></x-event-card>
-      <x-new-event-card icon="lni lni-plus" text="New Event"></x-new-event-card>
+      <x-new-element-card text="New Event"></x-new-event-card>
     </div>
   </div>
 </section>

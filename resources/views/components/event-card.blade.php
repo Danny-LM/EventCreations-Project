@@ -1,3 +1,6 @@
+
+<!-- Live as if you were to die tomorrow. Learn as if you were to live forever. - Mahatma Gandhi -->
+
 <div class="col">
     <div class="my-card event-card shadow-sm h-100">
         <!-- Image -->

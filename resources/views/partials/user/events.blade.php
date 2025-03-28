@@ -1,11 +1,14 @@
 <section class="dashboard-events">
-  <!----------------------------------- Header ----------------------------------->
+<!----------------------------------- Header ----------------------------------->
   <div class="container">
-    <x-header></x-header>
+    <div class="header-background">
+      <x-head-nav-btns></x-head-nav-btns>
+      <x-head-dynamic-message></x-head-dynamic-message>
+    </div>
   </div>
 
 <!----------------------------------- Content ----------------------------------->
-  <div class="container extra-margin margin-bottom">
+  <div class="container margin-bottom">
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4">
       <x-event-card></x-event-card>
       <x-event-card></x-event-card>

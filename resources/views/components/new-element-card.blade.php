@@ -1,3 +1,6 @@
+
+<!-- Live as if you were to die tomorrow. Learn as if you were to live forever. - Mahatma Gandhi -->
+
 <div class="col">
     <div class="my-card new-element-card shadow-sm d-flex align-items-center justify-content-center h-100">
         <div class="text-center">

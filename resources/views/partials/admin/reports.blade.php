@@ -1,11 +1,14 @@
-<section class="dashboard-home">
-  <!----------------------------------- Header ----------------------------------->
+<section class="dashboard-reports">
+<!----------------------------------- Header ----------------------------------->
   <div class="container">
-      <x-header></x-header>
+    <div class="header-background">
+      <x-head-nav-btns></x-head-nav-btns>
+      <x-head-dynamic-message></x-head-dynamic-message>
+    </div>
   </div>
 
 <!----------------------------------- Content ----------------------------------->
-  <div class="container extra-margin margin-bottom">
+  <div class="container margin-bottom">
     <h1>Welcome to your reports page</h1>
   </div>
 </section>

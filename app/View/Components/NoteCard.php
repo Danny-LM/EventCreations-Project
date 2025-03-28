@@ -4,7 +4,7 @@ namespace App\View\Components;
 
 use Illuminate\View\Component;
 
-class NoteCard extends Component
+class noteCard extends Component
 {
     /**
      * Create a new component instance.

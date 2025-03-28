@@ -348,33 +348,31 @@ a.sidebar-link:active {
     font-weight: 600;
 }
 
-/* .nav-buttons {
-    display: flex;
-    gap: 12px;
+/* .search-bar {
+    margin-right: 10px;
 }
 
-.nav-btn {
+.search-box {
     display: flex;
     align-items: center;
-    gap: 8px;
-    padding: 8px 16px;
+    background: white;
     border-radius: 20px;
+    padding: 5px 10px;
+    min-width: 80px;
+}
+
+.search-icon {
+    margin-right: 5px;
     color: #666;
-    cursor: pointer;
-    transition: all 0.3s ease;
 }
 
-.nav-btn:hover {
-    color: #4d007d;
-}
-
-.nav-btn:active {
-    background-color: #4d007d;
-    color: #fff;
-    font-weight: 600;
-    box-shadow: 0 4px 8px rgba(77, 0, 125, 0.3);
+.search-box input {
+    border: none;
+    outline: none;
+    width: 100%;
 } */
 
+/* ----------------------------------- Cards -----------------------------------  */
 /* Dashboard - Cards */
 .custom-card {
     display: flex;
@@ -407,86 +405,16 @@ a.sidebar-link:active {
     justify-content: center;
 }
 
-/* Event Cards */
-.my-card {
-    flex: 0 0 33.3333%;
-    padding: 12px;
-    background: white;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    color: black;
-    margin: 0 20px;
-    height: 225px;
-}
-
-.event-card {
-    max-width: 300px;
-    cursor: pointer;
-    border-radius: 8px;
-    margin: 0 auto;
-    overflow: hidden;
-}
-
-.event-card__content {
-    color: #000;
-    position: relative;
-    padding: 4px;
-    padding-bottom: 3rem;
-}
-
-.event-card__image {
-    width: 100%;
-    height: auto;
-    border-radius: 4px;
-    object-fit: cover;
-}
-
-.event-card__title {
-    margin-bottom: 0.5rem;
-}
-
-.event-card__button {
-    position: absolute;
-    bottom: 1rem;
-    right: 1rem;
-}
-
-/* New Element Card */
-.new-element-card {
-    max-width: 300px;
-    height: auto;
-    border-radius: 8px;
-    cursor: pointer;
-    margin: 1rem auto;
-}
-
-/* Note Cards */
-
-
-/* .search-bar {
-    margin-right: 10px;
-}
-
-.search-box {
-    display: flex;
-    align-items: center;
-    background: white;
+.card {
     border-radius: 20px;
-    padding: 5px 10px;
-    min-width: 80px;
+    max-width: 300px;
+    margin: 0 auto;
 }
 
-.search-icon {
-    margin-right: 5px;
-    color: #666;
+.card-body {
+    min-height: 300px;
 }
 
-.search-box input {
-    border: none;
-    outline: none;
-    width: 100%;
-} */
 
 /* ----------------------------------- Texts -----------------------------------  */
 

@@ -145,5 +145,6 @@
 
     <script type="module" src="{{ asset('js/dashboard/sidebar-toggle.js') }}"></script>
     <script type="module" src="{{ asset('js/dashboard/spa-navigation.js') }}"></script>
+    <script type="module" src="{{ asset('js/dashboard/dynamic-messages.js') }}"></script>
 </body>
 </html> 

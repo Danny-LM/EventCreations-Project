@@ -2,20 +2,20 @@
 <!-- Live as if you were to die tomorrow. Learn as if you were to live forever. - Mahatma Gandhi -->
 
 <div class="col">
-    <div class="my-card event-card shadow-sm h-100">
-        <!-- Image -->
-        
+    <div class="card h-100 shadow">
         <!-- Content -->
-        <div class="card-body event-card__content">
-            <img src="{{ $event_image }}" alt="Event Image" class="img-fluid event-card__image mb-3">
-            <p class="text.muted small mb-1 event-card__date">{{ $event_date }}</p>
-            <h4 class="card-title event-card__title">{{ $event_title }}</h3>
-            <p class="card-text event-card__description">
-                {{ $event_description }}
-            </p>
+        <div class="card-body d-flex flex-column p-1">
+            <img src="{{ $event_image }}" alt="Event Image" class="img-fluid h-100 card-img-top mb-2">
+            <h4 class="card-title mb-2">{{ $event_title }}</h3>
+            <p class="text-muted small mb-1">{{ $event_date }}</p>
+
+            <div class="flex-grow-1"></div>
 
             <!-- Button -->
-            <button class="btn btn-primary event-card__button"></button>
+            <div class="p-3">
+                <button class="btn btn-primary btn-sm aling-self-end mt-2">Ver más</button>
+            </div>
+
         </div>
     </div>
 </div>

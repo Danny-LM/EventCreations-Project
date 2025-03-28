@@ -1,3 +1,4 @@
+
 <section class="dashboard-home">
 <!----------------------------------- Header ----------------------------------->
   <div class="container">
@@ -43,7 +44,3 @@
     </div>
   </div>
 </section>
-
-<script src="{{ asset('js/dynamic-messages.js') }}"></script>
-<script src="{{ asset('js/themes.js') }}"></script>
-<script src="{{ asset('js/calendar.js') }}"></script>

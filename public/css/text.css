@@ -1,0 +1,49 @@
+
+@import 'variables.css';
+
+.text-style {
+  font-family: var(--font-family-primary);
+  color: var(--color-text-primary);
+}
+
+.text-45 { font-size: var(--text-45);}
+.text-24 { font-size: var(--text-24);}
+.text-18 { font-size: var(--text-18);}
+.text-16 { font-size: var(--text-16);}
+
+.icon-size { font-size: var(--icons);}
+
+.text-bold { font-weight: var(--font-weight-bold);}
+.text-medium { font-weight: var(--font-weight-medium);}
+
+.h1-text {
+  font-family: var(--font-family-primary);
+  color: var(--color-text-primary);
+
+  font-size: var(--text-45);
+  font-weight: var(--font-weight-bold);
+}
+
+.h2-text {
+  font-family: var(--font-family-primary);
+  color: var(--color-text-primary);
+
+  font-size: var(--text-24);
+  font-weight: var(--font-weight-medium);
+}
+
+.h3-text {
+  font-family: var(--font-family-primary);
+  color: var(--color-text-primary);
+
+  font-size: var(--text-18);
+  font-weight: var(--font-weight-medium);
+}
+
+.normal-text {
+  font-family: var(--font-family-primary);
+  color: var(--color-text-primary);
+  
+  font-size: var(--text-16);
+  font-weight: var(--font-weight-medium);
+}

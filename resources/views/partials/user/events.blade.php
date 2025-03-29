@@ -4,7 +4,6 @@
   <div class="container">
     <div class="header-background">
       <x-head-nav-btns></x-head-nav-btns>
-      <x-head-dynamic-message></x-head-dynamic-message>
       <x-head-footer text="My Events"></x-head-footer>
     </div>
   </div>

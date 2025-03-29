@@ -9,14 +9,6 @@
     margin-top: 24px;
 }
 
-.container.extra-margin {
-    margin-top: 60px;
-}
-
-.container.margin-bottom {
-    margin-bottom: 24px;
-}
-
 /* Primera seccion homepage */
 
 #hero-section {
@@ -295,6 +287,16 @@ a.sidebar-link:active {
     text-align: center;
 }
 
+.header-footer {
+    height: 5rem; /* 80px */
+    width: 90%;
+    border-radius: var(--border-lg);
+
+    background: var(--bg-dashboard);
+    transform: translateY(var(--custom-padding-xl)); /* 24px */
+    opacity: 0.96;
+}
+
 /* .search-bar {
     margin-right: 10px;
 }
@@ -353,13 +355,18 @@ a.sidebar-link:active {
 }
 
 .card {
-    border-radius: 20px;
-    max-width: 300px;
+    border-radius: 1.25rem; /* 20px */
+    max-width: 18.75rem; /* 300px */
     margin: 0 auto;
 }
 
 .card-body {
-    min-height: 300px;
+    min-height: 15.625rem; /* 250px */
+}
+
+.mini-card {
+    background: var(--bg-dashboard);
+    border-radius: 1rem; /* 20px */
 }
 
 

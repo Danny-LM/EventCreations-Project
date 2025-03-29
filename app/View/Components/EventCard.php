@@ -6,15 +6,17 @@ use Illuminate\View\Component;
 
 class eventCard extends Component
 {
-    public $event_image;
-    public $event_date;
-    public $event_title;
+    public $title;
+    public $date;
+    public $type;
+    public $theme;
 
-    public function __construct($event_image="https://placehold.jp/350x250.png",$event_date="DD-MM-YYYY",$event_title="Card Title")
+    public function __construct( $title="Event Title", $date="00/00/00", $type="Bithday", $theme="Celebrities")
     {
-        $this->event_image = $event_image;
-        $this->event_date = $event_date;
-        $this->event_title = $event_title;
+        $this->title = $title;
+        $this->date = $date;
+        $this->type = $type;
+        $this->theme = $theme;
     }
 
     public function render()

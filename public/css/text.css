@@ -1,9 +1,14 @@
 
 @import 'variables.css';
 
-.text-style {
+.txt-style-1 {
   font-family: var(--font-family-primary);
   color: var(--color-text-primary);
+}
+
+.txt-style-2 {
+  font-family: var(--font-family-primary);
+  color: var(--color-text-secondary);
 }
 
 .text-45 { font-size: var(--text-45);}
@@ -16,34 +21,4 @@
 .text-bold { font-weight: var(--font-weight-bold);}
 .text-medium { font-weight: var(--font-weight-medium);}
 
-.h1-text {
-  font-family: var(--font-family-primary);
-  color: var(--color-text-primary);
-
-  font-size: var(--text-45);
-  font-weight: var(--font-weight-bold);
-}
-
-.h2-text {
-  font-family: var(--font-family-primary);
-  color: var(--color-text-primary);
-
-  font-size: var(--text-24);
-  font-weight: var(--font-weight-medium);
-}
-
-.h3-text {
-  font-family: var(--font-family-primary);
-  color: var(--color-text-primary);
-
-  font-size: var(--text-18);
-  font-weight: var(--font-weight-medium);
-}
-
-.normal-text {
-  font-family: var(--font-family-primary);
-  color: var(--color-text-primary);
-  
-  font-size: var(--text-16);
-  font-weight: var(--font-weight-medium);
-}
+.text-underline { text-decoration: var(--text-underline);}

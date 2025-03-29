@@ -22,23 +22,23 @@
 
 /* ---------- Spacing ---------- */
     /* Border */
-    --border-xs: 0.5rem;
-    --border-sm: 0.75rem;
-    --border-md: 1rem;
-    --border-lg: 1.25rem;
-    --border-xl: 1.5rem;
+    --border-xs: 0.5rem; /* 8px */
+    --border-sm: 0.75rem; /* 12px */
+    --border-md: 1rem; /* 16px */
+    --border-lg: 1.25rem; /* 20px */
+    --border-xl: 1.5rem; /* 24px */
 
     /* Padding */
-    --custom-padding-xs: 0.5rem;
-    --custom-padding-sm: 0.75rem;
-    --custom-padding-md: 1rem;
-    --custom-padding-lg: 1.25rem;
-    --custom-padding-xl: 1.5rem;
+    --custom-padding-xs: 0.5rem; /* 8px */
+    --custom-padding-sm: 0.75rem; /* 12px */
+    --custom-padding-md: 1rem; /* 16px */
+    --custom-padding-lg: 1.25rem; /* 20px */
+    --custom-padding-xl: 1.5rem; /* 24px */
 
 /* ---------- Lettering Style ---------- */
     /* Text Color */
     --color-text-primary: var(--color-white);
-    --color-text-secondary: var(--color-black);
+    --color-text-secondary: var(--color-midnight-purple);
 
     /* Font Family */
     --font-family-primary: 'Poppins', sans-serif;
@@ -57,7 +57,7 @@
 
     /* Text Styles */
     --text-underline: underline;
-
+    --text-italic: italic;
 
 
 

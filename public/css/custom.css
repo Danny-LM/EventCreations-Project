@@ -1,1 +1,9 @@
 @import 'components.css';
+
+.cst-border-1 {
+    border-radius: var(--border-lg) 0 0 var(--border-lg);
+}
+
+.cst-border-2 {
+    border-radius: 0 var(--border-lg) var(--border-lg) 0;
+}

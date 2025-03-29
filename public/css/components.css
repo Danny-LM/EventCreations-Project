@@ -254,6 +254,54 @@ a.sidebar-link:active {
     opacity: 1;
 }
 
+/*-----------------------------------  Search Filter Bar -----------------------------------  */
+.search-bar {
+    flex: 1 1 100px;
+    background-color: var(--bg-dashboard);
+    min-width: 100px;
+    max-width: 280px;
+    border-radius: var(--border-lg);
+
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.search-bar .form-control {
+    border-radius: var(--border-lg);
+    border: none;
+    height: 100%;
+    padding: 0.5rem;
+    box-sizing: border-box;
+}
+
+.search-bar .input-group-text {
+    background-color: var(--bg-dashboard);
+    border-radius: var(--border-lg) 0 0 var(--border-lg);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 0.5rem;
+    box-sizing: border-box;
+}
+
+.btn-search-action {
+    background-color: var(--bg-dashboard);
+    border-radius: var(--border-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0 1rem;
+    height: 3rem;
+    width: 8rem;
+    box-sizing: border-box;
+}
+
+
 /*-----------------------------------  Dashboard -----------------------------------  */
 /* Dashboard - Header */
 .header-background {
@@ -297,32 +345,12 @@ a.sidebar-link:active {
     opacity: 0.96;
 }
 
-/* .search-bar {
-    margin-right: 10px;
+.nav-btn {
+    background-color: var(--bg-dashboard);
+    border-radius: var(--border-lg);
 }
 
-.search-box {
-    display: flex;
-    align-items: center;
-    background: white;
-    border-radius: 20px;
-    padding: 5px 10px;
-    min-width: 80px;
-}
-
-.search-icon {
-    margin-right: 5px;
-    color: #666;
-}
-
-.search-box input {
-    border: none;
-    outline: none;
-    width: 100%;
-} */
-
-/* ----------------------------------- Cards -----------------------------------  */
-/* Dashboard - Cards */
+/* ----------------------------------- Dashboard Cards -----------------------------------  */
 .custom-card {
     display: flex;
     justify-content: center;

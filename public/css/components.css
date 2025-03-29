@@ -358,6 +358,8 @@ a.sidebar-link:active {
     border-radius: 1.25rem; /* 20px */
     max-width: 18.75rem; /* 300px */
     margin: 0 auto;
+
+    cursor: pointer;
 }
 
 .card-body {

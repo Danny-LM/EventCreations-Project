@@ -4,7 +4,7 @@
 <!-- 1: Header Nav Buttons -->
 <div class="header-nav d-flex justify-content-between align-items-center p-3">
     <!-- Back btn -->
-    <a class="nav-link d-flex align-items-center me-3" href="#">
+    <a class="nav-link d-flex align-items-center me-3" data-back>
         <i class="fi fi-rr-arrow-left align-middle"></i>
     </a>
 

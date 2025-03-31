@@ -408,9 +408,9 @@ a.sidebar-link:active {
     align-items: center;
     justify-content: center;
 
-    width: 250px;
-    min-width: 220px;
-    max-width: 250px;
+    width: 15rem;
+    min-width: 15rem;
+    max-width: 15rem;
 
     text-align: center;
     white-space: nowrap;

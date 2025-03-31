@@ -146,6 +146,6 @@
 
     <script type="module" src="{{ asset('js/dashboard/sidebar-toggle.js') }}"></script>
     <script type="module" src="{{ asset('js/dashboard/spa-navigation.js') }}"></script>
-    <script type="module" src="{{ asset('js/dashboard/dynamic-messages.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
 </body>
 </html> 

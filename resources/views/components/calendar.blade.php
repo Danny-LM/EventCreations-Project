@@ -1,55 +1,56 @@
 <!-- No surplus words or unnecessary actions. - Marcus Aurelius -->
 
-<div class="container">
+<div x-data="calendarComponent()" class="container">
     <div class="d-flex justify-content-center align-items-center my-3">
-        <i class="fi fi-rr-angle-small-left mx-3" wire:click="previousMonth"></i>
-        <span class="fs-4 fw-bold d-flex align-items-center">
-            <div class="drowdown">
-                <span class="selectable me-2 dropdown-toggle"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    {{ \Carbon\Carbon::create((int) $year, (int) $month, 1)->translatedFormat('F') }}
+        <!-- Left Arrow -->
+        <i class="fi fi-rr-angle-small-left mx-3 clickable-icon" @click="previousMonth()"></i>
+
+        <span class="fs-4 fw-bold d-flex align-items-center calendar-header">
+            <!-- Month Dropdown -->
+            <div class="drowdown me-2">
+                <span class="selectable dropdown-toggle" data-bs-toggle="dropdown">
+                    <span x-text="monthName"></span>
                 </span>
                 <ul class="dropdown-menu">
-                    @foreach(range(1,12) as $m)
+                    <template x-for="(m, index) in months" :key="index">
                         <li>
-                            <a href="#" class="dropdown-item" wire:click="setMonth({{ $m }})">
-                                {{ \Carbon\Carbon::create(null, $m, 1)->translatedFormat('F') }}
+                            <a href="#" class="dropdown-item" @click="setMonth(index + 1)">
+                                <span x-text="m"></span>
                             </a>
                         </li>
-                    @endforeach
+                    </template>
                 </ul>
             </div>
 
+            <!-- Year Dropdown -->
             <div class="dropdown">
-                <span class="selectable dropdown-toggle"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    {{ $year }}
+                <span class="selectable dropdown-toggle" data-bs-toggle="dropdown">
+                    <span x-text="year"></span>
                 </span>
                 <ul class="dropdown-menu">
-                    @foreach(range($year-5, $year+5) as $y)
-                        <li><a href="#" class="dropdown-item" wire:click="setYear({{ $y }})">
-                            {{ $y }}
-                        </a></li>
-                    @endforeach
+                    <template x-for="y in yearRange">
+                        <li>
+                            <a href="#" class="dropdown-item" @click="setYear(y)">
+                                <span x-text="y"></span>
+                            </a>
+                        </li>
+                    </template>
                 </ul>
             </div>
 
         </span>
-        <i class="fi fi-rr-angle-small-right mx-3" wire:click="nextMonth"></i>
+
+        <!-- Right Arrow -->
+        <i class="fi fi-rr-angle-small-right mx-3 clickable-icon" @click="nextMonth()"></i>
     </div>
 
     <div class="calendar-grid">
-        @foreach($days as $day)
-            <div class="calendar-day {{ $day ? 'active-day' : 'inactive-day' }}">
-                @if($day)
-                    <span class="day-number">{{ $day }}</span>
-                    <div class="events-container">
-                        <!-- Here will be added the user events -->
-                    </div>
-                @endif
+        <template x-for="day in days">
+            <div class="calendar-day" :class="{ 'active-day': day !== null, 'inactive-day': day === null }">
+                <span x-text="day !== null ? day : ''"></span>
             </div>
-        @endforeach
+        </template>
     </div>
 </div>
+
+<script src="{{ asset('js/dashboard/calendar.js') }}"></script>

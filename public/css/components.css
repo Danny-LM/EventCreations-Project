@@ -403,6 +403,20 @@ a.sidebar-link:active {
 }
 
 /* ----------------------------------- Dashboard - Calendar -----------------------------------  */
+.calendar-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 250px;
+    min-width: 220px;
+    max-width: 250px;
+
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
 .calendar-grid {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
@@ -432,6 +446,10 @@ a.sidebar-link:active {
 
 
 /* ----------------------------------- Texts -----------------------------------  */
+
+.clickable-icon {
+    cursor: pointer;
+}
 
 .h1-text {  
     font-size: var(--h1-size);

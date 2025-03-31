@@ -5,3 +5,5 @@
 <div class="header-content d-flex justify-content-center align-items-center flex-grow-1">
     <h2 class="dash-home-text" id="dynamic-message">Welcome to EventCreations!</h2>
 </div>
+
+<script type="module" src="{{ asset('js/dashboard/dynamic-messages.js') }}"></script>

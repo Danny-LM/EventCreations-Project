@@ -254,6 +254,19 @@ a.sidebar-link:active {
     opacity: 1;
 }
 
+.loader-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spinner-color {
+    color: var(--color-midnight-purple);
+    width: 3rem;
+    height: 3rem;
+}
+
 /*-----------------------------------  Search Filter Bar -----------------------------------  */
 .search-bar {
     flex: 1 1 100px;

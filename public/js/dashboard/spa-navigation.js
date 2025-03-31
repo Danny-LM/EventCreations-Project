@@ -22,8 +22,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
             try {
                 document.getElementById('main-content').innerHTML = `
-                    <div class="d-flex justify-content-center py-5">
-                        <div class="spinner-border text-primary" role="status">
+                    <div class="loader-container d-flex justify-content-center align-items-center">
+                        <div class="spinner-border spinner-color spinner-border-lg" role="status">
                             <span class="visually-hidden">Loading...</span>
                         </div>
                     </div>
@@ -53,8 +53,8 @@ document.addEventListener('DOMContentLoaded', function() {
         if (e.state?.url) {
             try {
                 document.getElementById('main-content').innerHTML = `
-                    <div class="d-flex justify-content-center py-5">
-                        <div class="spinner-border text-primary" role="status">
+                    <div class="loader-container d-flex justify-content-center align-items-center">
+                        <div class="spinner-border spinner-color spinner-border-lg" role="status">
                             <span class="visually-hidden">Loading...</span>
                         </div>
                     </div>

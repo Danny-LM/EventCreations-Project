@@ -20,7 +20,7 @@
   </div> 
 
   <!----------------------------------- Contents ----------------------------------->
-  <div class="container margin-bottom">
+  <div class="container my-5">
     <!-- Primera Fila -->
     <div class="row g-3 mb-4">
       <div class="col-12 col-md-6">

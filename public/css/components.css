@@ -402,6 +402,34 @@ a.sidebar-link:active {
     border-radius: 1rem; /* 20px */
 }
 
+/* ----------------------------------- Dashboard - Calendar -----------------------------------  */
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+
+.calendar-day {
+    min-height: 80px;
+    border: 1px solid #ddd;
+    padding: 5px;
+    position: relative;
+}
+
+.active-day {
+    background: var(--bg-dashboard);
+}
+
+.inactive-day {
+    background: var(--bg-dashboard);
+    opacity: 0.5;
+}
+
+.selectable {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 
 /* ----------------------------------- Texts -----------------------------------  */
 

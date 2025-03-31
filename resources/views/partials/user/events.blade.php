@@ -9,7 +9,7 @@
   </div>
 
 <!----------------------------------- Content ----------------------------------->
-  <div class="container my-4">
+  <div class="container my-5">
     <x-search-filter-bar></x-search-filter-bar>
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4">
       <!-- Add dynamic event cards here -->

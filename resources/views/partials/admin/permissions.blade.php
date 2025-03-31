@@ -9,7 +9,7 @@
   </div>
 
 <!----------------------------------- Content ----------------------------------->
-  <div class="container margin-bottom">
+  <div class="container my-5">
     <!-- <h1>Welcome to permisions & roles</h1> -->
 
     @if(session('success'))

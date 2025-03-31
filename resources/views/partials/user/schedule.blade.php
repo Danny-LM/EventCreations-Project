@@ -8,7 +8,7 @@
   </div>
 
 <!----------------------------------- Content ----------------------------------->
-  <div class="container my-4">
-    <h1>Bienvenido a tu Calendario</h1>
+  <div class="container my-5">
+    <x-calendar></x-calendar>
   </div>
 </section>

@@ -28,7 +28,7 @@
                     <span x-text="year"></span>
                 </span>
                 <ul class="dropdown-menu">
-                    <template x-for="y in yearRange">
+                    <template x-for="(y) in yearRange">
                         <li>
                             <a href="#" class="dropdown-item" @click="setYear(y)">
                                 <span x-text="y"></span>

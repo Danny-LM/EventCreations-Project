@@ -30,3 +30,5 @@
         </li>
     </ul>
 </div>
+
+<script type="module" src="{{ asset('js/dashboard/back-button.js') }}"></script>

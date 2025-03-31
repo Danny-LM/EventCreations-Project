@@ -5,27 +5,27 @@
 <div class="header-nav d-flex justify-content-between align-items-center p-3">
     <!-- Back btn -->
     <a class="nav-link d-flex align-items-center me-3" href="#">
-        <i class="lni lni-arrow-left align-middle"></i>
+        <i class="fi fi-rr-arrow-left align-middle"></i>
     </a>
 
     <ul class="navbar-nav d-flex flex-row mb-0 align-items-center">
         <!-- User Profile -->
         <li class="nav-item mx-3">
             <a class="nav-link" href="#">
-                <i class="lni lni-user-4 align-middle"></i>
+                <i class="fi fi-rr-circle-user align-middle"></i>
             </a>
         </li>
         
         <!-- Settings -->
         <li class="nav-item mx-3">
             <a class="nav-link" href="#">
-                <i class="lni lni-gear-1 align-middle"></i>
+                <i class="fi fi-rr-settings align-middle"></i>
             </a>
         </li>
         <!-- Notifications -->
         <li class="nav-item mx-3">
             <a class="nav-link" href="#">
-                <i class="lni lni-bell-1 align-middle"></i>
+                <i class="fi fi-rr-bell align-middle"></i>
             </a>
         </li>
     </ul>

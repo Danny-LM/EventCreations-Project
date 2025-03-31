@@ -11,7 +11,7 @@ class eventCard extends Component
     public $type;
     public $theme;
 
-    public function __construct( $title="Event Title", $date="00/00/00", $type="Bithday", $theme="Celebrities")
+    public function __construct( $title="Event Name", $date="00/00/00", $type="Bithday", $theme="Celebrities")
     {
         $this->title = $title;
         $this->date = $date;

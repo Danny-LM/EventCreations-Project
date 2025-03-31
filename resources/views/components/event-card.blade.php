@@ -6,10 +6,10 @@
         <!-- Content -->
         <div class="card-body d-flex flex-column p-1">
             <!-- Title with icons -->
-            <div class="d-flex align-items-center justify-content-center mb-4">
-                <i class="lni lni-star-fat fs-4 mx-2 align-middle"></i>
-                <h3 class="card-title mb-0">{{ $title }}</h3>
-                <i class="lni lni-pencil-1 fs-4 mx-2 align-middle"></i>
+            <div class="d-flex align-items-center justify-content-center mb-2">
+                <i class="fi fi-rr-star fs-4 mx-1 align-middle"></i>
+                <h3 class="fs-4 card-title">{{ $title }}</h3>
+                <i class="fi fi-rr-pencil fs-4 mx-1 align-middle"></i>
             </div>
 
             <div class="d-flex flex-column flex-grow-1 justify-content-center align-items-center">
@@ -19,7 +19,7 @@
                         <span class="ms-1 fw-bold fst-italic align-middle">Date</span>
                         <div class="mx-1 align-middle me-1">
                             <span class="align-middle">{{ $date }}</span>
-                            <i class="lni lni-calendar-days align-middle"></i>
+                            <i class="fi fi-rr-calendar-clock align-middle"></i>
                         </div>
                     </div>
                     <!-- Type -->
@@ -27,7 +27,7 @@
                         <span class="ms-1 fw-bold fst-italic align-middle">Type</span>
                         <div class="mx-1 align-middle me-1">
                             <span class="align-middle">{{ $type }}</span>
-                            <i class="lni lni-calendar-days align-middle"></i>
+                            <i class="fi fi-rr-tags align-middle"></i>
                         </div>
                     </div>
                     <!-- Theme -->
@@ -35,7 +35,7 @@
                         <span class="ms-1 fw-bold fst-italic align-middle">Theme</span>
                         <div class="mx-1 align-middle me-1">
                             <span class="align-middle">{{ $theme }}</span>
-                            <i class="lni lni-calendar-days align-middle"></i>
+                            <i class="fi fi-rr-palette align-middle"></i>
                         </div>
                     </div>
                 </div>

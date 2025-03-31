@@ -3,13 +3,12 @@
   <div class="container">
     <div class="header-background">
       <x-head-nav-btns></x-head-nav-btns>
-      <x-head-dynamic-message></x-head-dynamic-message>
       <x-head-footer text="My Schedule"></x-head-footer>
     </div>
   </div>
 
 <!----------------------------------- Content ----------------------------------->
-  <div class="container margin-bottom">
+  <div class="container my-4">
     <h1>Bienvenido a tu Calendario</h1>
   </div>
 </section>

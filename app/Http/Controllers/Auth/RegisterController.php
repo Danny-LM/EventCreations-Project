@@ -3,71 +3,41 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
-use App\Providers\RouteServiceProvider;
+
 use App\Models\User;
-use Illuminate\Foundation\Auth\RegistersUsers;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
-use Illuminate\Support\Facades\Validator;
+use Illuminate\Validation\Rules;
 
 class RegisterController extends Controller
 {
-    /*
-    |--------------------------------------------------------------------------
-    | Register Controller
-    |--------------------------------------------------------------------------
-    |
-    | This controller handles the registration of new users as well as their
-    | validation and creation. By default this controller uses a trait to
-    | provide this functionality without requiring any additional code.
-    |
-    */
-
-    use RegistersUsers;
-
-    /**
-     * Where to redirect users after registration.
-     *
-     * @var string
-     */
-    protected $redirectTo = RouteServiceProvider::HOME;
-
-    /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
-    public function __construct()
+    // Mostrar el formulario de registro
+    public function showRegistrationForm()
     {
-        $this->middleware('guest');
+        return view('auth.register'); // Aquí deberías tener la vista register.blade.php
     }
 
-    /**
-     * Get a validator for an incoming registration request.
-     *
-     * @param  array  $data
-     * @return \Illuminate\Contracts\Validation\Validator
-     */
-    protected function validator(array $data)
+    // Procesar el registro de un nuevo usuario
+    public function register(Request $request)
     {
-        return Validator::make($data, [
-            'name' => ['required', 'string', 'max:255'],
-            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
-            'password' => ['required', 'string', 'min:8', 'confirmed'],
+        // Validación de los datos del formulario
+        $request->validate([
+            'username' => ['required', 'string', 'max:255'], // Validar que el nombre de usuario esté presente y sea una cadena de caracteres
+            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'], // Validar que el email esté presente, sea único y tenga un formato correcto
+            'password' => ['required', 'confirmed', Rules\Password::defaults()], // Validar que la contraseña esté presente y sea confirmada correctamente
         ]);
-    }
+        // Agregar un mensaje de éxito a la sesión
+    session()->flash('success', '¡Te has registrado correctamente!');
+    
 
-    /**
-     * Create a new user instance after a valid registration.
-     *
-     * @param  array  $data
-     * @return \App\Models\User
-     */
-    protected function create(array $data)
-    {
-        return User::create([
-            'name' => $data['name'],
-            'email' => $data['email'],
-            'password' => Hash::make($data['password']),
+        // Crear el usuario en la base de datos
+        $user = User::create([
+            'name' => $request->username, // Asignar el nombre de usuario
+            'email' => $request->email,   // Asignar el email
+            'password' => Hash::make($request->password), // Crear la contraseña cifrada
         ]);
+
+        // Redirigir al dashboard después de registrar al usuario
+        return redirect()->route('home'); // Redirige a la página principal
     }
 }

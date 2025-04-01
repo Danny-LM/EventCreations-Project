@@ -7,9 +7,10 @@
 <h1> Log in</h1>
  <div class="row g-2">
   <div class="col-md">
-    
+  <form method="POST" action="{{ route('login') }}">
+    @csrf
       <div class="form-floating">   
-      <input type="text" class="form-control" id="username" placeholder=" " value="">
+      <input type="text" class="form-control  @error('name') is-invalid @enderror" id="username" placeholder=" " value="">
       <label for="username">Your username</label></div>
       
       <div class="form-floating">

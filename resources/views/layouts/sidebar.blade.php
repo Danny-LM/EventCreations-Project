@@ -12,7 +12,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     
-    <link href="https://cdn.lineicons.com/5.0/lineicons.css" rel="stylesheet" />
+    <!-- <link href="https://cdn.lineicons.com/5.0/lineicons.css" rel="stylesheet" /> -->
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css">
     
     <link rel="stylesheet" href="/css/custom.css">
 
@@ -20,10 +21,10 @@
 <body>
     <div class="wrapper d-flex">
         <!-- Sidebar -->
-        <aside id="sidebar" class="d-flex flex-column">
+        <aside id="sidebar" class="d-flex flex-column expand">
             <div class="d-flex">
                 <button id="sidebar-toggle-btn" type="button">
-                    <i class="lni lni-dashboard-square-1"></i>
+                    <i class="fi fi-rr-apps"></i>
                 </button>
                 <div class="sidebar-logo">
                     <h3>EventCreations</h3>
@@ -33,70 +34,100 @@
                 
                 <!-- Overview Page -->
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link" data-route="{{ route('my-home') }}" aria-label="Go to Home">
-                        <i class="lni lni-home-2"></i>
+                    <a href="#"
+                        class="sidebar-link"
+                        data-route="{{ route('dashboard', ['section' => 'my-home']) }}"
+                        aria-label="Go to your home">
+                        <i class="fi fi-rr-home"></i>
                         <span>Home</span>
                     </a>
                 </li>
 
                 <!-- User Management -->
                 <li class="sidebar-item"> <!-- (Admin Only) -->
-                    <a href="#" class="sidebar-link" data-route="{{ route('my-users') }}"> <!-- (modify later) -->
-                        <i class="lni lni-user-multiple-4"></i>
+                    <a href="#"
+                        class="sidebar-link"
+                        data-route="{{ route('dashboard', ['section' => 'users']) }}"
+                        aria-label="Go to your users">
+                        <i class="fi fi-rr-users"></i>
                         <span>Users [Admin]</span>
                     </a>
                 </li>
                 <li class="sidebar-item"> <!-- (Admin Only) -->
-                    <a href="#" class="sidebar-link" data-route="{{ route('permissions') }}"> <!-- (modify later) -->
-                        <i class="lni lni-shield-2-check"></i>
-                        <span>Roles & Permissions [Admin]</span>
+                    <a href="#"
+                        class="sidebar-link"
+                        data-route="{{ route('dashboard', ['section' => 'permissions']) }}"
+                        aria-label="Go to your roles and permissions">
+                        <i class="fi fi-rr-shield"></i>
+                        <span>Roles [Admin]</span>
                     </a>
                 </li>
 
                 <!-- Event Management -->
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link" data-route="{{ route('my-events') }}" aria-label="Go to Your Events">
-                        <i class="lni lni-agenda"></i>
+                    <a href="#"
+                        class="sidebar-link"
+                        data-route="{{ route('dashboard', ['section' => 'my-events']) }}"
+                        aria-label="Go to your events">
+                        <i class="fi fi-rr-table-picnic"></i>
                         <span>My Events</span>
                     </a>
                 </li>
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link" data-route="{{ route('my-notes') }}" aria-label="Go to Your Notes">
-                        <i class="lni lni-pen-to-square"></i>
-                        <span>Notes</span>
+                    <a href="#"
+                        class="sidebar-link"
+                        data-route="{{ route('dashboard', ['section' => 'my-notes']) }}"
+                        aria-label="Go to your notes">
+                        <i class="fi fi-rr-edit"></i>
+                        <span>My Notes</span>
                     </a>
                 </li>
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link" data-route="{{ route('my-schedule') }}" aria-label="Go to Your Schedule">
-                        <i class="lni lni-calendar-days"></i>
-                        <span>Schedule</span>
+                    <a href="#"
+                        class="sidebar-link"
+                        data-route="{{ route('dashboard', ['section' => 'my-schedule']) }}"
+                        aria-label="Go to your schedule">
+                        <i class="fi fi-rr-calendar-day"></i>
+                        <span>My Schedule</span>
                     </a>
                 </li>
 
                 <!-- Analytics & Reports -->
                 <li class="sidebar-item"> <!-- (Admin Only) -->
-                    <a href="#" class="sidebar-link" data-route="{{ route('my-analytics') }}"> <!-- (modify later) -->
-                        <i class="lni lni-bar-chart-4"></i>
+                    <a href="#"
+                        class="sidebar-link"
+                        data-route="{{ route('dashboard', ['section' => 'analytics']) }}"
+                        aria-label="Go to your analytics">
+                        <i class="fi fi-rr-chat-arrow-grow"></i>
                         <span>Analytics [Admin]</span>
                     </a>
                 </li>
                 <li class="sidebar-item"> <!-- (Admin Only) -->
-                    <a href="#" class="sidebar-link" data-route="{{ route('my-reports') }}"> <!-- (modify later) -->
-                        <i class="lni lni-file-multiple"></i>
+                    <a href="#"
+                        class="sidebar-link"
+                        data-route="{{ route('dashboard', ['section' => 'reports']) }}"
+                        aria-label="Go to your reports">
+                        <i class="fi fi-rr-file-medical-alt"></i>
                         <span>Reports [Admin]</span>
                     </a>
                 </li>
 
                 <!-- Support & Help -->
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link" data-route="{{ route('support') }}"> <!-- (modify later) -->
-                        <i class="lni lni-question-mark"></i>
+                    <a href="#"
+                        class="sidebar-link"
+                        data-route="{{ route('dashboard', ['section' => 'support']) }}"
+                        aria-label="Go to your support">
+                        <i class="fi fi-rr-headset"></i>
                         <span>Support</span>
                     </a>
                 </li>
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link" data-route="{{ route('my-documentation') }}"> <!-- (modify later) -->
-                        <i class="lni lni-book-1"></i>
+                    <a href="#"
+                        class="sidebar-link"
+                        data-route="{{ route('dashboard', ['section' => 'documentation']) }}"
+                        aria-label="Go to your documentation">
+                        <i class="fi fi-rr-document"></i>
                         <span>Documentation</span>
                     </a>
                 </li>
@@ -105,10 +136,15 @@
 
         <!-- Main Content -->
          <div id="main-content" class="flex-grow-1">
-            @yield('content')
+            @isset($content)
+                @include($content)
+            @endisset
          </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="{{ asset('js/dashboard.js') }}"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+    <script type="module" src="{{ asset('js/dashboard/sidebar-toggle.js') }}"></script>
+    <script type="module" src="{{ asset('js/dashboard/spa-navigation.js') }}"></script>
 </body>
-</html>
+</html> 

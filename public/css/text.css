@@ -1,0 +1,24 @@
+
+@import 'variables.css';
+
+.txt-style-1 {
+  font-family: var(--font-family-primary);
+  color: var(--color-text-primary);
+}
+
+.txt-style-2 {
+  font-family: var(--font-family-primary);
+  color: var(--color-text-secondary);
+}
+
+.text-45 { font-size: var(--text-45);}
+.text-24 { font-size: var(--text-24);}
+.text-18 { font-size: var(--text-18);}
+.text-16 { font-size: var(--text-16);}
+
+.icon-size { font-size: var(--icons);}
+
+.text-bold { font-weight: var(--font-weight-bold);}
+.text-medium { font-weight: var(--font-weight-medium);}
+
+.text-underline { text-decoration: var(--text-underline);}

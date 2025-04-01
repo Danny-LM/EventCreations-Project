@@ -6,61 +6,31 @@ use Illuminate\Http\Request;
 
 class DashboardController extends Controller
 {
-    // Method to load the dashboard view
-    public function dashboard()
+    public function show($section)
     {
-        return view('dashboard', ['partial' => 'partials.user.home']);
-    }
+        $viewMap = [
+            'my-home' => 'partials.user.home',
+            'my-events' => 'partials.user.events',
+            'my-notes' => 'partials.user.notes',
+            'my-schedule' => 'partials.user.schedule',
 
-    // Admin Partial Views
-    public function users()
-    {
-        return view('partials.admin.users');
-    }
-    
-    public function permissions()
-    {
-        return view('partials.admin.permissions');
-    }
-    
-    public function analytics()
-    {
-        return view('partials.admin.analytics');
-    }
-    
-    public function reports()
-    {
-        return view('partials.admin.reports');
-    }
+            'support' => 'partials.user.support',
+            'documentation' => 'partials.user.documentation',
 
-    // methods to load the partial views
-    public function home()
-    {
-        return view('partials.user.home');
-    }
+            'users' => 'partials.admin.users',
+            'permissions' => 'partials.admin.permissions',
+            'analytics' => 'partials.admin.analytics',
+            'reports' => 'partials.admin.reports'
+        ];
 
-    public function events()
-    {
-        return view('partials.user.events');
-    }
+        $partial = $viewMap[$section] ?? 'partials.user.home';
 
-    public function notes()
-    {
-        return view('partials.user.notes');
-    }
+        if (request()->ajax()) {
+            return view($partial);
+        }
 
-    public function schedule()
-    {
-        return view('partials.user.schedule');
-    }
-    
-    public function support()
-    {
-        return view('partials.user.support');
-    }
-    
-    public function documentation()
-    {
-        return view('partials.user.documentation');
+        return view('dashboard', [
+            'content' => $partial
+        ]);
     }
 }

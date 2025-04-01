@@ -4,7 +4,7 @@ namespace App\View\Components;
 
 use Illuminate\View\Component;
 
-class HeadCard extends Component
+class headCard extends Component
 {
     public $icon;
     public $text;

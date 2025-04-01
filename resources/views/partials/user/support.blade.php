@@ -1,11 +1,14 @@
-<section class="dashboard-home">
-  <!----------------------------------- Header ----------------------------------->
+<section class="dashboard-support">
+<!----------------------------------- Header ----------------------------------->
   <div class="container">
-      <x-header></x-header>
+    <div class="header-background">
+      <x-head-nav-btns></x-head-nav-btns>
+      <x-head-footer text="Support Attention"></x-head-footer>
+    </div>
   </div>
 
-<!----------------------------------- Dashboard ----------------------------------->
-  <div class="container">
+<!----------------------------------- Content ----------------------------------->
+  <div class="container my-5">
     <h1>Welcome to your support page</h1>
   </div>
 </section>

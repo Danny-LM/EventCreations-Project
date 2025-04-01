@@ -37,7 +37,7 @@ Route::post('/register', [AuthController::class, 'register'])->name('register');
 Route::get('/roles', [RoleController::class, 'index'])->name('roles.index');
 
 // Rutas de autenticación por defecto de Laravel (opcional)
-Auth::routes(); 
+// Auth::routes();
 
 // Ruta del dashboard o home después del login
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
@@ -62,16 +62,21 @@ Route::get('/test', function () {
     return view('test');
 });
 
-// Dashboard Routes
-Route::get('/test-home', [DashboardController::class, 'dashboard'])->name('dashboard');
-Route::get('/my-home', [DashboardController::class, 'home'])->name('my-home');
-Route::get('/my-events', [DashboardController::class, 'events'])->name('my-events');
-Route::get('/my-notes', [DashboardController::class, 'notes'])->name('my-notes');
-Route::get('/my-schedule', [DashboardController::class, 'schedule'])->name('my-schedule');
-Route::get('/support', [DashboardController::class, 'support'])->name('support');
-Route::get('/my-documentation', [DashboardController::class, 'documentation'])->name('my-documentation');
+/*
+|--------------------------------------------------------------------------
+| Data Inyection
+|--------------------------------------------------------------------------
+*/
+// Roles
+Route::get('/roles', [RoleController::class, 'index']);
+Route::post('/roles', [RoleController::class, 'create']);
 
-Route::get('/my-users', [DashboardController::class, 'users'])->name('my-users');
-Route::get('/permissions', [DashboardController::class, 'permissions'])->name('permissions');
-Route::get('/my-analytics', [DashboardController::class, 'analytics'])->name('my-analytics');
-Route::get('/my-reports', [DashboardController::class, 'reports'])->name('my-reports');
+/*
+|--------------------------------------------------------------------------
+| Dashboard Routes
+|--------------------------------------------------------------------------
+*/
+
+Route::get('/{section}', [DashboardController::class, 'show'])
+    ->name('dashboard')
+    ->where('section', 'my-home|my-events|my-notes|my-schedule|support|documentation|users|permissions|analytics|reports');

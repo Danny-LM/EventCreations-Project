@@ -62,8 +62,14 @@ Route::get('/test', function () {
     return view('test');
 });
 
-
-// Route::get('/dash', [DashboardController::class, 'dashboard'])->name('dashboard');
+/*
+|--------------------------------------------------------------------------
+| Data Inyection
+|--------------------------------------------------------------------------
+*/
+// Roles
+Route::get('/roles', [RoleController::class, 'index']);
+Route::post('/roles', [RoleController::class, 'create']);
 
 /*
 |--------------------------------------------------------------------------
@@ -74,7 +80,3 @@ Route::get('/test', function () {
 Route::get('/{section}', [DashboardController::class, 'show'])
     ->name('dashboard')
     ->where('section', 'my-home|my-events|my-notes|my-schedule|support|documentation|users|permissions|analytics|reports');
-
-    // Route::prefix('dashboard')->group(function () {
-//     // Dashboard Section Routes
-// });

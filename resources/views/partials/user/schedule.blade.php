@@ -1,11 +1,14 @@
-<section class="dashboard-home">
-  <!----------------------------------- Header ----------------------------------->
+<section class="dashboard-schedule">
+<!----------------------------------- Header ----------------------------------->
   <div class="container">
-      <x-header></x-header>
+    <div class="header-background">
+      <x-head-nav-btns></x-head-nav-btns>
+      <x-head-footer text="My Schedule"></x-head-footer>
+    </div>
   </div>
 
-<!----------------------------------- Dashboard ----------------------------------->
-  <div class="container">
-    <h1>Bienvenido a tu Calendario</h1>
+<!----------------------------------- Content ----------------------------------->
+  <div class="container my-5">
+    <x-calendar></x-calendar>
   </div>
 </section>

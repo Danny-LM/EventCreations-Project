@@ -12,7 +12,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     
-    <link href="https://cdn.lineicons.com/5.0/lineicons.css" rel="stylesheet" />
+    <!-- <link href="https://cdn.lineicons.com/5.0/lineicons.css" rel="stylesheet" /> -->
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css">
     
     <link rel="stylesheet" href="/css/custom.css">
 
@@ -23,7 +24,7 @@
         <aside id="sidebar" class="d-flex flex-column expand">
             <div class="d-flex">
                 <button id="sidebar-toggle-btn" type="button">
-                    <i class="lni lni-dashboard-square-1"></i>
+                    <i class="fi fi-rr-apps"></i>
                 </button>
                 <div class="sidebar-logo">
                     <h3>EventCreations</h3>
@@ -37,7 +38,7 @@
                         class="sidebar-link"
                         data-route="{{ route('dashboard', ['section' => 'my-home']) }}"
                         aria-label="Go to your home">
-                        <i class="lni lni-home-2"></i>
+                        <i class="fi fi-rr-home"></i>
                         <span>Home</span>
                     </a>
                 </li>
@@ -48,7 +49,7 @@
                         class="sidebar-link"
                         data-route="{{ route('dashboard', ['section' => 'users']) }}"
                         aria-label="Go to your users">
-                        <i class="lni lni-user-multiple-4"></i>
+                        <i class="fi fi-rr-users"></i>
                         <span>Users [Admin]</span>
                     </a>
                 </li>
@@ -57,8 +58,8 @@
                         class="sidebar-link"
                         data-route="{{ route('dashboard', ['section' => 'permissions']) }}"
                         aria-label="Go to your roles and permissions">
-                        <i class="lni lni-shield-2-check"></i>
-                        <span>Roles & Permissions [Admin]</span>
+                        <i class="fi fi-rr-shield"></i>
+                        <span>Roles [Admin]</span>
                     </a>
                 </li>
 
@@ -68,7 +69,7 @@
                         class="sidebar-link"
                         data-route="{{ route('dashboard', ['section' => 'my-events']) }}"
                         aria-label="Go to your events">
-                        <i class="lni lni-agenda"></i>
+                        <i class="fi fi-rr-table-picnic"></i>
                         <span>My Events</span>
                     </a>
                 </li>
@@ -77,7 +78,7 @@
                         class="sidebar-link"
                         data-route="{{ route('dashboard', ['section' => 'my-notes']) }}"
                         aria-label="Go to your notes">
-                        <i class="lni lni-pen-to-square"></i>
+                        <i class="fi fi-rr-edit"></i>
                         <span>My Notes</span>
                     </a>
                 </li>
@@ -86,7 +87,7 @@
                         class="sidebar-link"
                         data-route="{{ route('dashboard', ['section' => 'my-schedule']) }}"
                         aria-label="Go to your schedule">
-                        <i class="lni lni-calendar-days"></i>
+                        <i class="fi fi-rr-calendar-day"></i>
                         <span>My Schedule</span>
                     </a>
                 </li>
@@ -97,7 +98,7 @@
                         class="sidebar-link"
                         data-route="{{ route('dashboard', ['section' => 'analytics']) }}"
                         aria-label="Go to your analytics">
-                        <i class="lni lni-bar-chart-4"></i>
+                        <i class="fi fi-rr-chat-arrow-grow"></i>
                         <span>Analytics [Admin]</span>
                     </a>
                 </li>
@@ -106,7 +107,7 @@
                         class="sidebar-link"
                         data-route="{{ route('dashboard', ['section' => 'reports']) }}"
                         aria-label="Go to your reports">
-                        <i class="lni lni-file-multiple"></i>
+                        <i class="fi fi-rr-file-medical-alt"></i>
                         <span>Reports [Admin]</span>
                     </a>
                 </li>
@@ -117,7 +118,7 @@
                         class="sidebar-link"
                         data-route="{{ route('dashboard', ['section' => 'support']) }}"
                         aria-label="Go to your support">
-                        <i class="lni lni-question-mark"></i>
+                        <i class="fi fi-rr-headset"></i>
                         <span>Support</span>
                     </a>
                 </li>
@@ -126,7 +127,7 @@
                         class="sidebar-link"
                         data-route="{{ route('dashboard', ['section' => 'documentation']) }}"
                         aria-label="Go to your documentation">
-                        <i class="lni lni-book-1"></i>
+                        <i class="fi fi-rr-document"></i>
                         <span>Documentation</span>
                     </a>
                 </li>

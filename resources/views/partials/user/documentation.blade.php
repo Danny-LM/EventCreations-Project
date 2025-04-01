@@ -1,11 +1,14 @@
-<section class="dashboard-home">
-  <!----------------------------------- Header ----------------------------------->
+<section class="dashboard-documentation">
+<!----------------------------------- Header ----------------------------------->
   <div class="container">
-      <x-header></x-header>
+    <div class="header-background">
+      <x-head-nav-btns></x-head-nav-btns>
+      <x-head-footer text="Documentation"></x-head-footer>
+    </div>
   </div>
 
-<!----------------------------------- Dashboard ----------------------------------->
-  <div class="container">
+<!----------------------------------- Content ----------------------------------->
+  <div class="container my-5">
     <h1>Welcome to your documentation</h1>
   </div>
 </section>

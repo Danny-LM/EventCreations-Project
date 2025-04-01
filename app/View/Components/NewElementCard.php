@@ -4,12 +4,12 @@ namespace App\View\Components;
 
 use Illuminate\View\Component;
 
-class NewElementCard extends Component
+class newElementCard extends Component
 {
     public $icon;
     public $text;
 
-    public function __construct($icon="lni lni-plus", $text="Card Text")
+    public function __construct($icon="fi fi-rr-plus", $text="Card Text")
     {
         $this->icon = $icon;
         $this->text = $text;

@@ -22,8 +22,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
             try {
                 document.getElementById('main-content').innerHTML = `
-                    <div class="d-flex justify-content-center py-5">
-                        <div class="spinner-border text-primary" role="status">
+                    <div class="loader-container d-flex justify-content-center align-items-center">
+                        <div class="spinner-border spinner-color spinner-border-lg" role="status">
                             <span class="visually-hidden">Loading...</span>
                         </div>
                     </div>
@@ -49,11 +49,36 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Manage popstate (back/forward buttons)
-    window.addEventListener('popstate', (e) => {
+    window.addEventListener('popstate', async (e) => {
         if (e.state?.url) {
-            window.location.href = e.state.url;
+            try {
+                document.getElementById('main-content').innerHTML = `
+                    <div class="loader-container d-flex justify-content-center align-items-center">
+                        <div class="spinner-border spinner-color spinner-border-lg" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
+                    </div>
+                `;
+    
+                const response = await fetch(e.state.url, {
+                    headers: { 'X-Requested-With': 'XMLHttpRequest' }
+                });
+    
+                if (!response.ok) throw new Error();
+    
+                document.getElementById('main-content').innerHTML = await response.text();
+    
+                // Actualizar el enlace activo en la barra lateral
+                document.querySelectorAll('.sidebar-link').forEach(item => {
+                    item.classList.toggle('active', item.getAttribute('data-route') === e.state.url);
+                });
+    
+            } catch (error) {
+                console.error("Error al cargar la página:", error);
+                window.location.href = e.state.url; // Fallback en caso de error
+            }
         }
-    });
+    });    
 
     // Set the initial active link
     const currentPath = window.location.pathname.split('/').pop();

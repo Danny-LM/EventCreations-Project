@@ -4,19 +4,19 @@ namespace App\View\Components;
 
 use Illuminate\View\Component;
 
-class EventCard extends Component
+class eventCard extends Component
 {
-    public $event_image;
-    public $event_date;
-    public $event_title;
-    public $event_description;
+    public $title;
+    public $date;
+    public $type;
+    public $theme;
 
-    public function __construct($event_image="https://placehold.jp/300x150.png",$event_date="DD-MM-YYYY",$event_title="Card Title",$event_description="Here the card description")
+    public function __construct( $title="Event Name", $date="00/00/00", $type="Bithday", $theme="Celebrities")
     {
-        $this->event_image = $event_image;
-        $this->event_date = $event_date;
-        $this->event_title = $event_title;
-        $this->event_description = $event_description;
+        $this->title = $title;
+        $this->date = $date;
+        $this->type = $type;
+        $this->theme = $theme;
     }
 
     public function render()

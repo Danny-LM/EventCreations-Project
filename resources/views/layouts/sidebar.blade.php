@@ -12,7 +12,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     
-    <!-- <link href="https://cdn.lineicons.com/5.0/lineicons.css" rel="stylesheet" /> -->
     <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css">
     
     <link rel="stylesheet" href="/css/custom.css">
@@ -141,10 +140,16 @@
             @endisset
          </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-
-    <script type="module" src="{{ asset('js/dashboard/sidebar-toggle.js') }}"></script>
-    <script type="module" src="{{ asset('js/dashboard/spa-navigation.js') }}"></script>
 </body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+<script src="{{ asset('js/dashboard/calendar.js') }}"></script>
+
+<script type="module" src="{{ asset('js/dashboard/sidebar-toggle.js') }}"></script>
+<script type="module" src="{{ asset('js/dashboard/spa-navigation.js') }}"></script>
+
+
 </html> 

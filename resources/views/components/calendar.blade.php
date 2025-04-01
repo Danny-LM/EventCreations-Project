@@ -23,12 +23,12 @@
             </div>
 
             <!-- Year Dropdown -->
-            <div class="dropdown">
+            <div class="drowdown me-2">
                 <span class="selectable dropdown-toggle" data-bs-toggle="dropdown">
                     <span x-text="year"></span>
                 </span>
                 <ul class="dropdown-menu">
-                    <template x-for="(y) in yearRange">
+                    <template x-for="y in yearRange" :key="y">
                         <li>
                             <a href="#" class="dropdown-item" @click="setYear(y)">
                                 <span x-text="y"></span>
@@ -52,5 +52,3 @@
         </template>
     </div>
 </div>
-
-<script src="{{ asset('js/dashboard/calendar.js') }}"></script>

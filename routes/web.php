@@ -37,16 +37,32 @@ Route::post('/register', [AuthController::class, 'register'])->name('register');
 Route::get('/roles', [RoleController::class, 'index'])->name('roles.index');
 
 // Rutas de autenticación por defecto de Laravel (opcional)
-// Auth::routes();
+Auth::routes();
 
 // Ruta del dashboard o home después del login
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-//Rutas de Google
 
+/*
+|--------------------------------------------------------------------------
+| Google Routes
+|--------------------------------------------------------------------------
+| Here are some temporary routes for testing purposes.
+| These routes will be removed in the final version of the project.
+*/
 Route::get('/auth/google', [GoogleController::class, 'redirectToGoogle'])->name('auth.google');
 Route::get('/auth/google/callback', [GoogleController::class, 'handleGoogleCallback']);
 
+
+/*
+|--------------------------------------------------------------------------
+| Dashboard Routes
+|--------------------------------------------------------------------------
+*/
+
+Route::get('/{section}', [DashboardController::class, 'show'])
+    ->name('dashboard')
+    ->where('section', 'my-home|my-events|my-notes|my-schedule|support|documentation|users|permissions|analytics|reports');
 
 
 /*
@@ -62,6 +78,7 @@ Route::get('/test', function () {
     return view('test');
 });
 
+
 /*
 |--------------------------------------------------------------------------
 | Data Inyection
@@ -71,12 +88,3 @@ Route::get('/test', function () {
 Route::get('/roles', [RoleController::class, 'index']);
 Route::post('/roles', [RoleController::class, 'create']);
 
-/*
-|--------------------------------------------------------------------------
-| Dashboard Routes
-|--------------------------------------------------------------------------
-*/
-
-Route::get('/{section}', [DashboardController::class, 'show'])
-    ->name('dashboard')
-    ->where('section', 'my-home|my-events|my-notes|my-schedule|support|documentation|users|permissions|analytics|reports');

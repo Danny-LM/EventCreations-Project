@@ -56,8 +56,8 @@
                     <a href="#"
                         class="sidebar-link"
                         data-route="{{ route('dashboard', ['section' => 'permissions']) }}"
-                        aria-label="Go to your roles and permissions">
-                        <i class="fi fi-rr-shield"></i>
+                        aria-label="Go to your roles">
+                        <i class="fi fi-rr-chart-tree"></i>
                         <span>Roles [Admin]</span>
                     </a>
                 </li>
@@ -68,7 +68,7 @@
                         class="sidebar-link"
                         data-route="{{ route('dashboard', ['section' => 'my-events']) }}"
                         aria-label="Go to your events">
-                        <i class="fi fi-rr-table-picnic"></i>
+                        <i class="fi fi-rr-cake-wedding"></i>
                         <span>My Events</span>
                     </a>
                 </li>
@@ -77,7 +77,7 @@
                         class="sidebar-link"
                         data-route="{{ route('dashboard', ['section' => 'my-notes']) }}"
                         aria-label="Go to your notes">
-                        <i class="fi fi-rr-edit"></i>
+                        <i class="fi fi-rr-memo-pad"></i>
                         <span>My Notes</span>
                     </a>
                 </li>
@@ -97,7 +97,8 @@
                         class="sidebar-link"
                         data-route="{{ route('dashboard', ['section' => 'analytics']) }}"
                         aria-label="Go to your analytics">
-                        <i class="fi fi-rr-chat-arrow-grow"></i>
+                        <!-- <i class="fi fi-rr-chat-arrow-grow"></i> -->
+                        <i class="fi fi-rr-chart-pie-alt"></i>
                         <span>Analytics [Admin]</span>
                     </a>
                 </li>
@@ -106,7 +107,8 @@
                         class="sidebar-link"
                         data-route="{{ route('dashboard', ['section' => 'reports']) }}"
                         aria-label="Go to your reports">
-                        <i class="fi fi-rr-file-medical-alt"></i>
+                        <!-- <i class="fi fi-rr-file-medical-alt"></i> -->
+                        <i class="fi fi-rr-bug"></i>
                         <span>Reports [Admin]</span>
                     </a>
                 </li>

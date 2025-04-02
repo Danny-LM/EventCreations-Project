@@ -7,7 +7,7 @@
     </div>
 
     <!-- search and filter bar -->
-    <div class="d-flex align-items-center p-5">
+    <div class="d-flex align-items-center pt-5">
       <x-search-bar></x-search-bar>
     </div>
   </div>

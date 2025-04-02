@@ -23,6 +23,6 @@ class eventsTableCard extends Component
      */
     public function render()
     {
-        return view('components.events-table-card');
+        return view('components.cards.events-table-card');
     }
 }

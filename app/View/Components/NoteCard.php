@@ -27,6 +27,6 @@ class noteCard extends Component
 
     public function render()
     {
-        return view('components.note-card');
+        return view('components.cards.note-card');
     }
 }

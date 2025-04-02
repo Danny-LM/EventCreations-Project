@@ -21,6 +21,6 @@ class eventCard extends Component
 
     public function render()
     {
-        return view('components.event-card');
+        return view('components.cards.event-card');
     }
 }

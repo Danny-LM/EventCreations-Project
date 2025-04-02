@@ -17,6 +17,6 @@ class newElementCard extends Component
 
     public function render()
     {
-        return view('components.new-element-card');
+        return view('components.cards.new-element-card');
     }
 }

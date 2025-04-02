@@ -23,6 +23,6 @@ class toolsCard extends Component
      */
     public function render()
     {
-        return view('components.tools-card');
+        return view('components.cards.tools-card');
     }
 }

@@ -19,6 +19,6 @@ class headCard extends Component
 
     public function render()
     {
-        return view('components.head-card');
+        return view('components.cards.head-card');
     }
 }

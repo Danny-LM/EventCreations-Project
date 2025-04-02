@@ -23,6 +23,6 @@ class calendarCard extends Component
      */
     public function render()
     {
-        return view('components.calendar-card');
+        return view('components.cards.calendar-card');
     }
 }

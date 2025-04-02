@@ -23,6 +23,6 @@ class noteListCard extends Component
      */
     public function render()
     {
-        return view('components.note-list-card');
+        return view('components.cards.note-list-card');
     }
 }

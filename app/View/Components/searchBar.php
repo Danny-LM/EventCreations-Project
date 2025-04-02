@@ -4,7 +4,7 @@ namespace App\View\Components;
 
 use Illuminate\View\Component;
 
-class searchFilterBar extends Component
+class searchBar extends Component
 {
     /**
      * Create a new component instance.
@@ -23,6 +23,6 @@ class searchFilterBar extends Component
      */
     public function render()
     {
-        return view('components.search-filter-bar');
+        return view('components.search-bar');
     }
 }

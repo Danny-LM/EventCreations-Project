@@ -1,5 +1,4 @@
 
-<section class="dashboard-home">
 <!----------------------------------- Header ----------------------------------->
   <div class="container">
     <div class="header-background">
@@ -43,4 +42,3 @@
       </div>
     </div>
   </div>
-</section>

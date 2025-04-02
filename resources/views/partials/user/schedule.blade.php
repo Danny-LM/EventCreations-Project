@@ -1,4 +1,4 @@
-<section class="dashboard-schedule">
+
 <!----------------------------------- Header ----------------------------------->
   <div class="container">
     <div class="header-background">
@@ -11,4 +11,3 @@
   <div class="container my-5">
     <x-calendar></x-calendar>
   </div>
-</section>

@@ -1,4 +1,4 @@
-<section class="dashboard-analytics">
+
 <!----------------------------------- Header ----------------------------------->
   <div class="container">
     <div class="header-background">
@@ -11,4 +11,3 @@
   <div class="container my-5">
     <h1>Welcome to your analytics page</h1>
   </div>
-</section>

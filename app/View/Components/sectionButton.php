@@ -4,7 +4,7 @@ namespace App\View\Components;
 
 use Illuminate\View\Component;
 
-class headNavBtns extends Component
+class sectionButton extends Component
 {
     /**
      * Create a new component instance.
@@ -23,6 +23,6 @@ class headNavBtns extends Component
      */
     public function render()
     {
-        return view('components.buttons.head-nav-btns');
+        return view('components.buttons.section-button');
     }
 }

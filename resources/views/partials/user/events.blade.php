@@ -9,6 +9,8 @@
     <!-- search and filter bar -->
     <div class="d-flex align-items-center pt-5">
       <x-search-bar></x-search-bar>
+      <x-modal-button></x-modal-button>
+      <x-modal-button></x-modal-button>
     </div>
   </div>
 
